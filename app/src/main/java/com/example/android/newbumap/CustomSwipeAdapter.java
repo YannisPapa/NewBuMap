@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class CustomSwipeAdapter extends PagerAdapter{
 
-    private int[] image_resources = {R.drawable.image3,R.drawable.image4,R.drawable.image5,R.drawable.image6};
+    private int[] image_resources = {R.drawable.bubasement,R.drawable.bufloor1,R.drawable.bufloor2,R.drawable.bufloor3};
     private Context ctx;
     private LayoutInflater layoutInflater;
 
