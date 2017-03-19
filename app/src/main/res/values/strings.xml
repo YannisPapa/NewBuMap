@@ -1,0 +1,261 @@
+<resources>
+
+    <string name="app_name">NewBuMap</string>>
+
+    <string-array name="building_array">
+        <item>Hamilton</item>
+        <item>Johnson</item>
+        <item>Nicolls</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="floor_array">
+        <item>Ground Floor</item>
+        <item>First Floor</item>
+        <item>Second Floor</item>
+        <item>Third Floor</item>
+    </string-array>
+    <string-array name="j_ground_array">
+        <item>J-001</item>
+        <item>J-002</item>
+        <item>J-004</item>
+        <item>J-004a</item>
+        <item>J-005</item>
+        <item>J-005a</item>
+        <item>J-009</item>
+        <item>J-010</item>
+        <item>J-011b</item>
+        <item>J-018</item>
+        <item>J-019</item>
+        <item>J-020</item>
+        <item>J-023</item>
+        <item>J-024</item>
+        <item>J-026A</item>
+        <item>J-026B</item>
+        <item>J-026C</item>
+    </string-array>
+    <string-array name="j_first_array">
+        <item>J-101</item>
+        <item>J-102</item>
+        <item>J-103</item>
+        <item>J-104a</item>
+        <item>J-104b</item>
+        <item>J-104c</item>
+        <item>J-104d</item>
+        <item>J-104e</item>
+        <item>J-105</item>
+        <item>J-108</item>
+        <item>J-113</item>
+        <item>J-114a</item>
+        <item>J-114b</item>
+        <item>J-115</item>
+        <item>J-116</item>
+        <item>J-116a</item>
+        <item>J-116b</item>
+        <item>J-116c</item>
+        <item>J-117a</item>
+        <item>J-117b</item>
+        <item>J-117c</item>
+        <item>J-117d</item>
+        <item>J-118</item>
+        <item>J-119</item>
+        <item>J-120</item>
+        <item>J-121</item>
+        <item>J-122</item>
+        <item>J-123</item>
+        <item>J-124</item>
+        <item>J-125</item>
+        <item>J-126</item>
+        <item>J-127</item>
+        <item>J-128</item>
+        <item>J-150</item>
+        <item>J-151</item>
+        <item>J-152</item>
+        <item>J-153</item>
+        <item>J-154</item>
+        <item>ITS</item>
+    </string-array>
+    <string-array name="j_second_array">
+        <item>J-201</item>
+        <item>J-202</item>
+        <item>J-203</item>
+        <item>J-203a</item>
+        <item>J-203b</item>
+        <item>J-204</item>
+        <item>J-204a</item>
+        <item>J-204b</item>
+        <item>J-205</item>
+        <item>J-206</item>
+        <item>J-207</item>
+        <item>J-207a</item>
+        <item>J-208</item>
+        <item>J-209</item>
+        <item>J-210</item>
+        <item>J-211</item>
+        <item>J-212</item>
+        <item>J-214</item>
+        <item>J-214a</item>
+        <item>J-215</item>
+        <item>J-215a</item>
+        <item>J-216</item>
+        <item>J-217</item>
+        <item>J-218</item>
+        <item>J-219</item>
+        <item>J-220</item>
+        <item>J-221</item>
+        <item>J-230</item>
+        <item>J-232</item>
+        <item>J-232a</item>
+        <item>J-232b</item>
+        <item>BWH</item>
+    </string-array>
+    <string-array name="j_third_array">
+        <item>J-301</item>
+        <item>J-302</item>
+        <item>J-302a</item>
+        <item>J-303</item>
+        <item>J-305</item>
+        <item>J-306</item>
+        <item>J-307a</item>
+        <item>J-308</item>
+        <item>J-308a</item>
+        <item>J-309</item>
+        <item>J-310</item>
+        <item>J-310a</item>
+        <item>J-312</item>
+        <item>J-313</item>
+        <item>J-314</item>
+        <item>J-315</item>
+        <item>J-316</item>
+        <item>J-317</item>
+        <item>J-318</item>
+        <item>J-318a</item>
+        <item>J-320</item>
+        <item>J-320a</item>
+        <item>J-320</item>
+        <item>J-321</item>
+        <item>J-322</item>
+        <item>J-323</item>
+        <item>J-324</item>
+        <item>J-325</item>
+        <item>J-326</item>
+        <item>J-327</item>
+        <item>J-328</item>
+        <item>J-329</item>
+    </string-array>
+    <string-array name="h_ground_array">
+        <item>H-003</item>
+    </string-array>
+    <string-array name="h_first_array">
+        <item>H-150</item>
+        <item>H-160</item>
+        <item>H-161</item>
+        <item>Bus Stop</item>
+    </string-array>
+    <string-array name="h_second_array">
+        <item>H-200</item>
+        <item>H-201</item>
+        <item>H-201b</item>
+        <item>H-202</item>
+        <item>H-203</item>
+        <item>H-204</item>
+        <item>H-205a</item>
+        <item>H-205b</item>
+        <item>H-206</item>
+        <item>H-207</item>
+        <item>H-208</item>
+        <item>H-209</item>
+        <item>H-210</item>
+        <item>H-211</item>
+        <item>H-212</item>
+        <item>H-212a</item>
+        <item>H-213</item>
+        <item>H-214</item>
+        <item>H-215</item>
+        <item>H-216</item>
+        <item>H-217</item>
+        <item>H-218</item>
+        <item>H-219</item>
+    </string-array>
+    <string-array name="h_third_array">
+        <item>H-300</item>
+        <item>H-301</item>
+        <item>H-302</item>
+        <item>H-303</item>
+        <item>H-304</item>
+        <item>H-305</item>
+        <item>H-310</item>
+        <item>H-310a</item>
+    </string-array>
+    <string-array name="n_ground_array">
+        <item>N-001</item>
+        <item>N-002</item>
+        <item>N-003</item>
+        <item>N-004</item>
+        <item>N-005</item>
+        <item>N-007</item>
+        <item>N-008</item>
+    </string-array>
+    <string-array name="n_first_array">
+        <item>N-101</item>
+        <item>N-102</item>
+        <item>N-103</item>
+        <item>N-104</item>
+        <item>N-105</item>
+        <item>N-106</item>
+        <item>N-107</item>
+        <item>N-108</item>
+        <item>N-109</item>
+        <item>N-110</item>
+        <item>N-111</item>
+        <item>N-112</item>
+        <item>N-113</item>
+        <item>N-114</item>
+        <item>N-115</item>
+        <item>N-116</item>
+    </string-array>
+    <string-array name="n_second_array">
+        <item>N-201</item>
+        <item>N-202</item>
+        <item>N-203</item>
+        <item>N-204</item>
+        <item>N-205</item>
+        <item>N-206</item>
+        <item>N-207</item>
+        <item>N-208</item>
+        <item>N-209</item>
+        <item>N-210a</item>
+        <item>N-210b</item>
+        <item>N-211</item>
+        <item>N-212</item>
+        <item>N-213</item>
+        <item>N-214</item>
+        <item>N-215</item>
+        <item>N-216</item>
+    </string-array>
+    <string-array name="n_third_array">
+        <item>N-301</item>
+        <item>N-302</item>
+        <item>N-303</item>
+        <item>N-304</item>
+        <item>N-305</item>
+        <item>N-306</item>
+        <item>N-307</item>
+        <item>N-308</item>
+        <item>N-310</item>
+        <item>N-311a</item>
+        <item>N-311b</item>
+        <item>N-312</item>
+        <item>N-313</item>
+        <item>N-314</item>
+        <item>N-315</item>
+        <item>N-315a</item>
+        <item>N-315b</item>
+        <item>N-316</item>
+    </string-array>
+    <string-array name="other_array">
+        <item>ITS</item>
+        <item>Bus Stop</item>
+        <item>BWH</item>
+    </string-array>
+
+</resources>
