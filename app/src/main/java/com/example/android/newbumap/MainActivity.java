@@ -181,6 +181,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
                     R.array.other_array, android.R.layout.simple_spinner_dropdown_item);
             spinner6.setAdapter(adapterT);
+
         }
 
     }
