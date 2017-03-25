@@ -1,6 +1,7 @@
 package com.example.android.newbumap;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -16,7 +17,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    Spinner spinner1, spinner2, spinner3, spinner4, spinner5, spinner6;
+    public Spinner spinner1, spinner2, spinner3, spinner4, spinner5, spinner6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         spinner4.setOnItemSelectedListener(this);
         spinner5.setOnItemSelectedListener(this);
 
+    }
+
+    public String getSpinnerString(int i){
+        if(i == 1){
+            return spinner1.getSelectedItem().toString();
+        }
+        if(i == 2){
+            return spinner2.getSelectedItem().toString();
+        }
+        if(i == 4){
+            return spinner4.getSelectedItem().toString();
+        }
+        if(i == 5){
+            return spinner5.getSelectedItem().toString();
+        }
+
+        return "error";
     }
 
     @Override
