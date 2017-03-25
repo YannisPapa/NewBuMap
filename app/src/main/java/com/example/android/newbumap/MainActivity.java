@@ -189,13 +189,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         Button btn = (Button)findViewById(R.id.next_page_button);
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ImageActivity.class));
+        startActivity(new Intent(MainActivity.this, ImageActivity.class));
             }
-        });
-    }
+
+
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
