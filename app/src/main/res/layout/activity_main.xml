@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
                 android:layout_marginTop="16dp"
-                app:srcCompat="@drawable/ubishop" />
+                app:srcCompat="@drawable/ubishop"/>
 
             <TextView
                 android:id="@+id/textView1"
@@ -38,7 +38,7 @@
                 android:text="I want to go from . . ."
                 android:textColor="#000000"
                 android:textSize="24dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                     android:text="Building"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -65,7 +65,7 @@
                     android:text="Floor"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -75,7 +75,7 @@
                     android:text="Room"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
@@ -117,7 +117,7 @@
                 android:text="to . . ."
                 android:textColor="#000000"
                 android:textSize="24dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -134,7 +134,7 @@
                     android:text="Building"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -144,7 +144,7 @@
                     android:text="Floor"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -154,7 +154,7 @@
                     android:text="Room"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
@@ -193,7 +193,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:onClick="nextPage"
-                android:text="GO!" />
+                android:text="GO!"/>
 
         </LinearLayout>
     </ScrollView>
