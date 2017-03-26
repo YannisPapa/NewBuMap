@@ -89,8 +89,8 @@ public class CustomSwipeAdapter extends PagerAdapter{
 
         // Initialize a new Bitmap to hold the source bitmap
         Bitmap dstBitmap = Bitmap.createBitmap(
-                bitmap.getWidth() + offset * 2, // Width
-                bitmap.getHeight() + offset * 2, // Height
+                bitmap.getWidth(), // Width
+                bitmap.getHeight(), // Height
                 Bitmap.Config.ARGB_8888 // Config
         );
 
@@ -115,6 +115,18 @@ public class CustomSwipeAdapter extends PagerAdapter{
                 offset, // Left
                 offset, // Top
                 null // Paint
+        );
+
+        float canvasWidth = canvas.getWidth();
+        float canvasHeight = canvas.getHeight();
+        float ratio = canvasWidth/canvasHeight;
+
+        canvas.drawRect(
+                310*ratio, //x start
+                1180*ratio, //y start
+                510*ratio, //x stop
+                1280*ratio, //y stop
+                paint
         );
 
         PathDraw pDraw = new PathDraw(canvas, paint);
