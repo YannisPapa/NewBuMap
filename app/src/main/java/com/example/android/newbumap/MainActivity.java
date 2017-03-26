@@ -47,23 +47,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
-    public String getSpinnerString(int i){
-        if(i == 1){
-            return spinner1.getSelectedItem().toString();
-        }
-        if(i == 2){
-            return spinner2.getSelectedItem().toString();
-        }
-        if(i == 4){
-            return spinner4.getSelectedItem().toString();
-        }
-        if(i == 5){
-            return spinner5.getSelectedItem().toString();
-        }
-
-        return "error";
-    }
-
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
@@ -205,14 +188,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void nextPage(View view){
 
-        Button btn = (Button)findViewById(R.id.next_page_button);
+        Intent intent = new Intent(MainActivity.this, ImageActivity.class);
+        intent.putExtra("spinner1", spinner1.getSelectedItem().toString());
+        intent.putExtra("spinner2", spinner2.getSelectedItem().toString());
+        intent.putExtra("spinner4", spinner4.getSelectedItem().toString());
+        intent.putExtra("spinner5", spinner5.getSelectedItem().toString());
+        MainActivity.this.startActivity(intent);
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ImageActivity.class));
-            }
-        });
+        //Button btn = (Button)findViewById(R.id.next_page_button);
+
+        //btn.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View v) {
+                //startActivity(new Intent(MainActivity.this, ImageActivity.class));
+            //}
+        //});
     }
 
     @Override
