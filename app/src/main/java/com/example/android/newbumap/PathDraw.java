@@ -7,330 +7,311 @@ public class PathDraw {
 
     Canvas c;
     Paint p;
+    float px;
 
-    public PathDraw(Canvas canvas, Paint paint){
+    public PathDraw(Canvas canvas, Paint paint, float px){
         c = canvas;
         p = paint;
+        this.px = px;
     }
-
+    /*------------------------GROUND FLOOR-----------------------------------*/
     public void nicollsGroundFloor(){
         //big line going across nicolls ground floor
         c.drawLine(
-                530, // startX
-                860, // startY
-                530, // stopX
-                2100, // stopY
+                (float)11*px, // startX
+                (float)18*px, // startY
+                (float)11*px, // stopX
+                (float)43.5*px, // stopY
                 p // Paint
         );
         //small angle'd line
         c.drawLine(
-                530, // startX
-                2100, // startY
-                740, // stopX
-                2175, // stopY
+                (float)11*px, // startX
+                (float)43.5*px, // startY
+                (float)15.5*px, // stopX
+                (float)45.2*px, // stopY
                 p // Paint
         );
     }
     public void hamiltonGroundFloor(){
         //line going across hamilton ground floor
         c.drawLine(
-                740, // startX
-                2175, // startY
-                2675, // stopX
-                2175, // stopY
+                (float)15.5*px, // startX
+                (float)45.2*px, // startY
+                (float)56*px, // stopX
+                (float)45.2*px, // stopY
                 p // Paint
         );
     }
     public void johnsonGroundFloor(){
         //line going across johnson ground floor
         c.drawLine(
-                2675, // startX
-                520, // startY
-                2675, // stopX
-                3250, // stopY
+                (float)56*px, // startX
+                (float)11.5*px, // startY
+                (float)56*px, // stopX
+                (float)67*px, // stopY
                 p // Paint
         );
     }
+    /*------------------------FIRST FLOOR-----------------------------------*/
     public void nicollsFirstFloor(){
         //line going across nicolls first floor
         c.drawLine(
-                400, // startX
-                860, // startY
-                400, // stopX
-                2120, // stopY
+                (float)8.25*px, // startX
+                (float)18*px, // startY
+                (float)8.25*px, // stopX
+                (float)44.6*px, // stopY
                 p // Paint
         );
         //line connecting to hamilton and going to busstop
         c.drawLine(
-                400, // startX
-                2120, // startY
-                880, // stopX
-                2120, // stopY
+                (float)8.25*px, // startX
+                (float)44.6*px, // startY
+                (float)18*px, // stopX
+                (float)44.6*px, // stopY
                 p // Paint
         );
     }
     public void hamiltonFirstFloor(){
-        //most bottom line of hamilton first floor
+        //line going in front of nelly's old office
         c.drawLine(
-                1665, // startX
-                2210, // startY
-                1950, // stopX
-                2210, // stopY
-                p // Paint
-        );
-        //line connecting hamilton to johnson
-        c.drawLine(
-                1950, // startX
-                2180, // startY
-                2565, // stopX
-                2180, // stopY
-                p // Paint
-        );
-        //small line connecting the two lines above
-        c.drawLine(
-                1950, // startX
-                2210, // startY
-                1950, // stopX
-                2180, // stopY
+                (float)30*px, // startX
+                (float)43*px, // startY
+                (float)34.7*px, // stopX
+                (float)43*px, // stopY
                 p // Paint
         );
         //line going in front of the hamilton lab on first floor
         c.drawLine(
-                1665, // startX
-                2065, // startY
-                1665, // stopX
-                2210, // stopY
+                (float)34.7*px, // startX
+                (float)43*px, // startY
+                (float)34.7*px, // stopX
+                (float)46*px, // stopY
                 p // Paint
         );
-        //line going in front of nelly's old office
+        //most bottom line of hamilton first floor
         c.drawLine(
-                1450, // startX
-                2065, // startY
-                1665, // stopX
-                2065, // stopY
+                (float)34.7*px, // startX
+                (float)46*px, // startY
+                (float)41*px, // stopX
+                (float)46*px, // stopY
+                p // Paint
+        );
+        //line connecting hamilton to johnson
+        c.drawLine(
+                (float)41*px, // startX
+                (float)45.4*px, // startY
+                (float)53.5*px, // stopX
+                (float)45.4*px, // stopY
+                p // Paint
+        );
+        //small line connecting the two lines above
+        c.drawLine(
+                (float)41*px, // startX
+                (float)46*px, // startY
+                (float)41*px, // stopX
+                (float)45.4*px, // stopY
                 p // Paint
         );
     }
     public void johnsonFirstFloor(){
         //big line going across johnson first floor
         c.drawLine(
-                2565, // startX
-                430, // startY
-                2565, // stopX
-                3210, // stopY
+                (float)53.5*px, // startX
+                (float)9*px, // startY
+                (float)53.5*px, // stopX
+                (float)66.8*px, // stopY
                 p // Paint
         );
         //little line connected to the big line
         c.drawLine(
-                2480, // startX
-                3210, // startY
-                2565, // stopX
-                3210, // stopY
+                (float)53.5*px, // startX
+                (float)66.8*px, // startY
+                (float)51.5*px, // stopX
+                (float)66.8*px, // stopY
                 p // Paint
         );
         //little vertical line
         c.drawLine(
-                2480, // startX
-                3210, // startY
-                2480, // stopX
-                3270, // stopY
+                (float)51.5*px, // startX
+                (float)66.8*px, // startY
+                (float)51.5*px, // stopX
+                (float)68.25*px, // stopY
                 p // Paint
         );
         //medium line at the bottom of johnson first floor
         c.drawLine(
-                2480, // startX
-                3270, // startY
-                1920, // stopX
-                3270, // stopY
+                (float)51.5*px, // startX
+                (float)68.25*px, // startY
+                (float)40.5*px, // stopX
+                (float)68.25*px, // stopY
                 p // Paint
         );
     }
+    /*------------------------SECOND FLOOR-----------------------------------*/
     public void nicollsSecondFloor(){
         //big line from top to bottom
         c.drawLine(
-                325, // startX
-                840, // startY
-                325, // stopX
-                2080, // stopY
+                (float)6.75*px, // startX
+                (float)17*px, // startY
+                (float)6.75*px, // stopX
+                (float)43.4*px, // stopY
                 p // Paint
         );
-        //smaller line under the big line
+        //line underneath big line
         c.drawLine(
-                200, // startX
-                2080, // startY
-                490, // stopX
-                2080, // stopY
+                (float)4*px, // startX
+                (float)43.4*px, // startY
+                (float)10.25*px, // stopX
+                (float)43.4*px, // stopY
                 p // Paint
         );
         //vertical line on the right near hamilton
         c.drawLine(
-                490, // startX
-                2080, // startY
-                490, // stopX
-                2250, // stopY
+                (float)10.25*px, // startX
+                (float)43.4*px, // startY
+                (float)10.25*px, // stopX
+                (float)46.8*px, // stopY
                 p // Paint
         );
         //most bottom line in norton second floor
         c.drawLine(
-                200, // startX
-                2250, // startY
-                490, // stopX
-                2250, // stopY
+                (float)10.25*px, // startX
+                (float)46.8*px, // startY
+                (float)4*px, // stopX
+                (float)46.8*px, // stopY
                 p // Paint
         );
         //line heading to hamilton second floor
         c.drawLine(
-                490, // startX
-                2095, // startY
-                625, // stopX
-                2095, // stopY
+                (float)10.25*px, // startX
+                (float)43.6*px, // startY
+                (float)13.2*px, // stopX
+                (float)43.6*px, // stopY
                 p // Paint
         );
     }
     public void hamiltonSecondFloor(){
         //big line going across main section
         c.drawLine(
-                625, // startX
-                2095, // startY
-                2090, // stopX
-                2095, // stopY
+                (float)13.2*px, // startX
+                (float)43.6*px, // startY
+                (float)43.5*px, // stopX
+                (float)43.6*px, // stopY
                 p // Paint
         );
         //angled line
         c.drawLine(
-                2090, // startX
-                2095, // startY
-                2150, // stopX
-                2180, // stopY
+                (float)43.5*px, // startX
+                (float)43.6*px, // startY
+                (float)45*px, // stopX
+                (float)45.5*px, // stopY
                 p // Paint
         );
         //small line connecting to johnson
         c.drawLine(
-                2150, // startX
-                2180, // startY
-                2580, // stopX
-                2180, // stopY
+                (float)45*px, // startX
+                (float)45.5*px, // startY
+                (float)54*px, // stopX
+                (float)45.5*px, // stopY
                 p // Paint
         );
     }
     public void johnsonSecondFloor(){
         //line going across johnson second floor
         c.drawLine(
-                2580, // startX
-                480, // startY
-                2580, // stopX
-                3200, // stopY
+                (float)54*px, // startX
+                (float)10*px, // startY
+                (float)54*px, // stopX
+                (float)66.8*px, // stopY
                 p // Paint
         );
     }
+    /*------------------------THIRD FLOOR-----------------------------------*/
     public void nicollsThirdFloor(){
         //big line from top to bottom
         c.drawLine(
-                335, // startX
-                820, // startY
-                335, // stopX
-                2070, // stopY
+                (float)7*px, // startX
+                (float)17*px, // startY
+                (float)7*px, // stopX
+                (float)43.25*px, // stopY
                 p // Paint
         );
-        //smaller line under the big line
+        //line under the big line
         c.drawLine(
-                210, // startX
-                2070, // startY
-                500, // stopX
-                2070, // stopY
-                p // Paint
-        );
-        //vertical line all the way on the left
-        c.drawLine(
-                210, // startX
-                2070, // startY
-                210, // stopX
-                2230, // stopY
+                (float)4.25*px, // startX
+                (float)43.25*px, // startY
+                (float)13.2*px, // stopX
+                (float)43.25*px, // stopY
                 p // Paint
         );
         //vertical line on the right near hamilton third floor
         c.drawLine(
-                500, // startX
-                2070, // startY
-                500, // stopX
-                2230, // stopY
+                (float)10.5*px, // startX
+                (float)43.25*px, // startY
+                (float)10.5*px, // stopX
+                (float)46.5*px, // stopY
+                p // Paint
+        );
+        //vertical line all the way on the left
+        c.drawLine(
+                (float)4.25*px, // startX
+                (float)43.25*px, // startY
+                (float)4.25*px, // stopX
+                (float)46.5*px, // stopY
                 p // Paint
         );
         //most bottom line in norton third floor
         c.drawLine(
-                210, // startX
-                2230, // startY
-                500, // stopX
-                2230, // stopY
-                p // Paint
-        );
-        //line heading to hamilton third floor
-        c.drawLine(
-                500, // startX
-                2075, // startY
-                625, // stopX
-                2075, // stopY
-                p // Paint
-        );
-    }
-    public void hamiltonThirdFloor(){
-        //line connecting to nicolls third floor
-        c.drawLine(
-                625, // startX
-                2075, // startY
-                980, // stopX
-                2075, // stopY
-                p // Paint
-        );
-        //angled line near nicolls third floor
-        c.drawLine(
-                980, // startX
-                2075, // startY
-                1030, // stopX
-                1910, // stopY
-                p // Paint
-        );
-        //big line going across most of hamilton third floor
-        c.drawLine(
-                1030, // startX
-                1910, // startY
-                2000, // stopX
-                1910, // stopY
-                p // Paint
-        );
-        //little angled line at the end of hamilton third floor
-        c.drawLine(
-                2000, // startX
-                1910, // startY
-                2020, // stopX
-                1960, // stopY
+                (float)4.25*px, // startX
+                (float)46.5*px, // startY
+                (float)10.5*px, // stopX
+                (float)46.5*px, // stopY
                 p // Paint
         );
 
     }
+    public void hamiltonThirdFloor(){
+        //line connecting to nicolls third floor
+        c.drawLine(
+                (float)13.2*px, // startX
+                (float)43.25*px, // startY
+                (float)20.5*px, // stopX
+                (float)43.25*px, // stopY
+                p // Paint
+        );
+        //angled line near nicolls third floor
+        c.drawLine(
+                (float)20.5*px, // startX
+                (float)43.25*px, // startY
+                (float)21.5*px, // stopX
+                (float)39.75*px, // stopY
+                p // Paint
+        );
+        //big line going across most of hamilton third floor
+        c.drawLine(
+                (float)21.5*px, // startX
+                (float)39.75*px, // startY
+                (float)41*px, // stopX
+                (float)39.75*px, // stopY
+                p // Paint
+        );
+        //little angled line at the end of hamilton third floor
+        c.drawLine(
+                (float)41*px, // startX
+                (float)39.75*px, // startY
+                (float)42*px, // stopX
+                (float)40.75*px, // stopY
+                p // Paint
+        );
+    }
     public void johnsonThirdFloor(){
         //top big line going across johnson third floor
         c.drawLine(
-                2580, // startX
-                480, // startY
-                2580, // stopX
-                1920, // stopY
-                p // Paint
-        );
-        //bottom big line going across johnson third floor
-        c.drawLine(
-                2600, // startX
-                1920, // startY
-                2600, // stopX
-                3200, // stopY
-                p // Paint
-        );
-        //little line connecting the two big lines
-        c.drawLine(
-                2580, // startX
-                1920, // startY
-                2600, // stopX
-                1920, // stopY
+                (float)54*px, // startX
+                (float)10*px, // startY
+                (float)54*px, // stopX
+                (float)66.5*px, // stopY
                 p // Paint
         );
     }

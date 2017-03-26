@@ -129,7 +129,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
                 paint
         );*/
 
-        PathDraw pDraw = new PathDraw(canvas, paint);
+        PathDraw pDraw = new PathDraw(canvas, paint, px);
 
         //Draw a red line on nicolls ground floor
         if((position == 0 && spinner1.equals("Nicolls") && spinner2.equals("Ground Floor")) || (position == 0 && spinner4.equals("Nicolls") && spinner5.equals("Ground Floor"))){
