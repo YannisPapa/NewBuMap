@@ -121,13 +121,13 @@ public class CustomSwipeAdapter extends PagerAdapter{
         Resources r = ctx.getResources();
         float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16, r.getDisplayMetrics());
 
-        canvas.drawRect(
+        /*canvas.drawRect(
                 5*px, //x start
                 20*px, //y start
                 9*px, //x stop
                 22*px, //y stop
                 paint
-        );
+        );*/
 
         PathDraw pDraw = new PathDraw(canvas, paint);
 
@@ -180,19 +180,24 @@ public class CustomSwipeAdapter extends PagerAdapter{
             pDraw.johnsonThirdFloor();
         }
 
-        StairwellDraw stairs = new StairwellDraw (paint, canvas);
+        StairwellDraw stairs = new StairwellDraw (paint, canvas, px);
 
         if(position == 0) {
+            stairs.BNT();
+            stairs.BNB();
+            stairs.BJT();
             stairs.BJM();
+            stairs.BJB();
+
         }
         if(position == 1) {
-            stairs.FFHM();
+            //stairs.FFHM();
         }
         if(position == 2) {
-            stairs.SFNB();
+            //stairs.SFNB();
         }
         if(position == 3) {
-            stairs.TFJT();
+            //stairs.TFJT();
         }
 
         // Display the newly created bitmap on app interface

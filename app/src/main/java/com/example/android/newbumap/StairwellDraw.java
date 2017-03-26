@@ -10,17 +10,19 @@ import android.graphics.Canvas;
 public class StairwellDraw {
     private Paint P;
     private Canvas C;
+    private float pixel;
 
-    public StairwellDraw(Paint pai, Canvas can) {
+    public StairwellDraw(Paint pai, Canvas can, float px) {
         P = pai;
         C = can;
+        pixel = px;
     }
 
     //Stairwell at Basement, Nicolls, Top
     public void BNT() {
         C.drawCircle( //N Top
-                890, //x val
-                1225, //y val
+                (float)13.5*pixel, //x val
+                (float)19.1*pixel, //y val
                 100,
                 P
         );
@@ -29,8 +31,8 @@ public class StairwellDraw {
     //Stairwell at Basement, Nicolls, Bottom
     public void BNB() {
         C.drawCircle( //N Bottom
-                885, //x val
-                2720, //y val
+                (float)13.7*pixel, //x val
+                (float)42.75*pixel, //y val
                 100,
                 P
         );
@@ -39,8 +41,8 @@ public class StairwellDraw {
     //Stairwell at Basement, Johnson, Top
     public void BJT() {
         C.drawCircle( //J Top
-                3738, //x val
-                1040, //y val
+                (float)58.6*pixel, //x val
+                (float)16.6*pixel, //y val
                 100,
                 P
         );
@@ -49,8 +51,8 @@ public class StairwellDraw {
     //Stairwell at Basement, Johnson, Middle
     public void BJM() {
         C.drawCircle( //J Mid
-                3730, //x val
-                2500, //y val
+                (float)58.5*pixel, //x val
+                (float)39*pixel, //y val
                 100,
                 P
         );
@@ -59,8 +61,8 @@ public class StairwellDraw {
     //Stairwell at Basement, Johnson, Bottom
     public void BJB() {
         C.drawCircle( //J Bottom
-                3595, //x val
-                4450, //y val
+                (float)56*pixel, //x val
+                (float)70*pixel, //y val
                 100,
                 P
         );
