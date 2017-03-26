@@ -191,13 +191,28 @@ public class CustomSwipeAdapter extends PagerAdapter{
 
         }
         if(position == 1) {
-            //stairs.FFHM();
+            stairs.FFNT();
+            stairs.FFNB();
+            stairs.FFHM();
+            stairs.FFJT();
+            stairs.FFJM();
+            stairs.FFJB();
         }
         if(position == 2) {
-            //stairs.SFNB();
+            stairs.SFNT();
+            stairs.SFNB();
+            stairs.SFHM();
+            stairs.SFJT();
+            stairs.SFJM();
+            stairs.SFJB();
         }
         if(position == 3) {
-            //stairs.TFJT();
+            stairs.TFNT();
+            stairs.TFNB();
+            stairs.TFHM();
+            stairs.TFJT();
+            stairs.TFJM();
+            stairs.TFJB();
         }
 
         // Display the newly created bitmap on app interface
