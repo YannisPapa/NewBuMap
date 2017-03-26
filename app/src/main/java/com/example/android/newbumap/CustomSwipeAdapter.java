@@ -10,6 +10,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.v4.view.PagerAdapter;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -117,15 +118,14 @@ public class CustomSwipeAdapter extends PagerAdapter{
                 null // Paint
         );
 
-        float canvasWidth = canvas.getWidth();
-        float canvasHeight = canvas.getHeight();
-        float ratio = canvasWidth/canvasHeight;
+        Resources r = ctx.getResources();
+        float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16, r.getDisplayMetrics());
 
         canvas.drawRect(
-                310*ratio, //x start
-                1180*ratio, //y start
-                510*ratio, //x stop
-                1280*ratio, //y stop
+                5*px, //x start
+                20*px, //y start
+                9*px, //x stop
+                22*px, //y stop
                 paint
         );
 
