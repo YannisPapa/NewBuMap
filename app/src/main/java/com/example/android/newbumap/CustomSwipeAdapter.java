@@ -118,15 +118,14 @@ public class CustomSwipeAdapter extends PagerAdapter{
                 null // Paint
         );
 
-        float bitHeight = bitmap.getHeight();
-        float bitWidth = bitmap.getWidth();
-        float bitRatio = bitWidth/bitHeight;
+        Resources r = ctx.getResources();
+        float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16, r.getDisplayMetrics());
 
         canvas.drawRect(
-                300*bitRatio, //x start
-                1200*bitRatio, //y start
-                500*bitRatio, //x stop
-                1300*bitRatio, //y stop
+                5*px, //x start
+                20*px, //y start
+                9*px, //x stop
+                22*px, //y stop
                 paint
         );
 
