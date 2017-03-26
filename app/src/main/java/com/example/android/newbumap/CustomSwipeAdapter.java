@@ -128,6 +128,21 @@ public class CustomSwipeAdapter extends PagerAdapter{
             );
         }
 
+        StairwellDraw stairs = new StairwellDraw (paint, canvas);
+
+        if(position == 0) {
+            stairs.BJM();
+        }
+        if(position == 1) {
+            stairs.FFHM();
+        }
+        if(position == 2) {
+            stairs.SFNB();
+        }
+        if(position == 3) {
+            stairs.TFJT();
+        }
+
         // Display the newly created bitmap on app interface
         imageView.setImageBitmap(dstBitmap);
 
@@ -140,236 +155,6 @@ public class CustomSwipeAdapter extends PagerAdapter{
         container.addView(item_view);
 
         return item_view;
-    }
-
-    //Stairwell at Basement, Nicolls, Top
-    public void stairwellBNT(Canvas c, Paint p) {
-        c.drawCircle( //N Top
-                890, //x val
-                1225, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at Basement, Nicolls, Bottom
-    public void stairwellBNB(Canvas c, Paint p) {
-        c.drawCircle( //N Bottom
-                885, //x val
-                2720, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at Basement, Johnson, Top
-    public void stairwellBJT(Canvas c, Paint p) {
-        c.drawCircle( //J Top
-                3738, //x val
-                1040, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at Basement, Johnson, Middle
-    public void stairwellBJM(Canvas c, Paint p) {
-        c.drawCircle( //J Mid
-                3730, //x val
-                2500, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at Basement, Johnson, Bottom
-    public void stairwellBJB(Canvas c, Paint p) {
-        c.drawCircle( //J Bottom
-                3595, //x val
-                4450, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at First Floor, Nicolls, Top
-    public void stairwellFFNT(Canvas c, Paint p) {
-        c.drawCircle( //N Top
-                700,  //x val
-                1175, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at First Floor, Nicolls, Bottom
-    public void stairwellFFNB(Canvas c, Paint p) {
-        c.drawCircle( //N Bottom
-                693, //x val
-                2690, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at First Floor, Hamilton
-    public void stairwellFFHM(Canvas c, Paint p) {
-        c.drawCircle( //H Mid
-                2903, //x val
-                2715, //y val
-                115,
-                p
-        );
-    }
-
-    //Stairwell at First Floor, Johnson, Top
-    public void stairwellFFJT(Canvas c, Paint p) {
-        c.drawCircle( //J Top
-                3580, //x val
-                1005, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at First Floor, Johnson, Middle
-    public void stairwellFFJM(Canvas c, Paint p) {
-        c.drawCircle( //J Mid
-                3580, //x val
-                2450, //y val
-                115,
-                p
-        );
-    }
-
-    //Stairwell at First Floor, Johnson, Bottom
-    public void stairwellFFJB(Canvas c, Paint p) {
-        c.drawCircle( //J Bottom
-                3420, //x val
-                4450, //y val
-                100,
-                p
-            );
-    }
-
-    //Stairwell at Second Floor, Nicolls, Top
-    public void stairwellSFNT(Canvas c, Paint p) {
-        c.drawCircle( //N Top
-                675,  //x val
-                1155, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at Second Floor, Nicolls, Bottom
-    public void stairwellSFNB(Canvas c, Paint p) {
-        c.drawCircle( //N Bottom
-                693, //x val
-                2675, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at Second Floor, Hamilton
-    public void stairwellSFHM(Canvas c, Paint p) {
-        c.drawCircle( //H Mid
-                2930, //x val
-                2707, //y val
-                115,
-                p
-        );
-    }
-
-    //Stairwell at Second Floor, Johnson, Top
-    public void stairwellSFJT(Canvas c, Paint p) {
-        c.drawCircle( //J Top
-                3610, //x val
-                975, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at Second Floor, Johnson, Middle
-    public void stairwellSFJM(Canvas c, Paint p) {
-        c.drawCircle( //J Mid
-                3605, //x val
-                2450, //y val
-                115,
-                p
-        );
-    }
-
-    //Stairwell at Second Floor, Johnson, Bottom
-    public void stairwellSFJB(Canvas c, Paint p) {
-        c.drawCircle( //J Bottom
-                3460, //x val
-                4450, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at Third Floor, Nicolls, Top
-    public void stairwellTFNT(Canvas c, Paint p) {
-        c.drawCircle( //N Top
-                675,  //x val
-                1150, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at Third Floor, Nicolls, Bottom
-    public void stairwellTFNB(Canvas c, Paint p) {
-        c.drawCircle( //N Bottom
-                693, //x val
-                2665, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at Third Floor, Hamilton
-    public void stairwellTFHM(Canvas c, Paint p) {
-        c.drawCircle( //H Mid
-                2875, //x val
-                2595, //y val
-                75,
-                p
-        );
-    }
-
-    //Stairwell at Third Floor, Johnson, Top
-    public void stairwellTFJT(Canvas c, Paint p) {
-        c.drawCircle( //J Top
-                3610, //x val
-                970, //y val
-                100,
-                p
-        );
-    }
-
-    //Stairwell at Third Floor, Johnson, Middle
-    public void stairwellTFJM(Canvas c, Paint p) {
-        c.drawCircle( //J Mid
-                3615, //x val
-                2438, //y val
-                115,
-                p
-        );
-    }
-
-    //Stairwell at Third Floor, Johnson, Bottom
-    public void stairwellTFJB(Canvas c, Paint p) {
-        c.drawCircle( //J Bottom
-                3460, //x val
-                4435, //y val
-                100,
-                p
-        );
     }
 
     @Override
