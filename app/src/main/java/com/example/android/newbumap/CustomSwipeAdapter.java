@@ -121,15 +121,15 @@ public class CustomSwipeAdapter extends PagerAdapter{
         Resources r = ctx.getResources();
         float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16, r.getDisplayMetrics());
 
-        canvas.drawRect(
+        /*canvas.drawRect(
                 5*px, //x start
                 20*px, //y start
                 9*px, //x stop
                 22*px, //y stop
                 paint
-        );
+        );*/
 
-        PathDraw pDraw = new PathDraw(canvas, paint);
+        PathDraw pDraw = new PathDraw(canvas, paint, px);
 
         //Draw a red line on nicolls ground floor
         if((position == 0 && spinner1.equals("Nicolls") && spinner2.equals("Ground Floor")) || (position == 0 && spinner4.equals("Nicolls") && spinner5.equals("Ground Floor"))){
