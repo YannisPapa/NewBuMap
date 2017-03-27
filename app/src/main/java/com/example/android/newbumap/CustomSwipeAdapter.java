@@ -189,6 +189,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
             }
         }
 
+
         // Display the newly created bitmap on app interface
         imageView.setImageBitmap(dstBitmap);
 

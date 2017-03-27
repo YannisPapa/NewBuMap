@@ -21,11 +21,24 @@ public class PathDraw {
     }
 
     /*------------------------GROUND FLOOR-----------------------------------*/
-    public void nicollsGroundFloor(){
-        //big line going across nicolls ground floor
+
+    public void nicollsGroundTop() {
+        //line to N005, N004 and N007
         c.drawLine(
                 (float)11*px, // startX
                 (float)18*px, // startY
+                (float)11*px, // stopX
+                (float)30*px, // stopY
+                p // Paint
+        );
+
+    }
+
+    public void nicollsGroundBottom() {
+        //line to N008, N003, N002, N001
+        c.drawLine(
+                (float)11*px, // startX
+                (float)30*px, // startY
                 (float)11*px, // stopX
                 (float)43.5*px, // stopY
                 p // Paint
@@ -39,6 +52,12 @@ public class PathDraw {
                 p // Paint
         );
     }
+
+    public void nicollsGroundFloor(){
+        //big line going across nicolls ground floor
+        nicollsGroundTop();
+        nicollsGroundBottom();
+    }
     public void hamiltonGroundFloor(){
         //line going across hamilton ground floor
         c.drawLine(
@@ -49,22 +68,64 @@ public class PathDraw {
                 p // Paint
         );
     }
-    public void johnsonGroundFloor(){
-        //line going across johnson ground floor
+
+    public void johnsonGroundTop() {
+        //line from J020 to J024
         c.drawLine(
                 (float)56*px, // startX
                 (float)11.5*px, // startY
+                (float)56*px, // stopX
+                (float)26*px, // stopY
+                p // Paint
+        );
+
+    }
+
+    public void johnsonGroundMid() {
+        //line from J024 to J010
+        c.drawLine(
+                (float)56*px, // startX
+                (float)26*px, // startY
+                (float)56*px, // stopX
+                (float)53*px, // stopY
+                p // Paint
+        );
+    }
+
+    public void johnsonGroundBottom() {
+        //line going from bathrooms to J004
+        c.drawLine(
+                (float)56*px, // startX
+                (float)53*px, // startY
                 (float)56*px, // stopX
                 (float)67*px, // stopY
                 p // Paint
         );
     }
+
+    public void johnsonGroundFloor(){
+        //line going across johnson ground floor
+        johnsonGroundTop();
+        johnsonGroundMid();
+        johnsonGroundBottom();
+    }
     /*------------------------FIRST FLOOR-----------------------------------*/
-    public void nicollsFirstFloor(){
-        //line going across nicolls first floor
+
+    public void nicollsFirstTop() {
         c.drawLine(
                 (float)8.25*px, // startX
                 (float)18*px, // startY
+                (float)8.25*px, // stopX
+                (float)34*px, // stopY
+                p // Paint
+        );
+    }
+
+    public void nicollsFirstBottom() {
+        //line going across nicolls N110 to bottom
+        c.drawLine(
+                (float)8.25*px, // startX
+                (float)34*px, // startY
                 (float)8.25*px, // stopX
                 (float)44.6*px, // stopY
                 p // Paint
@@ -77,6 +138,11 @@ public class PathDraw {
                 (float)44.6*px, // stopY
                 p // Paint
         );
+    }
+
+    public void nicollsFirstFloor(){
+        nicollsFirstTop();
+        nicollsFirstBottom();
     }
     public void hamiltonFirstFloor(){
         //line going in front of nelly's old office
@@ -120,11 +186,34 @@ public class PathDraw {
                 p // Paint
         );
     }
-    public void johnsonFirstFloor(){
+
+    public void johnsonFirstTop() {
         //big line going across johnson first floor
         c.drawLine(
                 (float)53.5*px, // startX
                 (float)9*px, // startY
+                (float)53.5*px, // stopX
+                (float)24*px, // stopY
+                p // Paint
+        );
+    }
+
+    public void johnsonFirstMid() {
+        //big line going across johnson first floor
+        c.drawLine(
+                (float)53.5*px, // startX
+                (float)24*px, // startY
+                (float)53.5*px, // stopX
+                (float)57*px, // stopY
+                p // Paint
+        );
+    }
+
+    public void johnsonFirstBottom() {
+        //big line going across johnson first floor
+        c.drawLine(
+                (float)53.5*px, // startX
+                (float)57*px, // startY
                 (float)53.5*px, // stopX
                 (float)66.8*px, // stopY
                 p // Paint
@@ -154,12 +243,30 @@ public class PathDraw {
                 p // Paint
         );
     }
+
+    public void johnsonFirstFloor(){
+        johnsonFirstTop();
+        johnsonFirstMid();
+        johnsonFirstBottom();
+
+    }
     /*------------------------SECOND FLOOR-----------------------------------*/
-    public void nicollsSecondFloor(){
-        //big line from top to bottom
+    public void nicollsSecondTop() {
+        //line from top to N211
         c.drawLine(
                 (float)6.75*px, // startX
                 (float)17*px, // startY
+                (float)6.75*px, // stopX
+                (float)31*px, // stopY
+                p // Paint
+        );
+    }
+
+    public void nicollsSecondBottom() {
+        //line from N216 to bottom
+        c.drawLine(
+                (float)6.75*px, // startX
+                (float)31*px, // startY
                 (float)6.75*px, // stopX
                 (float)43.4*px, // stopY
                 p // Paint
@@ -197,6 +304,11 @@ public class PathDraw {
                 p // Paint
         );
     }
+
+    public void nicollsSecondFloor(){
+        nicollsSecondTop();
+        nicollsSecondBottom();
+    }
     public void hamiltonSecondFloor(){
         //big line going across main section
         c.drawLine(
@@ -223,8 +335,9 @@ public class PathDraw {
                 p // Paint
         );
     }
-    public void johnsonSecondFloor(){
-        //line going across johnson second floor
+
+    public void johnsonSecondTop() {
+        //line from top to J208
         c.drawLine(
                 (float)54*px, // startX
                 (float)10*px, // startY
@@ -233,12 +346,50 @@ public class PathDraw {
                 p // Paint
         );
     }
+    public void johnsonSecondMid() {
+        //line from J208 to J232
+        c.drawLine(
+                (float)54*px, // startX
+                (float)26.5*px, // startY
+                (float)54*px, // stopX
+                (float)56*px, // stopY
+                p // Paint
+        );
+    }
+    public void johnsonSecondBottom() {
+        //line from J232b to bottom
+        c.drawLine(
+                (float)54*px, // startX
+                (float)56*px, // startY
+                (float)54*px, // stopX
+                (float)66.8*px, // stopY
+                p // Paint
+        );
+    }
+
+    public void johnsonSecondFloor(){
+        //line going across johnson second floor
+        johnsonSecondTop();
+        johnsonSecondMid();
+        johnsonSecondBottom();
+    }
     /*------------------------THIRD FLOOR-----------------------------------*/
-    public void nicollsThirdFloor(){
-        //big line from top to bottom
+    public void nicollsThirdTop() {
+        //line from top to N315b
         c.drawLine(
                 (float)7*px, // startX
                 (float)17*px, // startY
+                (float)7*px, // stopX
+                (float)31*px, // stopY
+                p // Paint
+        );
+    }
+
+    public void nicollsThirdBottom() {
+        //line from N315b to bottom
+        c.drawLine(
+                (float)7*px, // startX
+                (float)31*px, // startY
                 (float)7*px, // stopX
                 (float)43.25*px, // stopY
                 p // Paint
@@ -275,7 +426,11 @@ public class PathDraw {
                 (float)46.5*px, // stopY
                 p // Paint
         );
+    }
 
+    public void nicollsThirdFloor(){
+        nicollsThirdTop();
+        nicollsThirdBottom();
     }
     public void hamiltonThirdFloor(){
         //line connecting to nicolls third floor
@@ -311,14 +466,43 @@ public class PathDraw {
                 p // Paint
         );
     }
-    public void johnsonThirdFloor(){
-        //top big line going across johnson third floor
+
+    public void johnsonThirdTop() {
+        //top big J309
         c.drawLine(
                 (float)54*px, // startX
                 (float)10*px, // startY
                 (float)54*px, // stopX
+                (float)26*px, // stopY
+                p // Paint
+        );
+    }
+
+    public void johnsonThirdMid() {
+        //J326 to J309
+        c.drawLine(
+                (float)54*px, // startX
+                (float)26*px, // startY
+                (float)54*px, // stopX
+                (float)55*px, // stopY
+                p // Paint
+        );
+    }
+
+    public void johnsonThirdBottom() {
+        //J309 to bottom
+        c.drawLine(
+                (float)54*px, // startX
+                (float)55*px, // startY
+                (float)54*px, // stopX
                 (float)66.5*px, // stopY
                 p // Paint
         );
+    }
+
+    public void johnsonThirdFloor(){
+        johnsonThirdTop();
+        johnsonThirdMid();
+        johnsonThirdBottom();
     }
 }
