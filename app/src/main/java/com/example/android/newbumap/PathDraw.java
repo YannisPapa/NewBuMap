@@ -5,9 +5,9 @@ import android.graphics.Paint;
 
 public class PathDraw {
 
-    Canvas c;
-    Paint p;
-    float px;
+    private Canvas c;
+    private Paint p;
+    private float px;
 
     //constructor for PathDraw
     public PathDraw(Canvas canvas, Paint paint, float px){
@@ -15,6 +15,11 @@ public class PathDraw {
         p = paint;
         this.px = px;
     }
+
+    public void changePaint(Paint paint) {
+        p = paint;
+    }
+
     /*------------------------GROUND FLOOR-----------------------------------*/
     public void nicollsGroundFloor(){
         //big line going across nicolls ground floor
