@@ -1,8 +1,6 @@
 package com.example.android.newbumap;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -14,26 +12,24 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-
 
 public class CustomSwipeAdapter extends PagerAdapter{
 
     private int[] image_resources = {R.drawable.bubasement,R.drawable.bufloor1,R.drawable.bufloor2,R.drawable.bufloor3};
     private Context ctx;
     private LayoutInflater layoutInflater;
-    private String spinner1, spinner2, spinner4, spinner5;
+    private String spinner1,spinner2,spinner3,spinner4,spinner5,spinner6;
 
-    public CustomSwipeAdapter(Context ctx, String spn1, String spn2, String spn4, String spn5){
+    public CustomSwipeAdapter(Context ctx, String spn1, String spn2, String spn3, String spn4, String spn5, String spn6){
         this.ctx = ctx;
         spinner1 = spn1;
         spinner2 = spn2;
+        spinner3 = spn3;
         spinner4 = spn4;
         spinner5 = spn5;
+        spinner6 = spn6;
     }
 
     @Override
@@ -121,98 +117,76 @@ public class CustomSwipeAdapter extends PagerAdapter{
         Resources r = ctx.getResources();
         float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16, r.getDisplayMetrics());
 
-        /*canvas.drawRect(
-                5*px, //x start
-                20*px, //y start
-                9*px, //x stop
-                22*px, //y stop
-                paint
-        );*/
-
         PathDraw pDraw = new PathDraw(canvas, paint, px);
-
-        //Draw a red line on nicolls ground floor
-        if((position == 0 && spinner1.equals("Nicolls") && spinner2.equals("Ground Floor")) || (position == 0 && spinner4.equals("Nicolls") && spinner5.equals("Ground Floor"))){
-            pDraw.nicollsGroundFloor();
-        }
-        //Draw a red line on hamilton ground floor
-        if((position == 0 && spinner1.equals("Hamilton") && spinner2.equals("Ground Floor")) || (position == 0 && spinner4.equals("Hamilton") && spinner5.equals("Ground Floor"))){
-            pDraw.hamiltonGroundFloor();
-        }
-        //Draw a red line on johnson ground floor
-        if((position == 0 && spinner1.equals("Johnson") && spinner2.equals("Ground Floor")) || (position == 0 && spinner4.equals("Johnson") && spinner5.equals("Ground Floor"))){
-            pDraw.johnsonGroundFloor();
-        }
-        //Draw a red line on nicolls first floor
-        if((position == 1 && spinner1.equals("Nicolls") && spinner2.equals("First Floor")) || (position == 1 && spinner4.equals("Nicolls") && spinner5.equals("First Floor"))){
-            pDraw.nicollsFirstFloor();
-        }
-        //Draw a red line on hamilton first floor
-        if((position == 1 && spinner1.equals("Hamilton") && spinner2.equals("First Floor")) || (position == 1 && spinner4.equals("Hamilton") && spinner5.equals("First Floor"))){
-            pDraw.hamiltonFirstFloor();
-        }
-        //Draw a red line on  johnson floor
-        if((position == 1 && spinner1.equals("Johnson") && spinner2.equals("First Floor")) || (position == 1 && spinner4.equals("Johnson") && spinner5.equals("First Floor"))){
-            pDraw.johnsonFirstFloor();
-        }
-        //Draw a red line on nicolls second floor
-        if((position == 2 && spinner1.equals("Nicolls") && spinner2.equals("Second Floor")) || (position == 2 && spinner4.equals("Nicolls") && spinner5.equals("Second Floor"))){
-            pDraw.nicollsSecondFloor();
-        }
-        //Draw a red line on hamilton second floor
-        if((position == 2 && spinner1.equals("Hamilton") && spinner2.equals("Second Floor")) || (position == 2 && spinner4.equals("Hamilton") && spinner5.equals("Second Floor"))){
-            pDraw.hamiltonSecondFloor();
-        }
-        //Draw a red line on johnson second floor
-        if((position == 2 && spinner1.equals("Johnson") && spinner2.equals("Second Floor")) || (position == 2 && spinner4.equals("Johnson") && spinner5.equals("Second Floor"))){
-            pDraw.johnsonSecondFloor();
-        }
-        //Draw a red line on nicolls third floor
-        if((position == 3 && spinner1.equals("Nicolls") && spinner2.equals("Third Floor")) || (position == 3 && spinner4.equals("Nicolls") && spinner5.equals("Third Floor"))){
-            pDraw.nicollsThirdFloor();
-        }
-        //Draw a red line on hamilton third floor
-        if((position == 3 && spinner1.equals("Hamilton") && spinner2.equals("Third Floor")) || (position == 3 && spinner4.equals("Hamilton") && spinner5.equals("Third Floor"))){
-            pDraw.hamiltonThirdFloor();
-        }
-        //Draw a red line on johnson third floor
-        if((position == 3 && spinner1.equals("Johnson") && spinner2.equals("Third Floor")) || (position == 3 && spinner4.equals("Johnson") && spinner5.equals("Third Floor"))){
-            pDraw.johnsonThirdFloor();
-        }
-
         StairwellDraw stairs = new StairwellDraw (paint, canvas, px);
 
-        if(position == 0) {
-            stairs.BNT();
-            stairs.BNB();
-            stairs.BJT();
-            stairs.BJM();
-            stairs.BJB();
+        String johnson = "Johnson";
+        String nicolls = "Nicolls";
+        String hamilton = "Hamilton";
+        String groundFloor = "Ground Floor";
+        String firstFloor = "First Floor";
+        String secondFloor = "Second Floor";
+        String thirdFloor = "Third Floor";
+        String fRm = spinner3.substring(2,5);
+        String tRm = spinner6.substring(2,5);
+        int fromRoom = Integer.valueOf(fRm);
+        int toRoom = Integer.valueOf(tRm);
 
+        //Going from/to jGF
+        if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
+            //going from/to nFF
+            if((spinner1.equals(nicolls)||spinner4.equals(nicolls))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
+                pDraw.nicollsGroundFloor();
+                pDraw.hamiltonGroundFloor();
+                pDraw.johnsonGroundFloor();
+            }
+            //going from/to hFF
+            if((spinner1.equals(hamilton)||spinner4.equals(hamilton))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
+                pDraw.hamiltonGroundFloor();
+                pDraw.johnsonGroundFloor();
+            }
+            //going from/to jFF
+            if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(firstFloor)||spinner5.equals(firstFloor))){
+                //rooms near top stairs
+                if((fromRoom>=18&&fromRoom<=24)||(toRoom>=18&&toRoom<=24)){
+                    if(position == 0){
+                        pDraw.johnsonGroundFloor();
+                        stairs.BJT();
+                    }
+                    if(position == 1){
+                        pDraw.johnsonFirstFloor();
+                        stairs.FFJT();
+                    }
+                }
+                //rooms near middle stairs
+                if((fromRoom>=4&&fromRoom<=10)||(toRoom>=4&&toRoom<=10)||((fromRoom==26)||(toRoom==26))){
+                    if(position == 0){
+                        pDraw.johnsonGroundFloor();
+                        stairs.BJM();
+                    }
+                    if(position == 1){
+                        pDraw.johnsonFirstFloor();
+                        stairs.FFJM();
+                    }
+                }
+                //rooms near bottom stairs
+                if((fromRoom>=1&&fromRoom<=2)||(toRoom>=1&&toRoom<=2)||((fromRoom==11)||(toRoom==11))){
+                    if(position == 0){
+                        pDraw.johnsonGroundFloor();
+                        stairs.BJB();
+                    }
+                    if(position == 1){
+                        pDraw.johnsonFirstFloor();
+                        stairs.FFJB();
+                    }
+                }
+            }
         }
-        if(position == 1) {
-            stairs.FFNT();
-            stairs.FFNB();
-            stairs.FFHM();
-            stairs.FFJT();
-            stairs.FFJM();
-            stairs.FFJB();
-        }
-        if(position == 2) {
-            stairs.SFNT();
-            stairs.SFNB();
-            stairs.SFHM();
-            stairs.SFJT();
-            stairs.SFJM();
-            stairs.SFJB();
-        }
-        if(position == 3) {
-            stairs.TFNT();
-            stairs.TFNB();
-            stairs.TFHM();
-            stairs.TFJT();
-            stairs.TFJM();
-            stairs.TFJB();
+        if((spinner1.equals("Nicolls")||spinner4.equals("Nicolls"))&&(spinner2.equals("Ground Floor")||spinner5.equals("Ground Floor"))){
+            if((spinner1.equals("Hamilton")||spinner4.equals("Hamilton"))&&(spinner2.equals("Ground Floor")||spinner5.equals("Ground Floor"))){
+                pDraw.hamiltonGroundFloor();
+                pDraw.nicollsGroundFloor();
+            }
         }
 
         // Display the newly created bitmap on app interface

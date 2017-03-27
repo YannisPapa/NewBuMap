@@ -9,7 +9,7 @@ public class ImageActivity extends AppCompatActivity {
 
     ViewPager viewPager;
     CustomSwipeAdapter adapter;
-    String spinner1,spinner2,spinner4,spinner5;
+    String spinner1,spinner2,spinner3,spinner4,spinner5,spinner6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +19,13 @@ public class ImageActivity extends AppCompatActivity {
         Intent intent = getIntent();
         spinner1 = intent.getStringExtra("spinner1");
         spinner2 = intent.getStringExtra("spinner2");
+        spinner3 = intent.getStringExtra("spinner3");
         spinner4 = intent.getStringExtra("spinner4");
         spinner5 = intent.getStringExtra("spinner5");
+        spinner6 = intent.getStringExtra("spinner6");
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
-        adapter = new CustomSwipeAdapter(this,spinner1,spinner2,spinner4,spinner5);
+        adapter = new CustomSwipeAdapter(this,spinner1,spinner2,spinner3,spinner4,spinner5,spinner6);
         viewPager.setAdapter(adapter);
     }
 

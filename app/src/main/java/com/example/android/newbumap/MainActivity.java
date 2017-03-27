@@ -1,17 +1,11 @@
 package com.example.android.newbumap;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -188,21 +182,20 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void nextPage(View view){
 
-        Intent intent = new Intent(MainActivity.this, ImageActivity.class);
-        intent.putExtra("spinner1", spinner1.getSelectedItem().toString());
-        intent.putExtra("spinner2", spinner2.getSelectedItem().toString());
-        intent.putExtra("spinner4", spinner4.getSelectedItem().toString());
-        intent.putExtra("spinner5", spinner5.getSelectedItem().toString());
-        MainActivity.this.startActivity(intent);
-
-        //Button btn = (Button)findViewById(R.id.next_page_button);
-
-        //btn.setOnClickListener(new View.OnClickListener() {
-            //@Override
-            //public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this, ImageActivity.class));
-            //}
-        //});
+        if(spinner3.getSelectedItem().equals(spinner6.getSelectedItem())){
+            Toast.makeText(this, "Change one of your room choices",
+                    Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Intent intent = new Intent(MainActivity.this, ImageActivity.class);
+            intent.putExtra("spinner1", spinner1.getSelectedItem().toString());
+            intent.putExtra("spinner2", spinner2.getSelectedItem().toString());
+            intent.putExtra("spinner3", spinner3.getSelectedItem().toString());
+            intent.putExtra("spinner4", spinner4.getSelectedItem().toString());
+            intent.putExtra("spinner5", spinner5.getSelectedItem().toString());
+            intent.putExtra("spinner6", spinner6.getSelectedItem().toString());
+            MainActivity.this.startActivity(intent);
+        }
     }
 
     @Override

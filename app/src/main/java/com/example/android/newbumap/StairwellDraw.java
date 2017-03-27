@@ -3,10 +3,6 @@ package com.example.android.newbumap;
 import android.graphics.Paint;
 import android.graphics.Canvas;
 
-/**
- * Created by Mareep on 3/26/17.
- */
-
 public class StairwellDraw {
     private Paint P;
     private Canvas C;

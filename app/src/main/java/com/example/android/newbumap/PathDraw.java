@@ -9,6 +9,7 @@ public class PathDraw {
     Paint p;
     float px;
 
+    //constructor for PathDraw
     public PathDraw(Canvas canvas, Paint paint, float px){
         c = canvas;
         p = paint;
