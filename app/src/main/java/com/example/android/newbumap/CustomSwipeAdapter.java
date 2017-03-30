@@ -117,8 +117,10 @@ public class CustomSwipeAdapter extends PagerAdapter{
         Resources r = ctx.getResources();
         float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16, r.getDisplayMetrics());
 
-        PathDraw pDraw = new PathDraw(canvas, paint, px);
+        FloorDraw pDraw = new FloorDraw(canvas, paint, px);
         StairwellDraw stairs = new StairwellDraw (paint, canvas, px);
+
+
 
         String johnson = "Johnson";
         String nicolls = "Nicolls";
@@ -132,18 +134,17 @@ public class CustomSwipeAdapter extends PagerAdapter{
         int fromRoom = Integer.valueOf(fRm);
         int toRoom = Integer.valueOf(tRm);
 
+        PathDraw paths = new PathDraw(pDraw, stairs, position, spinner4, toRoom, spinner1, fromRoom);
+
         //Going from/to jGF
         if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
-            //going from/to nFF
+            //going from/to nGF
             if((spinner1.equals(nicolls)||spinner4.equals(nicolls))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
-                pDraw.nicollsGroundFloor();
-                pDraw.hamiltonGroundFloor();
-                pDraw.johnsonGroundFloor();
+                paths.johnsonGroundtoNicollsGround();
             }
-            //going from/to hFF
+            //going from/to hGF
             if((spinner1.equals(hamilton)||spinner4.equals(hamilton))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
-                pDraw.hamiltonGroundFloor();
-                pDraw.johnsonGroundFloor();
+                paths.johnsonGroundtoHamGround();
             }
             //going from/to jFF
             if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(firstFloor)||spinner5.equals(firstFloor))){
