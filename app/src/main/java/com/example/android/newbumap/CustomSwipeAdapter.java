@@ -182,13 +182,13 @@ public class CustomSwipeAdapter extends PagerAdapter{
                 }
             }
         }
+        //going from/to nGF
         if((spinner1.equals("Nicolls")||spinner4.equals("Nicolls"))&&(spinner2.equals("Ground Floor")||spinner5.equals("Ground Floor"))){
             if((spinner1.equals("Hamilton")||spinner4.equals("Hamilton"))&&(spinner2.equals("Ground Floor")||spinner5.equals("Ground Floor"))){
                 pDraw.hamiltonGroundFloor();
                 pDraw.nicollsGroundFloor();
             }
         }
-
 
         // Display the newly created bitmap on app interface
         imageView.setImageBitmap(dstBitmap);
