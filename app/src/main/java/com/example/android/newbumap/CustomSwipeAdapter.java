@@ -620,15 +620,19 @@ public class CustomSwipeAdapter extends PagerAdapter{
         //going to GF
         if(spinner5.equals(groundFloor)){
             //going to jGF
-            if(spinner4.equals(johnson)){
-
-            }
-            //going to nGF
-            if(spinner4.equals(nicolls)){
-
+            if(spinner4.equals(johnson)) {
+                //this is the same as going from jGF to j3F
+                paths.johnsonGFtoJohnson3F();
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
+                //this is the same as going from hGF to j3F
+                paths.hamiltonGFtoJohnson3F();
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+                //this is the same as going from nGF to j3F
+                paths.nicollsGFtoJohnson3F();
 
             }
         }
@@ -636,45 +640,52 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(firstFloor)){
             //going to j1F
             if(spinner4.equals(johnson)){
-
+                //this is the same as going from j1F to j3F
+                paths.johnson1FtoJohnson3F();
             }
             //going to h1F
             if(spinner4.equals(hamilton)){
+                //this is the same as going from h1F to j3F
+                paths.hamilton1FtoJohnson3F();
 
             }
             //going to n1F
             if(spinner4.equals(nicolls)){
-
+                //this is the same as going from n1F to j3F
+                paths.nicolls1FtoJohnson3F();
             }
         }
         //going to 2F
         if(spinner5.equals(secondFloor)){
             //going to j2F
             if(spinner4.equals(johnson)){
-
+                //this is the same as going from j2F to j3F
+                paths.johnson2FtoJohnson3F();
             }
             //going to h2F
             if(spinner4.equals(hamilton)){
-
+                //this is the same as going from h2F to j3F
+                paths.hamilton2FtoJohnson3F();
             }
             //going to n2F
             if(spinner4.equals(nicolls)){
-
+                //this is the same as going from n2F to j3F
+                paths.nicolls2FtoJohnson3F();
             }
         }
         //going to 3F
         if(spinner5.equals(thirdFloor)){
             //going to j3F
             if(spinner4.equals(johnson)){
-
+                paths.johnson3FtoJohnson3F();
             }
             //going to h3F
             if(spinner4.equals(hamilton)){
-
+                paths.johnson3FtoHamilton3F();
             }
             //going to n3F
             if(spinner4.equals(nicolls)){
-
+                paths.johnson3FtoNicolls3F();
             }
         }
     }
@@ -686,12 +697,12 @@ public class CustomSwipeAdapter extends PagerAdapter{
             if(spinner4.equals(johnson)){
 
             }
-            //going to nGF
-            if(spinner4.equals(nicolls)){
-
-            }
             //going to hGF
             if(spinner4.equals(hamilton)){
+
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
 
             }
         }
@@ -749,12 +760,12 @@ public class CustomSwipeAdapter extends PagerAdapter{
             if(spinner4.equals(johnson)){
 
             }
-            //going to nGF
-            if(spinner4.equals(nicolls)){
-
-            }
             //going to hGF
             if(spinner4.equals(hamilton)){
+
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
 
             }
         }
@@ -811,7 +822,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         int fromRoom = Integer.valueOf(fRm);
         int toRoom = Integer.valueOf(tRm);
 
-        PathDraw paths = new PathDraw(F, S, pos, spinner4, toRoom, spinner1, fromRoom);
+        PathDraw paths = new PathDraw(F, S, pos, spinner1, spinner2, fromRoom, toRoom);
 
         //going from GF
         if(spinner2.equals(groundFloor)){
