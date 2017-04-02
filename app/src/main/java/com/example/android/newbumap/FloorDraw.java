@@ -468,7 +468,7 @@ public class FloorDraw {
     }
 
     public void johnsonThirdTop() {
-        //top big J309
+        //top to J326
         c.drawLine(
                 (float)54*px, // startX
                 (float)10*px, // startY
