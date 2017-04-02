@@ -38,108 +38,773 @@ public class CustomSwipeAdapter extends PagerAdapter{
         spinner5 = spn5;
         spinner6 = spn6;
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     @Override
     public int getCount() {
         return image_resources.length;
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     @Override
     public boolean isViewFromObject(View view, Object object) {
         return (view==(LinearLayout) object);
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromJGround(PathDraw paths){
-        //going to nGF
-        if(spinner4.equals(nicolls)&&spinner5.equals(groundFloor)){
-            paths.johnsonGroundtoNicollsGround();
-        }
-        //going from/to hGF
-        if((spinner1.equals(hamilton)||spinner4.equals(hamilton))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
-            paths.johnsonGroundtoHamGround();
-        }
-        //going from/to j1F
-        if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(firstFloor)||spinner5.equals(firstFloor))){
-            paths.johnsonGroundtoJohnsonFF();
-        }
-        //going from/to h1F
-        if((spinner1.equals(hamilton)||spinner4.equals(hamilton))&&(spinner2.equals(firstFloor)||spinner5.equals(firstFloor))){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
-        }
-        //going from/to n1F
-        if((spinner1.equals(nicolls)||spinner4.equals(nicolls))&&(spinner2.equals(firstFloor)||spinner5.equals(firstFloor))){
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
 
-        }
-        //going from/to j2F
-        if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(secondFloor)||spinner5.equals(secondFloor))){
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
 
+            }
         }
-        //going from/to h2F
-        if((spinner1.equals(hamilton)||spinner4.equals(hamilton))&&(spinner2.equals(secondFloor)||spinner5.equals(secondFloor))){
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
         }
-        //going from/to n2F
-        if((spinner1.equals(nicolls)||spinner4.equals(nicolls))&&(spinner2.equals(secondFloor)||spinner5.equals(secondFloor))){
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
         }
-        //going from/to j3F
-        if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(thirdFloor)||spinner5.equals(thirdFloor))){
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
 
-        }
-        //going from/to h3F
-        if((spinner1.equals(hamilton)||spinner4.equals(hamilton))&&(spinner2.equals(thirdFloor)||spinner5.equals(thirdFloor))){
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
 
-        }
-        //going from/to n3F
-        if((spinner1.equals(nicolls)||spinner4.equals(nicolls))&&(spinner2.equals(thirdFloor)||spinner5.equals(thirdFloor))){
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
 
+            }
         }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromHGround(PathDraw paths){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
+
+            }
+        }
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromNGround(PathDraw paths){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
+
+            }
+        }
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromJFirst(PathDraw paths){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
+
+            }
+        }
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromHFirst(PathDraw paths){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
+
+            }
+        }
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromNFirst(PathDraw paths){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
+
+            }
+        }
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromJSecond(PathDraw paths){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
+
+            }
+        }
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromHSecond(PathDraw paths){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
+
+            }
+        }
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromNSecond(PathDraw paths){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
+
+            }
+        }
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromJThird(PathDraw paths){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
+
+            }
+        }
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromHThird(PathDraw paths){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
+
+            }
+        }
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void fromNThird(PathDraw paths){
+        //going to GF
+        if(spinner5.equals(groundFloor)){
+            //going to jGF
+            if(spinner4.equals(johnson)){
 
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+
+            }
+            //going to hGF
+            if(spinner4.equals(hamilton)){
+
+            }
+        }
+        //going to 1F
+        if(spinner5.equals(firstFloor)){
+            //going to j1F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h1F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n1F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 2F
+        if(spinner5.equals(secondFloor)){
+            //going to j2F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h2F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n2F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
+        //going to 3F
+        if(spinner5.equals(thirdFloor)){
+            //going to j3F
+            if(spinner4.equals(johnson)){
+
+            }
+            //going to h3F
+            if(spinner4.equals(hamilton)){
+
+            }
+            //going to n3F
+            if(spinner4.equals(nicolls)){
+
+            }
+        }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     private void pathing(FloorDraw F, StairwellDraw S, int pos) {
         String fRm = spinner3.substring(2,5);
         String tRm = spinner6.substring(2,5);
@@ -209,7 +874,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
             }
         }
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         layoutInflater = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -282,6 +947,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
                 null // Paint
         );
 
+        //convert dp to pix
         Resources r = ctx.getResources();
         float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16, r.getDisplayMetrics());
 
@@ -293,6 +959,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         // Display the newly created bitmap on app interface
         imageView.setImageBitmap(dstBitmap);
 
+        //Change the text
         if(position == 0) {
             textView.setText("Basement");
         }
@@ -310,7 +977,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
 
         return item_view;
     }
-
+    /*--------------------------------------------------------------------------------------------*/
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView((LinearLayout) object);
