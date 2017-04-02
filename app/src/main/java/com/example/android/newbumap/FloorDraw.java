@@ -252,12 +252,12 @@ public class FloorDraw {
     }
     /*------------------------SECOND FLOOR-----------------------------------*/
     public void nicollsSecondTop() {
-        //line from top to N211
+        //line from top to N216
         c.drawLine(
                 (float)6.75*px, // startX
                 (float)17*px, // startY
                 (float)6.75*px, // stopX
-                (float)31*px, // stopY
+                (float)34*px, // stopY
                 p // Paint
         );
     }
@@ -266,7 +266,7 @@ public class FloorDraw {
         //line from N216 to bottom
         c.drawLine(
                 (float)6.75*px, // startX
-                (float)31*px, // startY
+                (float)34*px, // startY
                 (float)6.75*px, // stopX
                 (float)43.4*px, // stopY
                 p // Paint
@@ -342,7 +342,7 @@ public class FloorDraw {
                 (float)54*px, // startX
                 (float)10*px, // startY
                 (float)54*px, // stopX
-                (float)66.8*px, // stopY
+                (float)26.5*px, // stopY
                 p // Paint
         );
     }

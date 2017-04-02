@@ -243,7 +243,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-                paths.johnsonGFtoJohnson1F();
+                paths.johnsonGFtoJohnson1F();   //same path
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
@@ -306,7 +306,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-
+                paths.johnsonGFtoHamilton1F();  //same path
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
@@ -369,7 +369,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-
+                paths.johnsonGFtoNicolls1F();   //same path
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
@@ -432,7 +432,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-
+                paths.johnsonGFtoJohnson2F();   //same path
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
@@ -495,7 +495,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-
+                paths.johnsonGFtoHamilton2F();  //same path
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
@@ -558,7 +558,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-
+                paths.johnsonGFtoNicolls2F();   //same path
             }
             //going to nGF
             if(spinner4.equals(nicolls)){

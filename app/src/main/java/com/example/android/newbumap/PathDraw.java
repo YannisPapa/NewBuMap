@@ -27,12 +27,13 @@ public class PathDraw {
 
     }
 
-    //--------------- Pathing from Johnson Ground Floor ---------------
+    //--------------- Pathing from Johnson Ground Floor --------------------------------------------
 
     public void johnsonGFtoJohnsonGF() {
         F.johnsonGroundFloor();
     }
 
+    //----------------------------------------------------------------------------------------------
     public void johnsonGFtoNicollsGF() {
         if (position == 0) {
             F.johnsonGroundMid();
@@ -67,7 +68,7 @@ public class PathDraw {
 
         }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void johnsonGFtoHamiltonGF() {
         if (position == 0) {
             F.hamiltonGroundFloor();
@@ -80,10 +81,10 @@ public class PathDraw {
             }
         }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void johnsonGFtoJohnson1F() {
         //rooms near top stairs
-        if(roomFrom > 100){
+        if(floorFrom.equals("First Floor")){
             int tempRoom = roomFrom;
             roomFrom = roomTo;
             roomTo = tempRoom;
@@ -189,40 +190,423 @@ public class PathDraw {
             }
         }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void johnsonGFtoHamilton1F () {
-
+        if(floorFrom.equals("First Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(roomFrom >= 18 && roomFrom < 26){
+            if(roomTo == 126) {
+                if (position == 0) {
+                    F.johnsonGroundTop();
+                    F.johnsonGroundMid();
+                    F.hamiltonGroundFloor();
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if (position == 1) {
+                    F.nicollsFirstBottom();
+                    S.FFNB();
+                }
+            }
+            else{
+                if (position == 0) {
+                    F.johnsonGroundTop();
+                    S.BJT();
+                }
+                if (position == 1) {
+                    F.johnsonFirstTop();
+                    F.johnsonFirstMid();
+                    F.hamiltonFirstFloor();
+                    S.FFJT();
+                }
+            }
+        }
+        if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
+            if(roomTo == 126) {
+                if (position == 0) {
+                    F.johnsonGroundMid();
+                    F.hamiltonGroundFloor();
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if (position == 1) {
+                    F.nicollsFirstBottom();
+                    S.FFNB();
+                }
+            }
+            else{
+                if(position == 0){
+                    F.johnsonGroundMid();
+                    S.BJM();
+                }
+                if(position == 1){
+                    F.johnsonFirstMid();
+                    F.hamiltonFirstFloor();
+                    S.FFJM();
+                }
+            }
+        }
+        if(roomFrom < 5 || roomFrom == 11){
+            if(roomTo == 126) {
+                if (position == 0) {
+                    F.johnsonGroundBottom();
+                    F.johnsonGroundMid();
+                    F.hamiltonGroundFloor();
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if (position == 1) {
+                    F.nicollsFirstBottom();
+                    S.FFNB();
+                }
+            }
+            else{
+                if(position == 0){
+                    F.johnsonGroundBottom();
+                    S.BJB();
+                }
+                if(position == 1){
+                    F.johnsonFirstBottom();
+                    F.johnsonFirstMid();
+                    F.hamiltonFirstFloor();
+                    S.FFJB();
+                }
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void johnsonGFtoNicolls1F() {
-
+        if(floorFrom.equals("First Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(roomFrom >= 18 && roomFrom < 26){
+            if(roomTo >= 111 && roomTo < 116){
+                if(position == 0){
+                    F.johnsonGroundTop();
+                    F.johnsonGroundMid();
+                    F.hamiltonGroundFloor();
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if(position == 1){
+                    F.nicollsFirstFloor();
+                    S.FFNB();
+                }
+            }
+            if((roomTo >= 101 && roomTo <= 110)||roomTo == 116){
+                if(position == 0){
+                    F.johnsonGroundTop();
+                    F.johnsonGroundMid();
+                    F.hamiltonGroundFloor();
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if(position == 1){
+                    F.nicollsFirstBottom();
+                    S.FFNB();
+                }
+            }
+        }
+        if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
+            if(roomTo >= 111 && roomTo < 116){
+                if(position == 0){
+                    F.johnsonGroundMid();
+                    F.hamiltonGroundFloor();
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if(position == 1){
+                    F.nicollsFirstFloor();
+                    S.FFNB();
+                }
+            }
+            if((roomTo >= 101 && roomTo <= 110)||roomTo == 116){
+                if(position == 0){
+                    F.johnsonGroundMid();
+                    F.hamiltonGroundFloor();
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if(position == 1){
+                    F.nicollsFirstBottom();
+                    S.FFNB();
+                }
+            }
+        }
+        if(roomFrom < 5 || roomFrom == 11){
+            if(roomTo >= 111 && roomTo < 116){
+                if(position == 0){
+                    F.johnsonGroundBottom();
+                    F.johnsonGroundMid();
+                    F.hamiltonGroundFloor();
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if(position == 1){
+                    F.nicollsFirstFloor();
+                    S.FFNB();
+                }
+            }
+            if((roomTo >= 101 && roomTo <= 110)||roomTo == 116){
+                if(position == 0){
+                    F.johnsonGroundBottom();
+                    F.johnsonGroundMid();
+                    F.hamiltonGroundFloor();
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if(position == 1){
+                    F.nicollsFirstBottom();
+                    S.FFNB();
+                }
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void johnsonGFtoJohnson2F() {
-
+        if(floorFrom.equals("Second Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(roomFrom >= 18 && roomFrom < 26){
+            if(position == 0){
+                F.johnsonGroundTop();
+                S.BJT();
+            }
+            if(position == 1){
+                S.FFJT();
+            }
+            if(roomTo>208 && roomTo<217){
+                if(position == 2){
+                    F.johnsonSecondTop();
+                    S.SFJT();
+                }
+            } else if((roomTo>=200&&roomTo<=203)||roomTo==232){
+                if(position == 2){
+                    F.johnsonSecondFloor();
+                    S.SFJT();
+                }
+            } else{
+                if(position == 2){
+                    F.johnsonSecondTop();
+                    F.johnsonSecondMid();
+                    S.SFJT();
+                }
+            }
+        }
+        if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
+            if(position == 0){
+                F.johnsonGroundMid();
+                S.BJM();
+            }
+            if(position == 1){
+                S.FFJM();
+            }
+            if(roomTo>208 && roomTo<217){
+                if(position == 2){
+                    F.johnsonSecondTop();
+                    F.johnsonSecondMid();
+                    S.SFJM();
+                }
+            } else if((roomTo>=200&&roomTo<=203)||roomTo==232){
+                if(position == 2){
+                    F.johnsonSecondBottom();
+                    F.johnsonSecondMid();
+                    S.SFJM();
+                }
+            } else{
+                if(position == 2){
+                    F.johnsonSecondMid();
+                    S.SFJM();
+                }
+            }
+        }
+        if(roomFrom < 5 || roomFrom == 11){
+            if(position == 0){
+                F.johnsonGroundBottom();
+                S.BJB();
+            }
+            if(position == 1){
+                S.FFJB();
+            }
+            if(roomTo>208 && roomTo<217){
+                if(position == 2){
+                    F.johnsonSecondFloor();
+                    S.SFJB();
+                }
+            } else if((roomTo>=200&&roomTo<=203)||roomTo==232){
+                if(position == 2){
+                    F.johnsonSecondBottom();
+                    S.SFJB();
+                }
+            } else{
+                if(position == 2){
+                    F.johnsonSecondBottom();
+                    F.johnsonSecondMid();
+                    S.SFJB();
+                }
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void johnsonGFtoHamilton2F() {
-
+        if(floorFrom.equals("Second Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(roomFrom >= 18 && roomFrom < 26){
+            if(position == 0){
+                F.johnsonGroundTop();
+                S.BJT();
+            }
+            if(position == 1){
+                S.FFJT();
+            }
+            if(position == 2){
+                S.SFJT();
+                F.johnsonSecondTop();
+                F.johnsonSecondMid();
+                F.hamiltonSecondFloor();
+            }
+        }
+        if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
+            if(position == 0){
+                F.johnsonGroundMid();
+                S.BJM();
+            }
+            if(position == 1){
+                S.FFJM();
+            }
+            if(position == 2){
+                S.SFJM();
+                F.johnsonSecondMid();
+                F.hamiltonSecondFloor();
+            }
+        }
+        if(roomFrom < 5 || roomFrom == 11){
+            if(position == 0){
+                F.johnsonGroundBottom();
+                S.BJB();
+            }
+            if(position == 1){
+                S.FFJB();
+            }
+            if(position == 2){
+                S.SFJB();
+                F.johnsonSecondBottom();
+                F.johnsonSecondMid();
+                F.hamiltonSecondFloor();
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void johnsonGFtoNicolls2F() {
-
+        if(floorFrom.equals("Second Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(roomFrom >= 18 && roomFrom < 26){
+            if(position == 0){
+                F.johnsonGroundTop();
+                S.BJT();
+            }
+            if(position == 1){
+                S.FFJT();
+            }
+            if(roomTo>=211&&roomTo<=216){
+                if(position == 2){
+                    S.SFJT();
+                    F.johnsonSecondTop();
+                    F.johnsonSecondMid();
+                    F.hamiltonSecondFloor();
+                    F.nicollsSecondFloor();
+                }
+            }
+            else{
+                if(position == 2){
+                    S.SFJT();
+                    F.johnsonSecondTop();
+                    F.johnsonSecondMid();
+                    F.hamiltonSecondFloor();
+                    F.nicollsSecondBottom();
+                }
+            }
+        }
+        if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
+            if(position == 0){
+                F.johnsonGroundMid();
+                S.BJM();
+            }
+            if(position == 1){
+                S.FFJM();
+            }
+            if(roomTo>=211&&roomTo<=216){
+                if(position == 2){
+                    S.SFJM();
+                    F.johnsonSecondMid();
+                    F.hamiltonSecondFloor();
+                    F.nicollsSecondFloor();
+                }
+            }
+            else{
+                if(position == 2){
+                    S.SFJM();
+                    F.johnsonSecondMid();
+                    F.hamiltonSecondFloor();
+                    F.nicollsSecondBottom();
+                }
+            }
+        }
+        if(roomFrom < 5 || roomFrom == 11){
+            if(position == 0){
+                F.johnsonGroundBottom();
+                S.BJB();
+            }
+            if(position == 1){
+                S.FFJB();
+            }
+            if(roomTo>=211&&roomTo<=216){
+                if(position == 2){
+                    S.SFJB();
+                    F.johnsonSecondBottom();
+                    F.johnsonSecondMid();
+                    F.hamiltonSecondFloor();
+                    F.nicollsSecondFloor();
+                }
+            }
+            else{
+                if(position == 2){
+                    S.SFJB();
+                    F.johnsonSecondBottom();
+                    F.johnsonSecondMid();
+                    F.hamiltonSecondFloor();
+                    F.nicollsSecondBottom();
+                }
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void johnsonGFtoJohnson3F() {
 
     }
-
+    //----------------------------------------------------------------------------------------------
     public void johnsonGFtoHamilton3F() {
 
     }
-
+    //----------------------------------------------------------------------------------------------
     public void johnsonGFtoNicolls3F() {
 
     }
 
-    //--------------- Pathing from Nicolls Ground Floor ---------------
+    //--------------- Pathing from Nicolls Ground Floor --------------------------------------------
 
     public void nicollsGFtoNicollsGF() {
 
