@@ -29,8 +29,8 @@ public class PathDraw {
 
     //--------------- Pathing from Johnson Ground Floor ---------------
 
-    public void johnsonGFtojohnsonGF() {
-
+    public void johnsonGFtoJohnsonGF() {
+        F.johnsonGroundFloor();
     }
 
     public void johnsonGFtoNicollsGF() {
@@ -83,36 +83,109 @@ public class PathDraw {
 
     public void johnsonGFtoJohnson1F() {
         //rooms near top stairs
-        if((roomFrom>=18&&roomFrom<=24)||(roomTo>=18&&roomTo<=24)){
-            if(position == 0){
-                F.johnsonGroundFloor();
-                S.BJT();
+        if(roomFrom > 100){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(roomFrom >= 18 && roomFrom < 26){
+            if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
+                if(position == 0){
+                    F.johnsonGroundTop();
+                    S.BJT();
+                }
+                if(position == 1){
+                    F.johnsonFirstTop();
+                    S.FFJT();
+                }
             }
-            if(position == 1){
-                F.johnsonFirstFloor();
-                S.FFJT();
+            if((roomTo >= 124 && roomTo <= 128)||(roomTo >= 107 && roomTo <= 115)||(roomTo >= 117 && roomTo <= 118)){
+                if(position == 0){
+                    F.johnsonGroundTop();
+                    S.BJT();
+                }
+                if(position == 1){
+                    F.johnsonFirstTop();
+                    F.johnsonFirstMid();
+                    S.FFJT();
+                }
+            }
+            if((roomTo >= 101 && roomTo <= 105)||roomTo == 116){
+                if(position == 0){
+                    F.johnsonGroundTop();
+                    S.BJT();
+                }
+                if(position == 1){
+                    F.johnsonFirstFloor();
+                    S.FFJT();
+                }
             }
         }
-        //rooms near middle stairs
-        if((roomFrom>=4&&roomFrom<=10)||(roomTo>=4&&roomTo<=10)||((roomFrom==26)||(roomTo==26))){
-            if(position == 0){
-                F.johnsonGroundFloor();
-                S.BJM();
+        if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
+            if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
+                if(position == 0){
+                    F.johnsonGroundMid();
+                    S.BJM();
+                }
+                if(position == 1){
+                    F.johnsonFirstMid();
+                    F.johnsonFirstTop();
+                    S.FFJM();
+                }
             }
-            if(position == 1){
-                F.johnsonFirstFloor();
-                S.FFJM();
+            if((roomTo >= 124 && roomTo <= 128)||(roomTo >= 107 && roomTo <= 115)||(roomTo >= 117 && roomTo <= 118)){
+                if(position == 0){
+                    F.johnsonGroundMid();
+                    S.BJM();
+                }
+                if(position == 1){
+                    F.johnsonFirstMid();
+                    S.FFJM();
+                }
+            }
+            if((roomTo >= 101 && roomTo <= 105)||roomTo == 116){
+                if(position == 0){
+                    F.johnsonGroundMid();
+                    S.BJM();
+                }
+                if(position == 1){
+                    F.johnsonFirstMid();
+                    F.johnsonFirstBottom();
+                    S.FFJM();
+                }
             }
         }
-        //rooms near bottom stairs
-        if((roomFrom>=1&&roomFrom<=2)||(roomTo>=1&&roomTo<=2)||((roomFrom==11)||(roomFrom==11))){
-            if(position == 0){
-                F.johnsonGroundFloor();
-                S.BJB();
+        if(roomFrom < 5 || roomFrom == 11){
+            if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
+                if(position == 0){
+                    F.johnsonGroundBottom();
+                    S.BJB();
+                }
+                if(position == 1){
+                    F.johnsonFirstFloor();
+                    S.FFJB();
+                }
             }
-            if(position == 1){
-                F.johnsonFirstFloor();
-                S.FFJB();
+            if((roomTo >= 124 && roomTo <= 128)||(roomTo >= 107 && roomTo <= 115)||(roomTo >= 117 && roomTo <= 118)){
+                if(position == 0){
+                    F.johnsonGroundBottom();
+                    S.BJB();
+                }
+                if(position == 1){
+                    F.johnsonFirstMid();
+                    F.johnsonFirstBottom();
+                    S.FFJB();
+                }
+            }
+            if((roomTo >= 101 && roomTo <= 105)||roomTo == 116){
+                if(position == 0){
+                    F.johnsonGroundBottom();
+                    S.BJB();
+                }
+                if(position == 1){
+                    F.johnsonFirstBottom();
+                    S.FFJB();
+                }
             }
         }
     }
@@ -151,7 +224,7 @@ public class PathDraw {
 
     //--------------- Pathing from Nicolls Ground Floor ---------------
 
-    public void nicollsGFtonicollsGF() {
+    public void nicollsGFtoNicollsGF() {
 
     }
 
@@ -200,7 +273,7 @@ public class PathDraw {
 
     //--------------- Pathing from Hamilton Ground Floor ---------------
 
-    public void hamiltonGFtohamiltonGF() {
+    public void hamiltonGFtoHamiltonGF() {
 
     }
 

@@ -188,7 +188,7 @@ public class FloorDraw {
     }
 
     public void johnsonFirstTop() {
-        //big line going across johnson first floor
+        //from j-150 to j-123
         c.drawLine(
                 (float)53.5*px, // startX
                 (float)9*px, // startY
@@ -199,7 +199,7 @@ public class FloorDraw {
     }
 
     public void johnsonFirstMid() {
-        //big line going across johnson first floor
+        //from j-118/j124 to ITS(j-107)/j-115
         c.drawLine(
                 (float)53.5*px, // startX
                 (float)24*px, // startY
@@ -210,7 +210,7 @@ public class FloorDraw {
     }
 
     public void johnsonFirstBottom() {
-        //big line going across johnson first floor
+        //from j-116 to the bottom of johnson
         c.drawLine(
                 (float)53.5*px, // startX
                 (float)57*px, // startY
