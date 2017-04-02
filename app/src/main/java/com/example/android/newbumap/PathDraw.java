@@ -27,7 +27,13 @@ public class PathDraw {
 
     }
 
-    public void johnsonGroundtoNicollsGround() {
+    //--------------- Pathing from Johnson Ground Floor ---------------
+
+    public void johnsonGFtojohnsonGF() {
+
+    }
+
+    public void johnsonGFtoNicollsGF() {
         if (position == 0) {
             F.johnsonGroundMid();
             F.hamiltonGroundFloor();
@@ -62,7 +68,7 @@ public class PathDraw {
         }
     }
 
-    public void johnsonGroundtoHamGround() {
+    public void johnsonGFtoHamiltonGF() {
         if (position == 0) {
             F.hamiltonGroundFloor();
             F.johnsonGroundMid();
@@ -75,7 +81,7 @@ public class PathDraw {
         }
     }
 
-    public void johnsonGroundtoJohnsonFF() {
+    public void johnsonGFtoJohnson1F() {
         //rooms near top stairs
         if((roomFrom>=18&&roomFrom<=24)||(roomTo>=18&&roomTo<=24)){
             if(position == 0){
@@ -111,12 +117,326 @@ public class PathDraw {
         }
     }
 
-    public void nicollsGroundtoHamGround() {
+    public void johnsonGFtoHamilton1F () {
+
+    }
+
+    public void johnsonGFtoNicolls1F() {
+
+    }
+
+    public void johnsonGFtoJohnson2F() {
+
+    }
+
+    public void johnsonGFtoHamilton2F() {
+
+    }
+
+    public void johnsonGFtoNicolls2F() {
+
+    }
+
+    public void johnsonGFtoJohnson3F() {
+
+    }
+
+    public void johnsonGFtoHamilton3F() {
+
+    }
+
+    public void johnsonGFtoNicolls3F() {
+
+    }
+
+    //--------------- Pathing from Nicolls Ground Floor ---------------
+
+    public void nicollsGFtonicollsGF() {
+
+    }
+
+    public void nicollsGFtoHamiltonGF() {
         if(position == 0) {
             F.hamiltonGroundFloor();
             F.nicollsGroundFloor();
         }
     }
 
+    public void nicollsGFtoJohnson1F() {
+
+    }
+
+    public void nicollsGFtoHamilton1F() {
+
+    }
+
+    public void nicollsGFtoNicolls1F() {
+
+    }
+
+    public void nicollsGFtoJohnson2F() {
+
+    }
+
+    public void nicollsGFtoHamilton2F() {
+
+    }
+
+    public void nicollsGFtoNicolls2F() {
+
+    }
+
+    public void nicollsGFtoJohnson3F() {
+
+    }
+
+    public void nicollsGFtoHamilton3F() {
+
+    }
+
+    public void nicollsGFtoNicolls3F() {
+
+    }
+
+    //--------------- Pathing from Hamilton Ground Floor ---------------
+
+    public void hamiltonGFtohamiltonGF() {
+
+    }
+
+    public void hamiltonGFtoJohnson1F() {
+
+    }
+
+    public void hamiltonGFtoHamilton1F() {
+
+    }
+
+    public void hamiltonGFtoNicolls1F() {
+
+    }
+
+    public void hamiltonGFtoJohnson2F() {
+
+    }
+
+    public void hamiltonGFtoHamilton2F() {
+
+    }
+
+    public void hamiltonGFtoNicolls2F() {
+
+    }
+
+    public void hamiltonGFtoJohnson3F() {
+
+    }
+
+    public void hamiltonGFtoHamilton3F() {
+
+    }
+
+    public void hamiltonGFtoNicolls3F() {
+
+    }
+
+    //--------------- Pathing from Johnson First Floor ---------------
+
+    public void johnson1FtoJohnson1F() {
+
+    }
+
+    public void johnson1FtoHamilton1F() {
+
+    }
+
+    public void johnson1FtoNicolls1F() {
+
+    }
+
+    public void johnson1FtoJohnson2F() {
+
+    }
+
+    public void johnson1FtoHamilton2F() {
+
+    }
+
+    public void johnson1FtoNicolls2F() {
+
+    }
+
+    public void johnson1FtoJohnson3F() {
+
+    }
+
+    public void johnson1FtoHamilton3F() {
+
+    }
+
+    public void johnson1FtoNicolls3F() {
+
+    }
+
+    //--------------- Pathing from Nicolls First Floor ---------------
+
+    public void nicolls1FtoNicolls1F() {
+
+    }
+
+    public void nicolls1FtoHamilton1F() {
+
+    }
+
+    public void nicolls1FtoJohnson2F() {
+
+    }
+
+    public void nicolls1FtoHamilton2F() {
+
+    }
+
+    public void nicolls1FtoNicolls2F() {
+
+    }
+
+    public void nicolls1FtoJohnson3F() {
+
+    }
+
+    public void nicolls1FtoHamilton3F() {
+
+    }
+
+    public void nicolls1FtoNicolls3F() {
+
+    }
+
+    //--------------- Pathing from Hamilton First Floor ---------------
+
+    public void hamilton1FtoHamilton1F() {
+
+    }
+
+    public void hamilton1FtoJohnson2F() {
+
+    }
+
+    public void hamilton1FtoHamilton2F() {
+
+    }
+
+    public void hamilton1FtoNicolls2F() {
+
+    }
+
+    public void hamilton1FtoJohnson3F() {
+
+    }
+
+    public void hamilton1FtoHamilton3F() {
+
+    }
+
+    public void hamilton1FtoNicolls3F() {
+
+    }
+
+
+    //--------------- Pathing from Johnson Second Floor ---------------
+
+    public void johnson2FtoJohnson2F() {
+
+    }
+
+    public void johnson2FtoHamilton2F() {
+
+    }
+
+    public void johnson2FtoNicolls2F() {
+
+    }
+
+    public void johnson2FtoJohnson3F() {
+
+    }
+
+    public void johnson2FtoHamilton3F() {
+
+    }
+
+    public void johnson2FtoNicolls3F() {
+
+    }
+
+    //--------------- Pathing from Nicolls Second Floor ---------------
+
+    public void nicolls2FtoNicolls2F() {
+
+    }
+
+    public void nicolls2FtoHamilton2F() {
+
+    }
+
+    public void nicolls2FtoJohnson3F() {
+
+    }
+
+    public void nicolls2FtoHamilton3F() {
+
+    }
+
+    public void nicolls2FtoNicolls3F() {
+
+    }
+
+    //--------------- Pathing from Hamilton Second Floor ---------------
+
+    public void hamilton2FtoHamilton2F() {
+
+    }
+
+    public void hamilton2FtoJohnson3F() {
+
+    }
+
+    public void hamilton2FtoHamilton3F() {
+
+    }
+
+    public void hamilton2FtoNicolls3F() {
+
+    }
+
+    //--------------- Pathing from Johnson Third Floor ---------------
+
+    public void johnson3FtoJohnson3F() {
+
+    }
+
+    public void johnson3FtoHamilton3F() {
+
+    }
+
+    public void johnson3FtoNicolls3F() {
+
+    }
+
+    //--------------- Pathing from Nicolls Third Floor ---------------
+
+    public void nicolls3FtoNicolls3F() {
+
+    }
+
+    public void nicolls3FtoHamilton3F() {
+
+    }
+
+    //--------------- Pathing from Hamilton Third Floor ---------------
+
+    public void hamilton3FtoHamilton3F() {
+
+    }
 
 }
