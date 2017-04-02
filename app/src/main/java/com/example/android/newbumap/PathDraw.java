@@ -75,5 +75,48 @@ public class PathDraw {
         }
     }
 
+    public void johnsonGroundtoJohnsonFF() {
+        //rooms near top stairs
+        if((roomFrom>=18&&roomFrom<=24)||(roomTo>=18&&roomTo<=24)){
+            if(position == 0){
+                F.johnsonGroundFloor();
+                S.BJT();
+            }
+            if(position == 1){
+                F.johnsonFirstFloor();
+                S.FFJT();
+            }
+        }
+        //rooms near middle stairs
+        if((roomFrom>=4&&roomFrom<=10)||(roomTo>=4&&roomTo<=10)||((roomFrom==26)||(roomTo==26))){
+            if(position == 0){
+                F.johnsonGroundFloor();
+                S.BJM();
+            }
+            if(position == 1){
+                F.johnsonFirstFloor();
+                S.FFJM();
+            }
+        }
+        //rooms near bottom stairs
+        if((roomFrom>=1&&roomFrom<=2)||(roomTo>=1&&roomTo<=2)||((roomFrom==11)||(roomFrom==11))){
+            if(position == 0){
+                F.johnsonGroundFloor();
+                S.BJB();
+            }
+            if(position == 1){
+                F.johnsonFirstFloor();
+                S.FFJB();
+            }
+        }
+    }
+
+    public void nicollsGroundtoHamGround() {
+        if(position == 0) {
+            F.hamiltonGroundFloor();
+            F.nicollsGroundFloor();
+        }
+    }
+
 
 }
