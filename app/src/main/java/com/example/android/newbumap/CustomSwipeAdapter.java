@@ -42,6 +42,45 @@ public class CustomSwipeAdapter extends PagerAdapter{
         return (view==(LinearLayout) object);
     }
 
+    private void pathing(FloorDraw F, StairwellDraw S, int pos) {
+        String johnson = "Johnson";
+        String nicolls = "Nicolls";
+        String hamilton = "Hamilton";
+        String groundFloor = "Ground Floor";
+        String firstFloor = "First Floor";
+        String secondFloor = "Second Floor";
+        String thirdFloor = "Third Floor";
+        String fRm = spinner3.substring(2,5);
+        String tRm = spinner6.substring(2,5);
+        int fromRoom = Integer.valueOf(fRm);
+        int toRoom = Integer.valueOf(tRm);
+
+        PathDraw paths = new PathDraw(F, S, pos, spinner4, toRoom, spinner1, fromRoom);
+
+        //Going from/to jGF
+        if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
+            //going from/to nGF
+            if((spinner1.equals(nicolls)||spinner4.equals(nicolls))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
+                paths.johnsonGroundtoNicollsGround();
+            }
+            //going from/to hGF
+            if((spinner1.equals(hamilton)||spinner4.equals(hamilton))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
+                paths.johnsonGroundtoHamGround();
+            }
+            //going from/to jFF
+            if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(firstFloor)||spinner5.equals(firstFloor))){
+                paths.johnsonGroundtoJohnsonFF();
+            }
+        }
+        //going from/to nGF
+        if((spinner1.equals("Nicolls")||spinner4.equals("Nicolls"))&&(spinner2.equals("Ground Floor")||spinner5.equals("Ground Floor"))){
+            //going from/to hGF
+            if((spinner1.equals("Hamilton")||spinner4.equals("Hamilton"))&&(spinner2.equals("Ground Floor")||spinner5.equals("Ground Floor"))){
+                paths.nicollsGroundtoHamGround();
+            }
+        }
+    }
+
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         layoutInflater = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -120,44 +159,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         FloorDraw pDraw = new FloorDraw(canvas, paint, px);
         StairwellDraw stairs = new StairwellDraw (paint, canvas, px);
 
-
-
-        String johnson = "Johnson";
-        String nicolls = "Nicolls";
-        String hamilton = "Hamilton";
-        String groundFloor = "Ground Floor";
-        String firstFloor = "First Floor";
-        String secondFloor = "Second Floor";
-        String thirdFloor = "Third Floor";
-        String fRm = spinner3.substring(2,5);
-        String tRm = spinner6.substring(2,5);
-        int fromRoom = Integer.valueOf(fRm);
-        int toRoom = Integer.valueOf(tRm);
-
-        PathDraw paths = new PathDraw(pDraw, stairs, position, spinner4, toRoom, spinner1, fromRoom);
-
-        //Going from/to jGF
-        if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
-            //going from/to nGF
-            if((spinner1.equals(nicolls)||spinner4.equals(nicolls))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
-                paths.johnsonGroundtoNicollsGround();
-            }
-            //going from/to hGF
-            if((spinner1.equals(hamilton)||spinner4.equals(hamilton))&&(spinner2.equals(groundFloor)||spinner5.equals(groundFloor))){
-                paths.johnsonGroundtoHamGround();
-            }
-            //going from/to jFF
-            if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(firstFloor)||spinner5.equals(firstFloor))){
-                paths.johnsonGroundtoJohnsonFF();
-            }
-        }
-        //going from/to nGF
-        if((spinner1.equals("Nicolls")||spinner4.equals("Nicolls"))&&(spinner2.equals("Ground Floor")||spinner5.equals("Ground Floor"))){
-            //going from/to hGF
-            if((spinner1.equals("Hamilton")||spinner4.equals("Hamilton"))&&(spinner2.equals("Ground Floor")||spinner5.equals("Ground Floor"))){
-                paths.nicollsGroundtoHamGround();
-            }
-        }
+        pathing(pDraw, stairs, position);
 
 
         // Display the newly created bitmap on app interface
