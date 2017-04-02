@@ -148,45 +148,14 @@ public class CustomSwipeAdapter extends PagerAdapter{
             }
             //going from/to jFF
             if((spinner1.equals(johnson)||spinner4.equals(johnson))&&(spinner2.equals(firstFloor)||spinner5.equals(firstFloor))){
-                //rooms near top stairs
-                if((fromRoom>=18&&fromRoom<=24)||(toRoom>=18&&toRoom<=24)){
-                    if(position == 0){
-                        pDraw.johnsonGroundFloor();
-                        stairs.BJT();
-                    }
-                    if(position == 1){
-                        pDraw.johnsonFirstFloor();
-                        stairs.FFJT();
-                    }
-                }
-                //rooms near middle stairs
-                if((fromRoom>=4&&fromRoom<=10)||(toRoom>=4&&toRoom<=10)||((fromRoom==26)||(toRoom==26))){
-                    if(position == 0){
-                        pDraw.johnsonGroundFloor();
-                        stairs.BJM();
-                    }
-                    if(position == 1){
-                        pDraw.johnsonFirstFloor();
-                        stairs.FFJM();
-                    }
-                }
-                //rooms near bottom stairs
-                if((fromRoom>=1&&fromRoom<=2)||(toRoom>=1&&toRoom<=2)||((fromRoom==11)||(toRoom==11))){
-                    if(position == 0){
-                        pDraw.johnsonGroundFloor();
-                        stairs.BJB();
-                    }
-                    if(position == 1){
-                        pDraw.johnsonFirstFloor();
-                        stairs.FFJB();
-                    }
-                }
+                paths.johnsonGroundtoJohnsonFF();
             }
         }
+        //going from/to nGF
         if((spinner1.equals("Nicolls")||spinner4.equals("Nicolls"))&&(spinner2.equals("Ground Floor")||spinner5.equals("Ground Floor"))){
+            //going from/to hGF
             if((spinner1.equals("Hamilton")||spinner4.equals("Hamilton"))&&(spinner2.equals("Ground Floor")||spinner5.equals("Ground Floor"))){
-                pDraw.hamiltonGroundFloor();
-                pDraw.nicollsGroundFloor();
+                paths.nicollsGroundtoHamGround();
             }
         }
 
