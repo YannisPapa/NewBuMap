@@ -1023,6 +1023,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
 
         FloorDraw pDraw = new FloorDraw(canvas, paint, px);
         StairwellDraw stairs = new StairwellDraw (paint, canvas, px);
+        RoomDraw Rooms = new RoomDraw(paint,canvas,px);
 
         if(spinner3.equals("ITS")){
             spinner3 = "J-107";
@@ -1044,7 +1045,31 @@ public class CustomSwipeAdapter extends PagerAdapter{
         }
 
         pathing(pDraw, stairs, position);
-
+       /* Rooms.BJB001();
+        Rooms.BJB002();
+        Rooms.BJB004();
+        Rooms.BJB005a();
+        Rooms.BJB005();
+        Rooms.BJB009();
+        Rooms.BJB010();
+        Rooms.BJB011();
+        Rooms.BJB018();
+        Rooms.BJB019();
+        Rooms.BJB020();
+        Rooms.BJB023();
+        Rooms.BJB024();
+        Rooms.BJB026a();
+        Rooms.BJB026b();
+        Rooms.BJB026c();
+        Rooms.BHB003();
+        Rooms.BNB001();
+        Rooms.BNB002();
+        Rooms.BNB003();
+        Rooms.BNB004();
+        Rooms.BNB005();
+        Rooms.BNB007();
+        Rooms.BNB008();
+        */
         // Display the newly created bitmap on app interface
         imageView.setImageBitmap(dstBitmap);
 
