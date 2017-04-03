@@ -244,60 +244,64 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-                paths.johnsonGFtoJohnson1F();   //same path
+                //this is the same as going from jGF to j1F
+                paths.johnsonGFtoJohnson1F();
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
+                //this is the same as going from nGF to j1F
+                paths.nicollsGFtoJohnson1F();
 
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
-
+                //this is the same as going from hGF to j1F
+                paths.hamiltonGFtoJohnson1F();
             }
         }
         //going to 1F
         if(spinner5.equals(firstFloor)){
             //going to j1F
             if(spinner4.equals(johnson)){
-
+                paths.johnson1FtoJohnson1F();
             }
             //going to h1F
             if(spinner4.equals(hamilton)){
-
+                paths.johnson1FtoHamilton1F();
             }
             //going to n1F
             if(spinner4.equals(nicolls)){
-
+                paths.johnson1FtoNicolls1F();
             }
         }
         //going to 2F
         if(spinner5.equals(secondFloor)){
             //going to j2F
             if(spinner4.equals(johnson)){
-
+                paths.johnson1FtoJohnson2F();
             }
             //going to h2F
             if(spinner4.equals(hamilton)){
-
+                paths.johnson1FtoHamilton2F();
             }
             //going to n2F
             if(spinner4.equals(nicolls)){
-
+                paths.johnson1FtoNicolls2F();
             }
         }
         //going to 3F
         if(spinner5.equals(thirdFloor)){
             //going to j3F
             if(spinner4.equals(johnson)){
-
+                paths.johnson1FtoJohnson3F();
             }
             //going to h3F
             if(spinner4.equals(hamilton)){
-
+                paths.johnson1FtoHamilton3F();
             }
             //going to n3F
             if(spinner4.equals(nicolls)){
-
+                paths.johnson1FtoNicolls3F();
             }
         }
     }
@@ -307,60 +311,65 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-                paths.johnsonGFtoHamilton1F();  //same path
-            }
-            //going to nGF
-            if(spinner4.equals(nicolls)){
-
+                //this is the same as going from jGF to h1F
+                paths.johnsonGFtoHamilton1F();
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
-
+                //this is the same as going from hGF to h1F
+                paths.hamiltonGFtoHamilton1F();
+            }
+            //going to nGF
+            if(spinner4.equals(nicolls)){
+                //this is the same as going from nGF to h1F
+                paths.nicollsGFtoHamilton1F();
             }
         }
         //going to 1F
         if(spinner5.equals(firstFloor)){
             //going to j1F
             if(spinner4.equals(johnson)){
-
+                //this is the same as going from j1F to h1F
+                paths.johnson1FtoHamilton1F();
             }
             //going to h1F
             if(spinner4.equals(hamilton)){
-
+                paths.hamilton1FtoHamilton1F();
             }
             //going to n1F
             if(spinner4.equals(nicolls)){
-
+                //this is the same as going from n1F to h1F
+                paths.nicolls1FtoHamilton1F();
             }
         }
         //going to 2F
         if(spinner5.equals(secondFloor)){
             //going to j2F
             if(spinner4.equals(johnson)){
-
+                paths.hamilton1FtoJohnson2F();
             }
             //going to h2F
             if(spinner4.equals(hamilton)){
-
+                paths.hamilton1FtoHamilton2F();
             }
             //going to n2F
             if(spinner4.equals(nicolls)){
-
+                paths.hamilton1FtoNicolls2F();
             }
         }
         //going to 3F
         if(spinner5.equals(thirdFloor)){
             //going to j3F
             if(spinner4.equals(johnson)){
-
+                paths.hamilton1FtoJohnson3F();
             }
             //going to h3F
             if(spinner4.equals(hamilton)){
-
+                paths.hamilton1FtoHamilton3F();
             }
             //going to n3F
             if(spinner4.equals(nicolls)){
-
+                paths.hamilton1FtoNicolls3F();
             }
         }
     }
@@ -370,60 +379,64 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-                paths.johnsonGFtoNicolls1F();   //same path
+                //this is the same as going from jGF to n1F
+                paths.johnsonGFtoNicolls1F();
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
-
+                //this is the same as going from nGF to n1F
+                paths.nicollsGFtoNicolls1F();
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
-
+                //this is the same as going from hGF to n1F
+                paths.hamiltonGFtoNicolls1F();
             }
         }
         //going to 1F
         if(spinner5.equals(firstFloor)){
             //going to j1F
             if(spinner4.equals(johnson)){
-
+                //this is the same as going from j1F to n1F
+                paths.johnson1FtoNicolls1F();
             }
             //going to h1F
             if(spinner4.equals(hamilton)){
-
+                paths.nicolls1FtoHamilton1F();
             }
             //going to n1F
             if(spinner4.equals(nicolls)){
-
+                paths.nicolls1FtoNicolls1F();
             }
         }
         //going to 2F
         if(spinner5.equals(secondFloor)){
             //going to j2F
             if(spinner4.equals(johnson)){
-
+                paths.nicolls1FtoJohnson2F();
             }
             //going to h2F
             if(spinner4.equals(hamilton)){
-
+                paths.nicolls1FtoHamilton2F();
             }
             //going to n2F
             if(spinner4.equals(nicolls)){
-
+                paths.nicolls1FtoNicolls2F();
             }
         }
         //going to 3F
         if(spinner5.equals(thirdFloor)){
             //going to j3F
             if(spinner4.equals(johnson)){
-
+                paths.nicolls1FtoJohnson3F();
             }
             //going to h3F
             if(spinner4.equals(hamilton)){
-
+                paths.nicolls1FtoHamilton3F();
             }
             //going to n3F
             if(spinner4.equals(nicolls)){
-
+                paths.nicolls1FtoNicolls3F();
             }
         }
     }

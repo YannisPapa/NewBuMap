@@ -766,32 +766,139 @@ public class PathDraw {
 
     //--------------- Pathing from Hamilton First Floor ---------------
 
-    public void hamilton1FtoHamilton1F() {
+    //Todo: add starting at bus stop to hamilton first floor functionality
 
+    public void hamilton1FtoHamilton1F() {
+        if (position == 1){
+            F.hamiltonFirstFloor();
+        }
     }
 
     public void hamilton1FtoJohnson2F() {
+        if (buildFrom.equals("Hamilton")) {
+            int temp = roomTo;
+            roomTo = roomFrom;
+            roomFrom = temp;
+        }
+
+        if(position == 1) {
+            F.hamiltonFirstFloor();
+            S.FFHM();
+        }
+
+        if(position == 2) {
+            S.SFHM();
+            F.hamiltonSecondFloor();
+            F.johnsonSecondMid();
+            if(roomFrom > 207 && roomFrom < 218) {
+                F.johnsonSecondTop();
+            } else if (roomFrom > 230 || roomFrom < 204) {
+                F.johnsonSecondBottom();
+            }
+        }
 
     }
 
     public void hamilton1FtoHamilton2F() {
-
+        if(position == 1) {
+            F.hamiltonFirstFloor();
+            S.FFHM();
+        }
+        if(position == 2) {
+            F.hamiltonSecondFloor();
+            S.SFHM();
+        }
     }
 
     public void hamilton1FtoNicolls2F() {
+        if(position == 1) {
+            F.hamiltonFirstFloor();
+            S.FFHM();
+        }
+        if(position == 2) {
+            if (buildFrom.equals("Hamilton")) {
+                int temp = roomTo;
+                roomTo = roomFrom;
+                roomFrom = temp;
+            }
 
+            S.SFHM();
+            F.hamiltonSecondFloor();
+            F.nicollsSecondBottom();
+
+            if(roomFrom > 210) {
+                F.nicollsSecondTop();
+            }
+        }
     }
 
     public void hamilton1FtoJohnson3F() {
+        if(position == 1) {
+            F.hamiltonFirstFloor();
+            S.FFHM();
+        }
+        if(position == 2) {
+            F.hamiltonSecondFloor();
+            S.SFHM();
+            F.johnsonSecondMid();
+            S.SFJM();
+        }
+        if(position == 3) {
+            S.TFJM();
+            F.johnsonThirdMid();
 
+            if(buildFrom.equals("Hamilton")) {
+                int temp = roomTo;
+                roomTo = roomFrom;
+                roomFrom = temp;
+            }
+
+            if (roomFrom < 326 && roomFrom > 315) {
+                F.johnsonThirdTop();
+            } else if (roomFrom == 309 || roomFrom == 310 || roomFrom < 303) {
+                F.johnsonThirdBottom();
+            }
+        }
     }
 
     public void hamilton1FtoHamilton3F() {
-
+        if(position == 1) {
+            F.hamiltonFirstFloor();
+            S.FFHM();
+        }
+        if(position == 2) {
+            S.SFHM();
+        }
+        if(position == 3) {
+            S.TFHM();
+            F.hamiltonThirdFloor();
+        }
     }
 
     public void hamilton1FtoNicolls3F() {
+        if(position == 1) {
+            F.hamiltonFirstFloor();
+            S.FFHM();
+        }
+        if(position == 2) {
+            S.SFHM();
+        }
+        if(position == 3) {
+            S.TFHM();
+            F.hamiltonThirdFloor();
+            F.nicollsThirdBottom();
 
+            if(buildFrom.equals("Nicolls")) {
+                int temp = roomTo;
+                roomTo = roomFrom;
+                roomFrom = temp;
+            }
+
+            if (roomTo < 315 && roomTo > 310) {
+                F.nicollsThirdTop();
+            }
+
+        }
     }
 
 
@@ -828,7 +935,7 @@ public class PathDraw {
             F.hamiltonSecondFloor();
             F.nicollsSecondBottom();
 
-            if (buildFrom.equals("Hamilton")) {
+            if (buildFrom.equals("Nicolls")) {
                 int temp = roomTo;
                 roomTo = roomFrom;
                 roomFrom = temp;
