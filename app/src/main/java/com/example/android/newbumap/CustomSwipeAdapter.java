@@ -8,13 +8,13 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.v4.view.PagerAdapter;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.util.Log;
 
 public class CustomSwipeAdapter extends PagerAdapter{
 
@@ -952,8 +952,6 @@ public class CustomSwipeAdapter extends PagerAdapter{
         TouchImageView imageView = (TouchImageView) item_view.findViewById(R.id.image_view);
         TextView textView = (TextView) item_view.findViewById(R.id.image_count);
         imageView.setImageResource(image_resources[position]);
-
-
 
         // Bitmap to draw on the canvas
         Bitmap bitmap = BitmapFactory.decodeResource(
