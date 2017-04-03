@@ -1519,7 +1519,8 @@ public class PathDraw {
 
     public void nicolls1FtoJohnson2F() {
         if(position == 1) {
-
+            F.nicollsFirstBottom();
+            S.FFNB();
         }
     }
 
