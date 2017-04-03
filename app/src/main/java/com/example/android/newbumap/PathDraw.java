@@ -733,15 +733,32 @@ public class PathDraw {
     //--------------- Pathing from Nicolls First Floor ---------------
 
     public void nicolls1FtoNicolls1F() {
-
+        if(position == 1){
+            F.nicollsFirstFloor();
+        }
     }
 
     public void nicolls1FtoHamilton1F() {
+        if(position == 1) {
+            F.nicollsFirstBottom();
+            F.hamiltonFirstFloor();
 
+            if (buildFrom.equals("Hamilton")) {
+                int temp = roomTo;
+                roomTo = roomFrom;
+                roomFrom = temp;
+            }
+
+            if(roomFrom > 110 && roomFrom < 116) {
+                F.nicollsFirstTop();
+            }
+        }
     }
 
     public void nicolls1FtoJohnson2F() {
+        if(position == 1) {
 
+        }
     }
 
     public void nicolls1FtoHamilton2F() {
