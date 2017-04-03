@@ -8,6 +8,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.v4.view.PagerAdapter;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -247,11 +248,11 @@ public class CustomSwipeAdapter extends PagerAdapter{
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
-
+                paths.nicollsGFtoJohnson1F();   //same path
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
-
+                paths.hamiltonGFtoJohnson1F();  //same path
             }
         }
         //going to 1F
@@ -310,11 +311,11 @@ public class CustomSwipeAdapter extends PagerAdapter{
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
-
+                paths.nicollsGFtoHamilton1F();  //same path
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
-
+                paths.hamiltonGFtoHamilton1F(); //same path
             }
         }
         //going to 1F
@@ -373,11 +374,11 @@ public class CustomSwipeAdapter extends PagerAdapter{
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
-
+                paths.nicollsGFtoNicolls1F();   //same path
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
-
+                paths.hamiltonGFtoNicolls1F();  //same path
             }
         }
         //going to 1F
@@ -436,11 +437,11 @@ public class CustomSwipeAdapter extends PagerAdapter{
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
-
+                paths.nicollsGFtoJohnson2F();   //same path
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
-
+                paths.hamiltonGFtoJohnson2F();   //same path
             }
         }
         //going to 1F
@@ -495,15 +496,15 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-
+                paths.johnsonGFtoHamilton2F();   //same path
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
-
+                paths.nicollsGFtoHamilton2F();   //same path
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
-
+                paths.hamiltonGFtoHamilton2F();   //same path
             }
         }
         //going to 1F
@@ -703,15 +704,15 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-
+                paths.johnsonGFtoHamilton3F();
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
-
+                paths.hamiltonGFtoHamilton3F();
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
-
+                paths.nicollsGFtoHamilton3F();
             }
         }
         //going to 1F
@@ -766,15 +767,15 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-
+                paths.johnsonGFtoNicolls3F();
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
-
+                paths.hamiltonGFtoNicolls3F();
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
-
+                paths.nicollsGFtoNicolls3F();
             }
         }
         //going to 1F

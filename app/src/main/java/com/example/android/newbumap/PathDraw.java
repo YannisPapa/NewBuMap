@@ -51,17 +51,17 @@ public class PathDraw {
             }
 
             if (buildFrom.equals("Johnson")) {
-                if(roomFrom < 24 && roomFrom >10) {
+                if(roomFrom >= 18 && roomFrom < 26) {
                     F.johnsonGroundTop();
                 }
-                if(roomFrom < 5) {
+                if(roomFrom < 5 || roomFrom == 11) {
                     F.johnsonGroundBottom();
                 }
             } else {
-                if(roomTo < 24 && roomTo >10) {
+                if(roomFrom >= 18 && roomFrom < 26) {
                     F.johnsonGroundTop();
                 }
-                if(roomTo < 5) {
+                if(roomFrom < 5 || roomFrom == 11) {
                     F.johnsonGroundBottom();
                 }
             }
@@ -73,10 +73,10 @@ public class PathDraw {
         if (position == 0) {
             F.hamiltonGroundFloor();
             F.johnsonGroundMid();
-            if(roomTo < 24 && roomTo >10 || roomFrom < 24 && roomFrom > 10) {
+            if(roomFrom >= 18 && roomFrom < 26) {
                 F.johnsonGroundTop();
             }
-            if(roomTo < 5 || roomFrom < 5) {
+            if(roomFrom < 5 || roomFrom == 11) {
                 F.johnsonGroundBottom();
             }
         }
@@ -595,110 +595,872 @@ public class PathDraw {
     }
     //----------------------------------------------------------------------------------------------
     public void johnsonGFtoJohnson3F() {
-
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(roomFrom >= 18 && roomFrom < 26){
+            if(position == 0){
+                F.johnsonGroundTop();
+                S.BJT();
+            }
+            if(position == 1){
+                S.FFJT();
+            }
+            if(position == 2){
+                S.SFJT();
+            }
+            if(roomTo>=315 && roomTo<326){
+                if(position == 3){
+                    F.johnsonThirdTop();
+                    S.TFJT();
+                }
+            } else if(roomTo==301||roomTo==302||roomTo==309||roomTo==310){
+                if(position == 3){
+                    F.johnsonThirdFloor();
+                    S.TFJT();
+                }
+            } else{
+                if(position == 3){
+                    F.johnsonThirdTop();
+                    F.johnsonThirdMid();
+                    S.TFJT();
+                }
+            }
+        }
+        if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
+            if(position == 0){
+                F.johnsonGroundMid();
+                S.BJM();
+            }
+            if(position == 1){
+                S.FFJM();
+            }
+            if(position == 2){
+                S.SFJM();
+            }
+            if(roomTo>=315 && roomTo<326){
+                if(position == 3){
+                    F.johnsonThirdTop();
+                    F.johnsonThirdMid();
+                    S.TFJM();
+                }
+            } else if(roomTo==301||roomTo==302||roomTo==309||roomTo==310){
+                if(position == 3){
+                    F.johnsonThirdBottom();
+                    F.johnsonThirdMid();
+                    S.TFJM();
+                }
+            } else{
+                if(position == 3){
+                    F.johnsonThirdMid();
+                    S.TFJM();
+                }
+            }
+        }
+        if(roomFrom < 5 || roomFrom == 11){
+            if(position == 0){
+                F.johnsonGroundBottom();
+                S.BJB();
+            }
+            if(position == 1){
+                S.FFJB();
+            }
+            if(position == 2){
+                S.SFJB();
+            }
+            if(roomTo>=315 && roomTo<326){
+                if(position == 3){
+                    F.johnsonThirdFloor();
+                    S.TFJB();
+                }
+            } else if(roomTo==301||roomTo==302||roomTo==309||roomTo==310){
+                if(position == 3){
+                    F.johnsonThirdBottom();
+                    S.TFJB();
+                }
+            } else{
+                if(position == 3){
+                    F.johnsonThirdBottom();
+                    F.johnsonThirdMid();
+                    S.TFJB();
+                }
+            }
+        }
     }
     //----------------------------------------------------------------------------------------------
     public void johnsonGFtoHamilton3F() {
-
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(roomFrom >= 18 && roomFrom < 26){
+            if(position == 0){
+                F.johnsonGroundTop();
+                F.johnsonGroundMid();
+                S.BJM();
+            }
+            if(position == 1){
+                S.FFJM();
+                F.johnsonFirstMid();
+                F.hamiltonFirstFloor();
+                S.FFHM();
+            }
+            if(position == 2){
+                S.SFHM();
+            }
+            if(position == 3){
+                S.TFHM();
+                F.hamiltonThirdFloor();
+            }
+        }
+        if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
+            if(position == 0){
+                F.johnsonGroundMid();
+                S.BJM();
+            }
+            if(position == 1){
+                S.FFJM();
+                F.johnsonFirstMid();
+                F.hamiltonFirstFloor();
+                S.FFHM();
+            }
+            if(position == 2){
+                S.SFHM();
+            }
+            if(position == 3){
+                S.TFHM();
+                F.hamiltonThirdFloor();
+            }
+        }
+        if(roomFrom < 5 || roomFrom == 11){
+            if(position == 0){
+                F.johnsonGroundBottom();
+                F.johnsonGroundMid();
+                S.BJM();
+            }
+            if(position == 1){
+                S.FFJM();
+                F.johnsonFirstMid();
+                F.hamiltonFirstFloor();
+                S.FFHM();
+            }
+            if(position == 2){
+                S.SFHM();
+            }
+            if(position == 3){
+                S.TFHM();
+                F.hamiltonThirdFloor();
+            }
+        }
     }
     //----------------------------------------------------------------------------------------------
     public void johnsonGFtoNicolls3F() {
-
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(roomFrom >= 18 && roomFrom < 26){
+            if(position == 0){
+                F.johnsonGroundTop();
+                F.johnsonGroundMid();
+                F.hamiltonGroundFloor();
+                F.nicollsGroundBottom();
+                S.BNB();
+            }
+            if(position == 1){
+                S.FFNB();
+            }
+            if(position == 2){
+                S.SFNB();
+            }
+            if(roomTo>=311&&roomTo<=315){
+                if(position == 3){
+                    S.TFNB();
+                    F.nicollsThirdFloor();
+                }
+            }
+            else{
+                if(position == 3){
+                    S.TFNB();
+                    F.nicollsThirdBottom();
+                }
+            }
+        }
+        if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
+            if(position == 0){
+                F.johnsonGroundMid();
+                F.hamiltonGroundFloor();
+                F.nicollsGroundBottom();
+                S.BNB();
+            }
+            if(position == 1){
+                S.FFNB();
+            }
+            if(position == 2){
+                S.SFNB();
+            }
+            if(roomTo>=311&&roomTo<=315){
+                if(position == 3){
+                    S.TFNB();
+                    F.nicollsThirdFloor();
+                }
+            }
+            else{
+                if(position == 3){
+                    S.TFNB();
+                    F.nicollsThirdBottom();
+                }
+            }
+        }
+        if(roomFrom < 5 || roomFrom == 11){
+            if(position == 0){
+                F.johnsonGroundBottom();
+                F.johnsonGroundMid();
+                F.hamiltonGroundFloor();
+                F.nicollsGroundBottom();
+                S.BNB();
+            }
+            if(position == 1){
+                S.FFNB();
+            }
+            if(position == 2){
+                S.SFNB();
+            }
+            if(roomTo>=311&&roomTo<=315){
+                if(position == 3){
+                    S.TFNB();
+                    F.nicollsThirdFloor();
+                }
+            }
+            else{
+                if(position == 3){
+                    S.TFNB();
+                    F.nicollsThirdBottom();
+                }
+            }
+        }
     }
 
     //--------------- Pathing from Nicolls Ground Floor --------------------------------------------
 
     public void nicollsGFtoNicollsGF() {
-
-    }
-
-    public void nicollsGFtoHamiltonGF() {
-        if(position == 0) {
-            F.hamiltonGroundFloor();
+        if(position == 0){
             F.nicollsGroundFloor();
         }
     }
-
+    //----------------------------------------------------------------------------------------------
+    public void nicollsGFtoHamiltonGF() {
+        if(position == 0){
+            F.hamiltonGroundFloor();
+            if(buildFrom.equals("Nicolls")){
+                if(roomFrom>=3&&roomFrom<=7){
+                    F.nicollsGroundFloor();
+                }
+                else {
+                    F.nicollsGroundBottom();
+                }
+            }
+            else{
+                if(roomTo>=3&&roomTo<=7){
+                    F.nicollsGroundFloor();
+                }
+                else {
+                    F.nicollsGroundBottom();
+                }
+            }
+        }
+    }
+    //----------------------------------------------------------------------------------------------
     public void nicollsGFtoJohnson1F() {
-
+        if(floorFrom.equals("First Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0){
+            F.hamiltonGroundFloor();
+            F.johnsonGroundMid();
+            S.BJM();
+        }
+        if(roomFrom>=3&&roomFrom<=7){
+            if(position == 0){
+                F.nicollsGroundFloor();
+            }
+            if(position == 1){
+                S.FFJM();
+                if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
+                    F.johnsonFirstMid();
+                    F.johnsonFirstTop();
+                }else if((roomTo >= 101 && roomTo <= 105)||roomTo == 116){
+                    F.johnsonFirstMid();
+                    F.johnsonFirstBottom();
+                }else{
+                    F.johnsonFirstMid();
+                }
+            }
+        }
+        else {
+            if(position == 0) {
+                F.nicollsGroundBottom();
+            }
+            if(position == 1){
+                S.FFJM();
+                if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
+                    F.johnsonFirstMid();
+                    F.johnsonFirstTop();
+                }else if((roomTo >= 101 && roomTo <= 105)||roomTo == 116){
+                    F.johnsonFirstMid();
+                    F.johnsonFirstBottom();
+                }else{
+                    F.johnsonFirstMid();
+                }
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void nicollsGFtoHamilton1F() {
-
+        if(floorFrom.equals("First Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(roomFrom>=3&&roomFrom<=7){
+            if(roomTo==126) {
+                if(position == 0){
+                    F.nicollsGroundFloor();
+                    S.BNB();
+                }
+                if(position == 1){
+                    S.FFNB();
+                    F.nicollsFirstBottom();
+                }
+            }else{
+                if(position == 0){
+                    F.nicollsGroundFloor();
+                    F.hamiltonGroundFloor();
+                    F.johnsonGroundMid();
+                    S.BJM();
+                }
+                if(position == 1){
+                    S.FFJM();
+                    F.johnsonFirstMid();
+                    F.hamiltonFirstFloor();
+                }
+            }
+        }
+        else {
+            if(roomTo==126) {
+                if(position == 0){
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if(position == 1){
+                    S.FFNB();
+                    F.nicollsFirstBottom();
+                }
+            }else{
+                if(position == 0){
+                    F.nicollsGroundBottom();
+                    F.hamiltonGroundFloor();
+                    F.johnsonGroundMid();
+                    S.BJM();
+                }
+                if(position == 1){
+                    S.FFJM();
+                    F.johnsonFirstMid();
+                    F.hamiltonFirstFloor();
+                }
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void nicollsGFtoNicolls1F() {
-
+        if(floorFrom.equals("First Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(roomFrom>=3&&roomFrom<=7){
+            if(roomTo >= 111 && roomTo < 116) {
+                if(position == 0){
+                    F.nicollsGroundTop();
+                    S.BNT();
+                }
+                if(position == 1){
+                    S.FFNT();
+                    F.nicollsFirstTop();
+                }
+            }else{
+                if(position == 0){
+                    F.nicollsGroundTop();
+                    S.BNT();
+                }
+                if(position == 1){
+                    S.FFNT();
+                    F.nicollsFirstFloor();
+                }
+            }
+        }
+        else {
+            if(roomTo >= 111 && roomTo < 116) {
+                if(position == 0){
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if(position == 1){
+                    S.FFNB();
+                    F.nicollsFirstFloor();
+                }
+            }else{
+                if(position == 0){
+                    F.nicollsGroundBottom();
+                    S.BNB();
+                }
+                if(position == 1){
+                    S.FFNB();
+                    F.nicollsFirstBottom();
+                }
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void nicollsGFtoJohnson2F() {
-
+        if(floorFrom.equals("Second Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0) {
+            F.hamiltonGroundFloor();
+            F.johnsonGroundMid();
+            S.BJM();
+            if (roomFrom >= 3 && roomFrom <= 7) {
+                F.nicollsGroundFloor();
+            } else {
+                F.nicollsGroundBottom();
+            }
+        }
+        if(position == 1){
+            S.FFJM();
+        }
+        if(position == 2){
+            S.SFJM();
+            F.johnsonSecondMid();
+            if(roomTo>208 && roomTo<217){
+                F.johnsonSecondTop();
+            }
+            if((roomTo>=200&&roomTo<=203)||roomTo==232){
+                F.johnsonSecondBottom();
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void nicollsGFtoHamilton2F() {
-
+        if(floorFrom.equals("Second Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0) {
+            S.BNB();
+            if (roomFrom >= 3 && roomFrom <= 7) {
+                F.nicollsGroundFloor();
+            } else {
+                F.nicollsGroundBottom();
+            }
+        }
+        if(position == 1){
+            S.FFNB();
+        }
+        if(position == 2){
+            S.SFNB();
+            F.nicollsSecondBottom();
+            F.hamiltonSecondFloor();
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void nicollsGFtoNicolls2F() {
-
+        if(floorFrom.equals("Second Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if (roomFrom >= 3 && roomFrom <= 7) {
+            if(position == 0) {
+                F.nicollsGroundTop();
+                S.BNT();
+            }
+            if(position == 1){
+                S.FFNT();
+            }
+            if(position == 2){
+                S.SFNT();
+                if(roomTo>=211&&roomTo<=216){
+                    F.nicollsSecondTop();
+                }else{
+                    F.nicollsSecondFloor();
+                }
+            }
+        } else {
+            if(position == 0) {
+                F.nicollsGroundBottom();
+                S.BNB();
+            }
+            if(position == 1){
+                S.FFNB();
+            }
+            if(position == 2){
+                S.SFNB();
+                if(roomTo>=211&&roomTo<=216){
+                    F.nicollsSecondFloor();
+                }else{
+                    F.nicollsSecondBottom();
+                }
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void nicollsGFtoJohnson3F() {
-
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0) {
+            F.hamiltonGroundFloor();
+            F.johnsonGroundMid();
+            S.BJM();
+            if (roomFrom >= 3 && roomFrom <= 7) {
+                F.nicollsGroundFloor();
+            } else {
+                F.nicollsGroundBottom();
+            }
+        }
+        if(position == 1){
+            S.FFJM();
+        }
+        if(position == 2){
+            S.SFJM();
+        }
+        if(position == 3){
+            S.TFJM();
+            F.johnsonThirdMid();
+            if(roomTo>=315 && roomTo<326){
+                F.johnsonThirdTop();
+            }
+            if((roomTo==301||roomTo==302||roomTo==309||roomTo==310)){
+                F.johnsonThirdBottom();
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void nicollsGFtoHamilton3F() {
-
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0) {
+            S.BNB();
+            if (roomFrom >= 3 && roomFrom <= 7) {
+                F.nicollsGroundFloor();
+            } else {
+                F.nicollsGroundBottom();
+            }
+        }
+        if(position == 1){
+            S.FFNB();
+        }
+        if(position == 2){
+            S.SFNB();
+        }
+        if(position == 3){
+            S.TFNB();
+            F.nicollsThirdBottom();
+            F.hamiltonThirdFloor();
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void nicollsGFtoNicolls3F() {
-
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if (roomFrom >= 3 && roomFrom <= 7) {
+            if(position == 0) {
+                F.nicollsGroundTop();
+                S.BNT();
+            }
+            if(position == 1){
+                S.FFNT();
+            }
+            if(position == 2){
+                S.SFNT();
+            }
+            if(position == 3){
+                S.TFNT();
+                if(roomTo>=311&&roomTo<=315){
+                    F.nicollsThirdTop();
+                }else{
+                    F.nicollsThirdFloor();
+                }
+            }
+        } else {
+            if(position == 0) {
+                F.nicollsGroundBottom();
+                S.BNB();
+            }
+            if(position == 1){
+                S.FFNB();
+            }
+            if(position == 2){
+                S.SFNB();
+            }
+            if(position == 3){
+                S.TFNB();
+                if(roomTo>=311&&roomTo<=315){
+                    F.nicollsThirdFloor();
+                }else{
+                    F.nicollsThirdBottom();
+                }
+            }
+        }
     }
-
     //--------------- Pathing from Hamilton Ground Floor ---------------
-
     public void hamiltonGFtoHamiltonGF() {
-
+        if(position == 0){
+            F.hamiltonGroundFloor();
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void hamiltonGFtoJohnson1F() {
-
+        if(floorFrom.equals("First Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0){
+            F.hamiltonGroundFloor();
+            F.johnsonGroundMid();
+            S.BJM();
+        }
+        if(position == 1){
+            F.johnsonFirstMid();
+            S.FFJM();
+            if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
+                F.johnsonFirstTop();
+            }
+            if((roomTo >= 101 && roomTo <= 105)||roomTo == 116){
+                F.johnsonFirstBottom();
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void hamiltonGFtoHamilton1F() {
-
+        if(floorFrom.equals("First Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0){
+            F.hamiltonGroundFloor();
+            if(roomTo==126){
+                F.nicollsGroundBottom();
+                S.BNB();
+            }else{
+                F.johnsonGroundMid();
+                S.BJM();
+            }
+        }
+        if(position == 1){
+            if(roomTo==126){
+                F.nicollsFirstBottom();
+                S.FFNB();
+            }else{
+                F.johnsonFirstMid();
+                S.FFJM();
+                F.hamiltonFirstFloor();
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void hamiltonGFtoNicolls1F() {
-
+        if(floorFrom.equals("First Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0){
+            F.hamiltonGroundFloor();
+            F.nicollsGroundBottom();
+            S.BNB();
+        }
+        if(position == 1){
+            S.FFNB();
+            if(roomTo >= 111 && roomTo < 116) {
+                F.nicollsFirstFloor();
+            }else{
+                F.nicollsFirstBottom();
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void hamiltonGFtoJohnson2F() {
-
+        if(floorFrom.equals("Second Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0) {
+            F.hamiltonGroundFloor();
+            F.johnsonGroundMid();
+            S.BJM();
+        }
+        if(position == 1){
+            S.FFJM();
+        }
+        if(position == 2){
+            S.SFJM();
+            F.johnsonSecondMid();
+            if(roomTo>208 && roomTo<217){
+                F.johnsonSecondTop();
+            }
+            if((roomTo>=200&&roomTo<=203)||roomTo==232){
+                F.johnsonSecondBottom();
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void hamiltonGFtoHamilton2F() {
-
+        if(floorFrom.equals("Second Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0) {
+            F.hamiltonGroundFloor();
+            F.johnsonGroundMid();
+            S.BJM();
+        }
+        if(position == 1){
+            S.FFJM();
+        }
+        if(position == 2){
+            S.SFJM();
+            F.johnsonSecondMid();
+            F.hamiltonSecondFloor();
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void hamiltonGFtoNicolls2F() {
-
+        if(floorFrom.equals("Second Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0) {
+            F.hamiltonGroundFloor();
+            F.nicollsGroundBottom();
+            S.BNB();
+        }
+        if(position == 1){
+            S.FFNB();
+        }
+        if(position == 2){
+            S.SFNB();
+            if(roomTo>=211&&roomTo<=216){
+                F.nicollsSecondFloor();
+            }else{
+                F.nicollsSecondBottom();
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void hamiltonGFtoJohnson3F() {
-
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0) {
+            F.hamiltonGroundFloor();
+            F.johnsonGroundMid();
+            S.BJM();
+        }
+        if(position == 1){
+            S.FFJM();
+        }
+        if(position == 2){
+            S.SFJM();
+        }
+        if(position == 3){
+            S.TFJM();
+            F.johnsonThirdMid();
+            if(roomTo>=315 && roomTo<326){
+                F.johnsonThirdTop();
+            }
+            if((roomTo==301||roomTo==302||roomTo==309||roomTo==310)){
+                F.johnsonThirdBottom();
+            }
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void hamiltonGFtoHamilton3F() {
-
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0) {
+            F.hamiltonGroundFloor();
+            F.nicollsGroundBottom();
+            S.BNB();
+        }
+        if(position == 1){
+            S.FFNB();
+        }
+        if(position == 2){
+            S.SFNB();
+        }
+        if(position == 3){
+            S.TFNB();
+            F.nicollsThirdBottom();
+            F.hamiltonThirdFloor();
+        }
     }
-
+    //----------------------------------------------------------------------------------------------
     public void hamiltonGFtoNicolls3F() {
-
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
+        if(position == 0) {
+            F.hamiltonGroundFloor();
+            F.nicollsGroundBottom();
+            S.BNB();
+        }
+        if(position == 1){
+            S.FFNB();
+        }
+        if(position == 2){
+            S.SFNB();
+        }
+        if(position == 3){
+            S.TFNB();
+            if(roomTo>=311&&roomTo<=315){
+                F.nicollsThirdFloor();
+            }else{
+                F.nicollsThirdBottom();
+            }
+        }
     }
-
-    //--------------- Pathing from Johnson First Floor ---------------
-
+    //--------------- Pathing from Johnson First Floor ---------------------------------------------
     public void johnson1FtoJohnson1F() {
 
     }
