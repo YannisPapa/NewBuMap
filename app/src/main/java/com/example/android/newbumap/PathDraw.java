@@ -31,33 +31,63 @@ public class PathDraw {
     //----------------------------------------------------------------------------------------------
     public void johnsonGFtoNicollsGF() {
         if (position == 0) {
-            F.johnsonGroundMid();
             F.hamiltonGroundFloor();
-            F.nicollsGroundBottom();
 
             if(buildFrom.equals("Nicolls")) {
                 if (roomFrom == 4 || roomFrom == 5 || roomFrom == 7){
+                    F.startPaint();
                     F.nicollsGroundTop();
+                    F.paintBack();
+                    F.nicollsGroundBottom();
+                } else {
+                    F.startPaint();
+                    F.nicollsGroundBottom();
+                    F.paintBack();
                 }
             } else {
                 if (roomTo == 4 || roomTo == 5 || roomTo == 7){
+                    F.endPaint();
                     F.nicollsGroundTop();
+                    F.paintBack();
+                    F.nicollsGroundBottom();
+                } else {
+                    F.endPaint();
+                    F.nicollsGroundBottom();
+                    F.paintBack();
                 }
             }
 
             if (buildFrom.equals("Johnson")) {
                 if(roomFrom >= 18 && roomFrom < 26) {
+                    F.startPaint();
                     F.johnsonGroundTop();
-                }
-                if(roomFrom < 5 || roomFrom == 11) {
+                    F.paintBack();
+                    F.johnsonGroundMid();
+                } else if(roomFrom < 5 || roomFrom == 11) {
+                    F.startPaint();
                     F.johnsonGroundBottom();
+                    F.paintBack();
+                    F.johnsonGroundMid();
+                } else {
+                    F.startPaint();
+                    F.johnsonGroundMid();
+                    F.paintBack();
                 }
             } else {
-                if(roomFrom >= 18 && roomFrom < 26) {
+                if(roomTo >= 18 && roomTo < 26) {
+                    F.endPaint();
                     F.johnsonGroundTop();
-                }
-                if(roomFrom < 5 || roomFrom == 11) {
+                    F.paintBack();
+                    F.johnsonGroundMid();
+                } else if(roomTo < 5 || roomTo == 11) {
+                    F.endPaint();
                     F.johnsonGroundBottom();
+                    F.paintBack();
+                    F.johnsonGroundMid();
+                } else {
+                    F.endPaint();
+                    F.johnsonGroundMid();
+                    F.paintBack();
                 }
             }
 

@@ -1,6 +1,7 @@
 package com.example.android.newbumap;
 
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 
 public class FloorDraw {
@@ -17,6 +18,42 @@ public class FloorDraw {
     }
 
     public void changePaint(Paint paint) {
+        p = paint;
+    }
+
+    public void startPaint() {
+        Paint paint = new Paint();
+        // Line color
+        paint.setColor(Color.MAGENTA);
+        paint.setStyle(Paint.Style.STROKE);
+        // Line width in pixels
+        paint.setStrokeWidth(8);
+        paint.setAntiAlias(true);
+
+        p = paint;
+    }
+
+    public void endPaint() {
+        Paint paint = new Paint();
+        // Line color
+        paint.setColor(Color.BLUE);
+        paint.setStyle(Paint.Style.STROKE);
+        // Line width in pixels
+        paint.setStrokeWidth(8);
+        paint.setAntiAlias(true);
+
+        p = paint;
+    }
+
+    public void paintBack() {
+        Paint paint = new Paint();
+        // Line color
+        paint.setColor(Color.RED);
+        paint.setStyle(Paint.Style.STROKE);
+        // Line width in pixels
+        paint.setStrokeWidth(8);
+        paint.setAntiAlias(true);
+
         p = paint;
     }
 
