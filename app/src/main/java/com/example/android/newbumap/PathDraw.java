@@ -1,11 +1,6 @@
 package com.example.android.newbumap;
 
 import android.util.Log;
-import android.widget.Toast;
-
-/**
- * Created by Mareep on 3/29/17.
- */
 
 public class PathDraw {
     private FloorDraw F;
@@ -17,6 +12,7 @@ public class PathDraw {
     private int roomTo;
 
     public PathDraw(FloorDraw f, StairwellDraw s, int p, String fromB, String fromF, int fromRoom, int toRoom) {
+        Log.d("test", String.valueOf(p));
         F = f;
         S = s;
         position = p;
@@ -829,7 +825,9 @@ public class PathDraw {
     //--------------- Pathing from Nicolls Second Floor ---------------
 
     public void nicolls2FtoNicolls2F() {
-
+        if(position == 2) {
+            F.nicollsSecondFloor();
+        }
     }
 
     public void nicolls2FtoHamilton2F() {
@@ -845,25 +843,117 @@ public class PathDraw {
     }
 
     public void nicolls2FtoNicolls3F() {
+        Log.d("testing", "hellooooooo");
+        Log.d("testing", Integer.toString(roomFrom));
+        Log.d("testing", Integer.toString(position));
 
+        if(position == 2) {
+            Log.d("testing", "on two");
+            F.nicollsSecondFloor();
+
+            if(floorFrom == "Second") {
+                int temp = roomTo;
+                roomTo = roomFrom;
+                roomFrom = temp;
+            }
+
+
+
+            if (roomFrom > 310 && roomFrom < 315) {
+                S.SFNT();
+            } else {
+                S.SFNB();
+            }
+
+        }
+
+        if(position == 3) {
+            Log.d("testing", "on three");
+            if(floorFrom == "Second") {
+                int temp = roomTo;
+                roomTo = roomFrom;
+                roomFrom = temp;
+            }
+
+            if (roomFrom > 310 && roomFrom < 315) {
+                S.TFNT();
+                F.nicollsThirdTop();
+            } else {
+                S.TFNB();
+                F.nicollsThirdBottom();
+            }
+        }
     }
 
     //--------------- Pathing from Hamilton Second Floor ---------------
 
     public void hamilton2FtoHamilton2F() {
-
+        if(position == 2) {
+            F.hamiltonSecondFloor();
+        }
     }
 
     public void hamilton2FtoJohnson3F() {
+        if(position == 2) {
+            F.hamiltonSecondFloor();
+            F.johnsonSecondMid();
+            S.SFJM();
+        }
+        if(position == 3) {
+            S.TFJM();
 
+            if (buildFrom.equals("Hamilton")) {
+                int temp = roomTo;
+                roomTo = roomFrom;
+                roomFrom = temp;
+            }
+
+            if (roomFrom < 326 && roomFrom > 315) {
+                F.johnsonThirdTop();
+                F.johnsonThirdMid();
+            } else if (roomFrom == 309 || roomFrom == 310 || roomFrom < 303) {
+                F.johnsonThirdBottom();
+                F.johnsonThirdMid();
+            } else {
+                F.johnsonThirdMid();
+            }
+
+        }
     }
 
     public void hamilton2FtoHamilton3F() {
-
+        if(position == 2) {
+            F.hamiltonSecondFloor();
+            S.SFHM();
+        }
+        if(position == 3) {
+            F.hamiltonThirdFloor();
+            S.TFHM();
+        }
     }
 
     public void hamilton2FtoNicolls3F() {
+        if(position == 2) {
+            S.SFHM();
+            F.hamiltonSecondFloor();
+        }
+        if(position == 3) {
+            S.TFHM();
+            F.hamiltonThirdFloor();
+            F.nicollsThirdBottom();
 
+            if (buildFrom.equals("Hamilton")) {
+                int temp = roomTo;
+                roomTo = roomFrom;
+                roomFrom = temp;
+            }
+            if (roomFrom > 310 && roomFrom < 315) {
+                F.nicollsThirdTop();
+            }
+
+
+
+        }
     }
 
     //--------------- Pathing from Johnson Third Floor ---------------
