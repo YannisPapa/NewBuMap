@@ -45,138 +45,142 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-        //These are the settings for the "from" spinners
-        if (spinner1.getSelectedItem().equals("Hamilton") && spinner2.getSelectedItem().equals("Ground Floor")){
-            ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
-                    R.array.h_ground_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterG);
-        }
-        if (spinner1.getSelectedItem().equals("Hamilton") && spinner2.getSelectedItem().equals("First Floor")){
-            ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
-                    R.array.h_first_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterF);
-        }
-        if (spinner1.getSelectedItem().equals("Hamilton") && spinner2.getSelectedItem().equals("Second Floor")){
-            ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
-                    R.array.h_second_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterS);
-        }
-        if (spinner1.getSelectedItem().equals("Hamilton") && spinner2.getSelectedItem().equals("Third Floor")){
-            ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
-                    R.array.h_third_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterT);
-        }
-        if (spinner1.getSelectedItem().equals("Johnson") && spinner2.getSelectedItem().equals("Ground Floor")){
-            ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
-                    R.array.j_ground_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterG);
-        }
-        if (spinner1.getSelectedItem().equals("Johnson") && spinner2.getSelectedItem().equals("First Floor")){
-            ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
-                    R.array.j_first_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterF);
-        }
-        if (spinner1.getSelectedItem().equals("Johnson") && spinner2.getSelectedItem().equals("Second Floor")){
-            ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
-                    R.array.j_second_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterS);
-        }
-        if (spinner1.getSelectedItem().equals("Johnson") && spinner2.getSelectedItem().equals("Third Floor")){
-            ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
-                    R.array.j_third_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterT);
-        }
-        if (spinner1.getSelectedItem().equals("Nicolls") && spinner2.getSelectedItem().equals("Ground Floor")){
-            ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
-                    R.array.n_ground_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterG);
-        }
-        if (spinner1.getSelectedItem().equals("Nicolls") && spinner2.getSelectedItem().equals("First Floor")){
-            ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
-                    R.array.n_first_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterF);
-        }
-        if (spinner1.getSelectedItem().equals("Nicolls") && spinner2.getSelectedItem().equals("Second Floor")){
-            ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
-                    R.array.n_second_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterS);
-        }
-        if (spinner1.getSelectedItem().equals("Nicolls") && spinner2.getSelectedItem().equals("Third Floor")){
-            ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
-                    R.array.n_third_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterT);
-        }
-        if (spinner1.getSelectedItem().equals("Other")){
-            ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
-                    R.array.other_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner3.setAdapter(adapterT);
+        if (parent.equals(spinner1) || parent.equals(spinner2)) {
+            //These are the settings for the "from" spinners
+            if (spinner1.getSelectedItem().equals("Hamilton") && spinner2.getSelectedItem().equals("Ground Floor")) {
+                ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
+                        R.array.h_ground_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterG);
+            }
+            if (spinner1.getSelectedItem().equals("Hamilton") && spinner2.getSelectedItem().equals("First Floor")) {
+                ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
+                        R.array.h_first_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterF);
+            }
+            if (spinner1.getSelectedItem().equals("Hamilton") && spinner2.getSelectedItem().equals("Second Floor")) {
+                ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
+                        R.array.h_second_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterS);
+            }
+            if (spinner1.getSelectedItem().equals("Hamilton") && spinner2.getSelectedItem().equals("Third Floor")) {
+                ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
+                        R.array.h_third_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterT);
+            }
+            if (spinner1.getSelectedItem().equals("Johnson") && spinner2.getSelectedItem().equals("Ground Floor")) {
+                ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
+                        R.array.j_ground_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterG);
+            }
+            if (spinner1.getSelectedItem().equals("Johnson") && spinner2.getSelectedItem().equals("First Floor")) {
+                ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
+                        R.array.j_first_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterF);
+            }
+            if (spinner1.getSelectedItem().equals("Johnson") && spinner2.getSelectedItem().equals("Second Floor")) {
+                ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
+                        R.array.j_second_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterS);
+            }
+            if (spinner1.getSelectedItem().equals("Johnson") && spinner2.getSelectedItem().equals("Third Floor")) {
+                ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
+                        R.array.j_third_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterT);
+            }
+            if (spinner1.getSelectedItem().equals("Nicolls") && spinner2.getSelectedItem().equals("Ground Floor")) {
+                ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
+                        R.array.n_ground_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterG);
+            }
+            if (spinner1.getSelectedItem().equals("Nicolls") && spinner2.getSelectedItem().equals("First Floor")) {
+                ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
+                        R.array.n_first_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterF);
+            }
+            if (spinner1.getSelectedItem().equals("Nicolls") && spinner2.getSelectedItem().equals("Second Floor")) {
+                ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
+                        R.array.n_second_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterS);
+            }
+            if (spinner1.getSelectedItem().equals("Nicolls") && spinner2.getSelectedItem().equals("Third Floor")) {
+                ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
+                        R.array.n_third_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterT);
+            }
+            if (spinner1.getSelectedItem().equals("Other")) {
+                ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
+                        R.array.other_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner3.setAdapter(adapterT);
+            }
         }
 
-        //These are the settings for the "to" spinners
-        if (spinner4.getSelectedItem().equals("Hamilton") && spinner5.getSelectedItem().equals("Ground Floor")){
-            ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
-                    R.array.h_ground_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterG);
-        }
-        if (spinner4.getSelectedItem().equals("Hamilton") && spinner5.getSelectedItem().equals("First Floor")){
-            ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
-                    R.array.h_first_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterF);
-        }
-        if (spinner4.getSelectedItem().equals("Hamilton") && spinner5.getSelectedItem().equals("Second Floor")){
-            ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
-                    R.array.h_second_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterS);
-        }
-        if (spinner4.getSelectedItem().equals("Hamilton") && spinner5.getSelectedItem().equals("Third Floor")){
-            ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
-                    R.array.h_third_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterT);
-        }
-        if (spinner4.getSelectedItem().equals("Johnson") && spinner5.getSelectedItem().equals("Ground Floor")){
-            ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
-                    R.array.j_ground_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterG);
-        }
-        if (spinner4.getSelectedItem().equals("Johnson") && spinner5.getSelectedItem().equals("First Floor")){
-            ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
-                    R.array.j_first_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterF);
-        }
-        if (spinner4.getSelectedItem().equals("Johnson") && spinner5.getSelectedItem().equals("Second Floor")){
-            ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
-                    R.array.j_second_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterS);
-        }
-        if (spinner4.getSelectedItem().equals("Johnson") && spinner5.getSelectedItem().equals("Third Floor")){
-            ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
-                    R.array.j_third_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterT);
-        }
-        if (spinner4.getSelectedItem().equals("Nicolls") && spinner5.getSelectedItem().equals("Ground Floor")){
-            ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
-                    R.array.n_ground_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterG);
-        }
-        if (spinner4.getSelectedItem().equals("Nicolls") && spinner5.getSelectedItem().equals("First Floor")){
-            ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
-                    R.array.n_first_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterF);
-        }
-        if (spinner4.getSelectedItem().equals("Nicolls") && spinner5.getSelectedItem().equals("Second Floor")){
-            ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
-                    R.array.n_second_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterS);
-        }
-        if (spinner4.getSelectedItem().equals("Nicolls") && spinner5.getSelectedItem().equals("Third Floor")){
-            ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
-                    R.array.n_third_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterT);
-        }
-        if (spinner4.getSelectedItem().equals("Other")){
-            ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
-                    R.array.other_array, android.R.layout.simple_spinner_dropdown_item);
-            spinner6.setAdapter(adapterT);
+        if (parent.equals(spinner4) || parent.equals(spinner5)) {
+            //These are the settings for the "to" spinners
+            if (spinner4.getSelectedItem().equals("Hamilton") && spinner5.getSelectedItem().equals("Ground Floor")) {
+                ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
+                        R.array.h_ground_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterG);
+            }
+            if (spinner4.getSelectedItem().equals("Hamilton") && spinner5.getSelectedItem().equals("First Floor")) {
+                ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
+                        R.array.h_first_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterF);
+            }
+            if (spinner4.getSelectedItem().equals("Hamilton") && spinner5.getSelectedItem().equals("Second Floor")) {
+                ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
+                        R.array.h_second_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterS);
+            }
+            if (spinner4.getSelectedItem().equals("Hamilton") && spinner5.getSelectedItem().equals("Third Floor")) {
+                ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
+                        R.array.h_third_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterT);
+            }
+            if (spinner4.getSelectedItem().equals("Johnson") && spinner5.getSelectedItem().equals("Ground Floor")) {
+                ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
+                        R.array.j_ground_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterG);
+            }
+            if (spinner4.getSelectedItem().equals("Johnson") && spinner5.getSelectedItem().equals("First Floor")) {
+                ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
+                        R.array.j_first_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterF);
+            }
+            if (spinner4.getSelectedItem().equals("Johnson") && spinner5.getSelectedItem().equals("Second Floor")) {
+                ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
+                        R.array.j_second_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterS);
+            }
+            if (spinner4.getSelectedItem().equals("Johnson") && spinner5.getSelectedItem().equals("Third Floor")) {
+                ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
+                        R.array.j_third_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterT);
+            }
+            if (spinner4.getSelectedItem().equals("Nicolls") && spinner5.getSelectedItem().equals("Ground Floor")) {
+                ArrayAdapter adapterG = ArrayAdapter.createFromResource(this,
+                        R.array.n_ground_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterG);
+            }
+            if (spinner4.getSelectedItem().equals("Nicolls") && spinner5.getSelectedItem().equals("First Floor")) {
+                ArrayAdapter adapterF = ArrayAdapter.createFromResource(this,
+                        R.array.n_first_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterF);
+            }
+            if (spinner4.getSelectedItem().equals("Nicolls") && spinner5.getSelectedItem().equals("Second Floor")) {
+                ArrayAdapter adapterS = ArrayAdapter.createFromResource(this,
+                        R.array.n_second_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterS);
+            }
+            if (spinner4.getSelectedItem().equals("Nicolls") && spinner5.getSelectedItem().equals("Third Floor")) {
+                ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
+                        R.array.n_third_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterT);
+            }
+            if (spinner4.getSelectedItem().equals("Other")) {
+                ArrayAdapter adapterT = ArrayAdapter.createFromResource(this,
+                        R.array.other_array, android.R.layout.simple_spinner_dropdown_item);
+                spinner6.setAdapter(adapterT);
+            }
         }
 
     }
