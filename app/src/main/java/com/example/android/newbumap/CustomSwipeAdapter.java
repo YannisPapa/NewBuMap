@@ -868,8 +868,6 @@ public class CustomSwipeAdapter extends PagerAdapter{
         int fromRoom = Integer.valueOf(fRm);
         int toRoom = Integer.valueOf(tRm);
 
-        Log.d("checkpos", String.valueOf(pos));
-
         PathDraw paths = new PathDraw(F, S, pos, spinner1, spinner2, fromRoom, toRoom);
 
         //going from GF
@@ -936,7 +934,6 @@ public class CustomSwipeAdapter extends PagerAdapter{
     /*--------------------------------------------------------------------------------------------*/
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        Log.d("atInit", String.valueOf(position));
         layoutInflater = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View item_view = layoutInflater.inflate(R.layout.swipe_layout,container,false);
         TouchImageView imageView = (TouchImageView) item_view.findViewById(R.id.image_view);
