@@ -299,15 +299,43 @@ public class RoomDraw {
      * ------------------------- First floor Hamilton -------------------------
      **/
     public void FFH150() {
+        C.drawRect(
+                (float) 35 * pixel, //x
+                (float) 42 * pixel,  //y
+                (float) 43 * pixel, //width
+                (float) 45 * pixel, //height
+                P
+        );
     }
 
     public void FFH160() {
+        C.drawRect(
+                (float) 29 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 31 * pixel, //width
+                (float) 42.5 * pixel, //height
+                P
+        );
+    }
+    public void FFH161() {
+        C.drawRect(
+                (float) 31 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 33 * pixel, //width
+                (float) 42.5 * pixel, //height
+                P
+        );
     }
 
-    public void FFH161() {
-    }
 
     public void FFHBSC() {
+        C.drawRect(
+                (float) 13 * pixel, //x
+                (float) 40 * pixel,  //y
+                (float) 17.5 * pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     /**

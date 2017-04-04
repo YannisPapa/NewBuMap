@@ -1070,6 +1070,11 @@ public class CustomSwipeAdapter extends PagerAdapter{
         Rooms.BNB007();
         Rooms.BNB008();
         */
+
+        Rooms.FFH150();
+        Rooms.FFH160();
+        Rooms.FFH161();
+        Rooms.FFHBSC();
         // Display the newly created bitmap on app interface
         imageView.setImageBitmap(dstBitmap);
 
