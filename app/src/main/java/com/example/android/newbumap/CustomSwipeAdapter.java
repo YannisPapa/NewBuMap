@@ -1026,22 +1026,34 @@ public class CustomSwipeAdapter extends PagerAdapter{
         RoomDraw Rooms = new RoomDraw(paint,canvas,px);
 
         if(spinner3.equals("ITS")){
+            spinner1 = "Johnson";
+            spinner2 = "First Floor";
             spinner3 = "J-107";
         }
         if(spinner6.equals("ITS")){
+            spinner4 = "Johnson";
+            spinner5 = "First Floor";
             spinner6 = "J-107";
         }
         if(spinner3.equals("BWH")){
+            spinner1 = "Johnson";
+            spinner2 = "Second Floor";
             spinner3 = "J-200";
         }
         if(spinner6.equals("BWH")){
+            spinner4 = "Johnson";
+            spinner5 = "Second Floor";
             spinner6 = "J-200";
         }
         if(spinner3.equals("Bus Stop")){
-            spinner3 = "J-126";
+            spinner1 = "Hamilton";
+            spinner2 = "First Floor";
+            spinner3 = "H-126";
         }
         if(spinner6.equals("Bus Stop")){
-            spinner6 = "J-126";
+            spinner4 = "Hamilton";
+            spinner5 = "First Floor";
+            spinner6 = "H-126";
         }
 
         pathing(pDraw, stairs, position);

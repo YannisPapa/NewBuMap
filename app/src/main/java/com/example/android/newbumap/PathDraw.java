@@ -31,33 +31,42 @@ public class PathDraw {
     //----------------------------------------------------------------------------------------------
     public void johnsonGFtoNicollsGF() {
         if (position == 0) {
-            F.johnsonGroundMid();
             F.hamiltonGroundFloor();
-            F.nicollsGroundBottom();
-
             if(buildFrom.equals("Nicolls")) {
                 if (roomFrom == 4 || roomFrom == 5 || roomFrom == 7){
                     F.nicollsGroundTop();
+                    F.nicollsGroundBottom();
+                } else {
+                    F.nicollsGroundBottom();
                 }
             } else {
                 if (roomTo == 4 || roomTo == 5 || roomTo == 7){
                     F.nicollsGroundTop();
+                    F.nicollsGroundBottom();
+                } else {
+                    F.nicollsGroundBottom();
                 }
             }
 
             if (buildFrom.equals("Johnson")) {
                 if(roomFrom >= 18 && roomFrom < 26) {
                     F.johnsonGroundTop();
-                }
-                if(roomFrom < 5 || roomFrom == 11) {
+                    F.johnsonGroundMid();
+                } else if(roomFrom < 5 || roomFrom == 11) {
                     F.johnsonGroundBottom();
+                    F.johnsonGroundMid();
+                } else {
+                    F.johnsonGroundMid();
                 }
             } else {
-                if(roomFrom >= 18 && roomFrom < 26) {
+                if(roomTo >= 18 && roomTo < 26) {
                     F.johnsonGroundTop();
-                }
-                if(roomFrom < 5 || roomFrom == 11) {
+                    F.johnsonGroundMid();
+                } else if(roomTo < 5 || roomTo == 11) {
                     F.johnsonGroundBottom();
+                    F.johnsonGroundMid();
+                } else {
+                    F.johnsonGroundMid();
                 }
             }
 
