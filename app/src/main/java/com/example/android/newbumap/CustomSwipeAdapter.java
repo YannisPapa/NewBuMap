@@ -1056,8 +1056,8 @@ public class CustomSwipeAdapter extends PagerAdapter{
             spinner6 = "H-126";
         }
 
-        Rooms.roomSelected(spinner3,position);
-        Rooms.roomSelected(spinner6,position);
+        Rooms.roomSelected(spinner3, position);
+        Rooms.roomSelected(spinner6, position);
 
         pathing(pDraw, stairs, position);
 
