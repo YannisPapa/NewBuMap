@@ -3,10 +3,6 @@ package com.example.android.newbumap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 
-/**
- * Created by jessi on 2017-04-03.
- */
-
 public class RoomDraw {
     private Paint P;
     private Canvas C;
