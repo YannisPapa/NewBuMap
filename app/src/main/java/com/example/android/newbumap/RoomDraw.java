@@ -1298,4 +1298,11 @@ public class RoomDraw {
 
     public void TFJ329() {
     }
+
+    public void roomSelected(String roomToDraw){
+        if(roomToDraw.equals("J-001")){
+            this.BJB001();
+        }
+    }
+
 }
