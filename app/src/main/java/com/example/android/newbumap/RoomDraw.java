@@ -302,7 +302,7 @@ public class RoomDraw {
         C.drawRect(
                 (float) 35 * pixel, //x
                 (float) 42 * pixel,  //y
-                (float) 43 * pixel, //width
+                (float) 43.5 * pixel, //width
                 (float) 45 * pixel, //height
                 P
         );
@@ -311,7 +311,7 @@ public class RoomDraw {
     public void FFH160() {
         C.drawRect(
                 (float) 29 * pixel, //x
-                (float) 39 * pixel,  //y
+                (float) 39.5 * pixel,  //y
                 (float) 31 * pixel, //width
                 (float) 42.5 * pixel, //height
                 P
@@ -320,7 +320,7 @@ public class RoomDraw {
     public void FFH161() {
         C.drawRect(
                 (float) 31 * pixel, //x
-                (float) 39 * pixel,  //y
+                (float) 39.5 * pixel,  //y
                 (float) 33 * pixel, //width
                 (float) 42.5 * pixel, //height
                 P
@@ -342,112 +342,354 @@ public class RoomDraw {
      * ------------------------- First floor Nicolls -------------------------
      **/
     public void FFN101() {
+        C.drawRect(
+                (float) 10.8 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 13 * pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
+
     }
 
     public void FFN102() {
+        C.drawRect(
+                (float) 8.6 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 10.8 * pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
+
     }
 
     public void FFN103() {
+        C.drawRect(
+                (float) 6.5 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 8.6* pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
     }
 
     public void FFN104() {
+        C.drawRect(
+                (float) 4.5 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 6.5* pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
     }
 
     public void FFN105() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 48.5 * pixel,  //y
+                (float) 4.5* pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
     }
 
     public void FFN106() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 46.5 * pixel,  //y
+                (float) 3.6* pixel, //width
+                (float) 48.5 * pixel, //height
+                P
+        );
     }
 
     public void FFN107() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 3.6* pixel, //width
+                (float) 46.5 * pixel, //height
+                P
+        );
     }
 
     public void FFN108() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 42 * pixel,  //y
+                (float) 3.6* pixel, //width
+                (float) 44 * pixel, //height
+                P
+        );
     }
 
     public void FFN109() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 38.5 * pixel,  //y
+                (float) 7* pixel, //width
+                (float) 42 * pixel, //height
+                P
+        );
     }
 
     public void FFN110() {
+        C.drawRect(
+            (float) 1 * pixel, //x
+            (float) 33* pixel,  //y
+            (float) 7* pixel, //width
+            (float) 38.5* pixel, //height
+            P
+    );
     }
 
     public void FFN111() {
+        C.drawRect(
+            (float) 1 * pixel, //x
+            (float) 27 * pixel,  //y
+            (float) 7* pixel, //width
+            (float) 33 * pixel, //height
+            P
+    );
     }
 
     public void FFN112() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 22.9 * pixel,  //y
+                (float) 7* pixel, //width
+                (float) 27 * pixel, //height
+                P
+        );
     }
 
     public void FFN113() {
+        C.drawRect(
+            (float) 1 * pixel, //x
+            (float) 17 * pixel,  //y
+            (float) 7* pixel, //width
+            (float) 22.9 * pixel, //height
+            P
+    );
     }
 
     public void FFN114() {
+        C.drawRect(
+                (float) 8.9*pixel, //x
+                (float) 19.5* pixel,  //y
+                (float) 13* pixel, //width
+                (float) 26* pixel, //height
+                P
+        );
     }
 
     public void FFN115() {
-    }
-
+        C.drawRect(
+                (float) 8.9*pixel, //x
+                (float) 26* pixel,  //y
+                (float) 13* pixel, //width
+                (float) 33* pixel, //height
+                P
+        );}
+    public void FFN116() {
+        C.drawRect(
+                (float) 8.9*pixel, //x
+                (float) 33* pixel,  //y
+                (float) 13* pixel, //width
+                (float) 37.5* pixel, //height
+                P
+        );}
     /**
      * ------------------------- First floor Johnson -------------------------
      **/
 
     public void FFJ101() {
+        C.drawRect(
+                (float) 54.5 * pixel, //x
+                (float) 64 * pixel,  //y
+                (float) 59 * pixel, //width
+                (float) 71.9 * pixel, //height
+                P
+        );
     }
 
     public void FFJ102() {
+        C.drawRect(
+            (float) 45 * pixel, //x
+            (float) 64 * pixel,  //y
+            (float) 50 * pixel, //width
+            (float) 67.5 * pixel, //height
+            P
+    );
     }
 
     public void FFJ103() {
+        C.drawRect(
+                (float) 39.5 * pixel, //x
+                (float) 64 * pixel,  //y
+                (float) 45* pixel, //width
+                (float) 67.5 * pixel, //height
+                P
+        );
     }
 
     public void FFJ104a() {
+        C.drawRect(
+                (float) 50 * pixel, //x
+                (float) 69 * pixel,  //y
+                (float) 52.5* pixel, //width
+                (float) 71 * pixel, //height
+                P
+        );
     }
 
     public void FFJ104b() {
+        C.drawRect(
+                (float) 47.3 * pixel, //x
+                (float) 69 * pixel,  //y
+                (float) 50* pixel, //width
+                (float) 71 * pixel, //height
+                P
+        );
     }
 
-    public void FFJ104c() {
+    public void FFJ104c() {   C.drawRect(
+            (float) 44.5 * pixel, //x
+            (float) 69 * pixel,  //y
+            (float) 47.3* pixel, //width
+            (float) 71* pixel, //height
+            P
+    );
     }
 
     public void FFJ104d() {
+        C.drawRect(
+                (float) 41.9 * pixel, //x
+                (float) 69 * pixel,  //y
+                (float) 44.5* pixel, //width
+                (float) 71 * pixel, //height
+                P
+        );
     }
 
     public void FFJ104e() {
+        C.drawRect(
+                (float) 39.9 * pixel, //x
+                (float) 69 * pixel,  //y
+                (float) 42* pixel, //width
+                (float) 71* pixel, //height
+                P
+        );
     }
 
     public void FFJ105() {
+        C.drawRect(
+                (float) 52.5 * pixel, //x
+                (float) 60.5 * pixel,  //y
+                (float) 48.5* pixel, //width
+                (float) 64* pixel, //height
+                P
+        );
     }
 
     public void FFJITS() {
+        C.drawRect(
+                (float) 52.5* pixel, //x
+                (float) 52.6 * pixel,  //y
+                (float) 48.5* pixel, //width
+                (float) 60.5* pixel, //height
+                P
+        );
     }
 
     public void FFJ108() {
+        C.drawRect(
+                (float) 52.5 * pixel, //x
+                (float) 46 * pixel,  //y
+                (float) 48.5* pixel, //width
+                (float) 52.6* pixel, //height
+                P
+        );
     }
 
     public void FFJ113() {
-    }
-
-    public void FFJ114() {
+        C.drawRect(
+                (float) 54.5 * pixel, //x
+                (float) 40 * pixel,  //y
+                (float) 59* pixel, //width
+                (float) 45* pixel, //height
+                P
+        );
     }
 
     public void FFJ114a() {
+        C.drawRect(
+                (float) 54.5 * pixel, //x
+                (float) 46.5 * pixel,  //y
+                (float) 58.5* pixel, //width
+                (float) 48.5* pixel, //height
+                P
+        );
     }
 
     public void FFJ114b() {
+        C.drawRect(
+                (float) 54.5 * pixel, //x
+                (float) 48.5 * pixel,  //y
+                (float) 58.5* pixel, //width
+                (float) 50.5* pixel, //height
+                P
+        );
     }
 
     public void FFJ115() {
+        C.drawRect(
+                (float) 54.5 * pixel, //x
+                (float) 50.5 * pixel,  //y
+                (float) 58.5* pixel, //width
+                (float) 54.8* pixel, //height
+                P
+        );
     }
 
     public void FFJ116() {
+        C.drawRect(
+                (float) 54.5 * pixel, //x
+                (float) 58 * pixel,  //y
+                (float) 58.5* pixel, //width
+                (float) 60.5* pixel, //height
+                P
+        );
     }
 
     public void FFJ116a() {
+        C.drawRect(
+                (float) 54.5 * pixel, //x
+                (float) 54.8 * pixel,  //y
+                (float) 55.9* pixel, //width
+                (float) 57* pixel, //height
+                P
+        );
     }
 
     public void FFJ116b() {
+        C.drawRect(
+                (float) 54.5 * pixel, //x
+                (float) 60.5 * pixel,  //y
+                (float) 58.5* pixel, //width
+                (float) 64* pixel, //height
+                P
+        );
     }
 
     public void FFJ116c() {
+        C.drawRect(
+                (float) 55.9 * pixel, //x
+                (float) 54.8 * pixel,  //y
+                (float) 58.5* pixel, //width
+                (float) 58* pixel, //height
+                P
+        );
     }
 
     public void FFJ117() {
@@ -586,57 +828,174 @@ public class RoomDraw {
      * ------------------------- Second floor Nicolls-------------------------
      **/
     public void SFN201() {
+        C.drawRect(
+                (float) 10.8 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 13 * pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
+
     }
 
     public void SFN202() {
+        C.drawRect(
+                (float) 8.6 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 10.8 * pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
+
     }
 
     public void SFN203() {
+        C.drawRect(
+                (float) 6.5 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 8.6* pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
     }
 
     public void SFN204() {
+        C.drawRect(
+                (float) 4.5 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 6.5* pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
     }
 
     public void SFN205() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 48.5 * pixel,  //y
+                (float) 4.5* pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
     }
 
     public void SFN206() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 46.5 * pixel,  //y
+                (float) 3.6* pixel, //width
+                (float) 48.5 * pixel, //height
+                P
+        );
     }
 
     public void SFN207() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 3.6* pixel, //width
+                (float) 46.5 * pixel, //height
+                P
+        );
     }
 
     public void SFN208() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 42 * pixel,  //y
+                (float) 3.6* pixel, //width
+                (float) 44 * pixel, //height
+                P
+        );
     }
 
     public void SFN209() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 38.5 * pixel,  //y
+                (float) 7* pixel, //width
+                (float) 42 * pixel, //height
+                P
+        );
     }
 
     public void SFN210a() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 33* pixel,  //y
+                (float) 7* pixel, //width
+                (float) 38.5* pixel, //height
+                P
+        );
     }
 
     public void SFN210b() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 33* pixel,  //y
+                (float) 7* pixel, //width
+                (float) 38.5* pixel, //height
+                P
+        );
     }
 
     public void SFN211() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 27 * pixel,  //y
+                (float) 7* pixel, //width
+                (float) 33 * pixel, //height
+                P
+        );
     }
 
     public void SFN212() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 22.9 * pixel,  //y
+                (float) 7* pixel, //width
+                (float) 27 * pixel, //height
+                P
+        );
     }
 
     public void SFN213() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 17 * pixel,  //y
+                (float) 7* pixel, //width
+                (float) 22.9 * pixel, //height
+                P
+        );
     }
 
     public void SFN214() {
+        C.drawRect(
+                (float) 8.9*pixel, //x
+                (float) 19.5* pixel,  //y
+                (float) 13* pixel, //width
+                (float) 26* pixel, //height
+                P
+        );
     }
 
-    public void SFN215() {
+    public void SFN115() {
+        C.drawRect(
+                (float) 8.9*pixel, //x
+                (float) 26* pixel,  //y
+                (float) 13* pixel, //width
+                (float) 33* pixel, //height
+                P
+        );}
+    public void SFN116() {
+        C.drawRect(
+                (float) 8.9*pixel, //x
+                (float) 33* pixel,  //y
+                (float) 13* pixel, //width
+                (float) 37.5* pixel, //height
+                P
+        );
     }
-
-    public void SFN216() {
-    }
-
-
     /**
      * ------------------------- Second floor Johnson -------------------------
      **/
@@ -754,27 +1113,85 @@ public class RoomDraw {
      * ------------------------- Third floor Nicolls -------------------------
      **/
     public void TFN301() {
+        C.drawRect(
+                (float) 10.8 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 13 * pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
+
     }
 
     public void TFN302() {
+        C.drawRect(
+                (float) 8.6 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 10.8 * pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
+
     }
 
     public void TFN303() {
+        C.drawRect(
+                (float) 6.5 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 8.6* pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
     }
 
     public void TFN304() {
+        C.drawRect(
+                (float) 4.5 * pixel, //x
+                (float) 47.5 * pixel,  //y
+                (float) 6.5* pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
     }
 
     public void TFN305() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 48.5 * pixel,  //y
+                (float) 4.5* pixel, //width
+                (float) 51 * pixel, //height
+                P
+        );
     }
 
     public void TFN306() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 46.5 * pixel,  //y
+                (float) 3.6* pixel, //width
+                (float) 48.5 * pixel, //height
+                P
+        );
     }
 
     public void TFN307() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 3.6* pixel, //width
+                (float) 46.5 * pixel, //height
+                P
+        );
     }
 
     public void TFN308() {
+        C.drawRect(
+                (float) 1 * pixel, //x
+                (float) 42 * pixel,  //y
+                (float) 3.6* pixel, //width
+                (float) 44 * pixel, //height
+                P
+        );
     }
 
     public void TFN310() {

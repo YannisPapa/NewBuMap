@@ -1057,36 +1057,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         }
 
         pathing(pDraw, stairs, position);
-       /* Rooms.BJB001();
-        Rooms.BJB002();
-        Rooms.BJB004();
-        Rooms.BJB005a();
-        Rooms.BJB005();
-        Rooms.BJB009();
-        Rooms.BJB010();
-        Rooms.BJB011();
-        Rooms.BJB018();
-        Rooms.BJB019();
-        Rooms.BJB020();
-        Rooms.BJB023();
-        Rooms.BJB024();
-        Rooms.BJB026a();
-        Rooms.BJB026b();
-        Rooms.BJB026c();
-        Rooms.BHB003();
-        Rooms.BNB001();
-        Rooms.BNB002();
-        Rooms.BNB003();
-        Rooms.BNB004();
-        Rooms.BNB005();
-        Rooms.BNB007();
-        Rooms.BNB008();
-        */
 
-        Rooms.FFH150();
-        Rooms.FFH160();
-        Rooms.FFH161();
-        Rooms.FFHBSC();
         // Display the newly created bitmap on app interface
         imageView.setImageBitmap(dstBitmap);
 
