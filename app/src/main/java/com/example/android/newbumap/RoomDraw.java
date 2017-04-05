@@ -882,72 +882,233 @@ public class RoomDraw {
      * ------------------------- Second floor Hamilton -------------------------
      **/
     public void SFH200() {
+        C.drawRect(
+                (float) 13 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 16* pixel, //width
+                (float) 46 * pixel, //height
+                P
+        );
     }
 
     public void SFH201() {
+        C.drawRect(
+                (float) 16 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 18* pixel, //width
+                (float) 47 * pixel, //height
+                P
+        );
     }
 
     public void SFH201b() {
+        C.drawRect(
+                (float) 18 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 19.5* pixel, //width
+                (float) 47 * pixel, //height
+                P
+        );
     }
 
     public void SFH202() {
+        C.drawRect(
+                (float) 19.5 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 23* pixel, //width
+                (float) 47 * pixel, //height
+                P
+        );
     }
 
     public void SFH203() {
+        C.drawRect(
+                (float) 23 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 26.5* pixel, //width
+                (float) 47 * pixel, //height
+                P
+        );
     }
 
     public void SFH204() {
+        C.drawRect(
+                (float) 26.5 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 30.5* pixel, //width
+                (float) 47 * pixel, //height
+                P
+        );
     }
 
     public void SFH205a() {
+        C.drawRect(
+                (float) 30.5 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 32.5* pixel, //width
+                (float) 47 * pixel, //height
+                P
+        );
     }
 
     public void SFH205b() {
+        C.drawRect(
+                (float) 32.5 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 33.5* pixel, //width
+                (float) 47 * pixel, //height
+                P
+        );
     }
 
     public void SFH206() {
+        C.drawRect(
+                (float) 33.5 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 37* pixel, //width
+                (float) 47 * pixel, //height
+                P
+        );
     }
 
     public void SFH207() {
+        C.drawRect(
+                (float) 37 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 40.5* pixel, //width
+                (float) 47 * pixel, //height
+                P
+        );
     }
 
     public void SFH208() {
+        C.drawRect(
+                (float) 40.5 * pixel, //x
+                (float) 44 * pixel,  //y
+                (float) 43.5* pixel, //width
+                (float) 47 * pixel, //height
+                P
+        );
     }
 
     public void SFH209() {
+        C.drawRect(
+                (float) 16* pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 18.5* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     public void SFH210() {
+        C.drawRect(
+                (float) 18.5 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 20.5* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     public void SFH211() {
+        C.drawRect(
+                (float) 20.5 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 23* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     public void SFH212a() {
+        C.drawRect(
+                (float) 23 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 24.3* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     public void SFH212() {
+        C.drawRect(
+                (float) 24.3 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 26.5* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     public void SFH213() {
+        C.drawRect(
+                (float) 26.5 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 30.3* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     public void SFH214() {
+        C.drawRect(
+                (float) 30.3 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 32.5* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     public void SFH215() {
+        C.drawRect(
+                (float) 32.5 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 34.5* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     public void SFH216() {
+        C.drawRect(
+                (float) 34.5 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 37* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     public void SFH217() {
+        C.drawRect(
+                (float) 37 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 39* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     public void SFH218() {
+        C.drawRect(
+                (float) 39 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 42* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     public void SFH219() {
+        C.drawRect(
+                (float) 42 * pixel, //x
+                (float) 39 * pixel,  //y
+                (float) 44* pixel, //width
+                (float) 43 * pixel, //height
+                P
+        );
     }
 
     /**
