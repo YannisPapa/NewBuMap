@@ -1947,4 +1947,1028 @@ public class RoomDraw {
                 P
         );
     }
+    public void roomSelected(String roomToDraw, int position){
+        if(roomToDraw.equals("J-001")){
+            if(position == 0) {
+                this.BJB001();
+            }
+        }
+        if(roomToDraw.equals("J-002")){
+            if(position == 0){
+                this.BJB002();
+            }
+        }
+        if(roomToDraw.equals("J-004")){
+            if(position == 0){
+                this.BJB004();
+            }
+        }
+        if(roomToDraw.equals("J-004a")){
+            if(position == 0){
+                this.BJB004();
+            }
+        }
+        if(roomToDraw.equals("J-005")){
+            if(position == 0){
+                this.BJB005();
+            }
+        }
+        if(roomToDraw.equals("J-005a")){
+            if(position == 0){
+                this.BJB005a();
+            }
+        }
+        if(roomToDraw.equals("J-009")){
+            if(position == 0){
+                this.BJB009();
+            }
+        }
+        if(roomToDraw.equals("J-010")){
+            if(position == 0){
+                this.BJB010();
+            }
+        }
+        if(roomToDraw.equals("J-011b")){
+            if(position == 0){
+                this.BJB011();
+            }
+        }
+        if(roomToDraw.equals("J-018")){
+            if(position == 0){
+                this.BJB018();
+            }
+        }
+        if(roomToDraw.equals("J-019")){
+            if(position == 0){
+                this.BJB019();
+            }
+        }
+        if(roomToDraw.equals("J-020")){
+            if(position == 0){
+                this.BJB020();
+            }
+        }
+        if(roomToDraw.equals("J-023")){
+            if(position == 0){
+                this.BJB023();
+            }
+        }
+        if(roomToDraw.equals("J-024")){
+            if(position == 0){
+                this.BJB024();
+            }
+        }
+        if(roomToDraw.equals("J-026a")){
+            if(position == 0){
+                this.BJB026a();
+            }
+        }
+        if(roomToDraw.equals("J-026b")){
+            if(position == 0){
+                this.BJB026b();
+            }
+        }
+        if(roomToDraw.equals("J-026c")){
+            if(position == 0){
+                this.BJB026c();
+            }
+        }
+        if(roomToDraw.equals("H-003")){
+            if(position == 0){
+                this.BHB003();
+            }
+        }
+        if(roomToDraw.equals("N-001")){
+            if(position == 0){
+                this.BNB001();
+            }
+        }
+        if(roomToDraw.equals("N-002")){
+            if(position == 0){
+                this.BNB002();
+            }
+        }
+        if(roomToDraw.equals("N-003")){
+            if(position == 0){
+                this.BNB003();
+            }
+        }
+        if(roomToDraw.equals("N-004")){
+            if(position == 0){
+                this.BNB004();
+            }
+        }
+        if(roomToDraw.equals("N-005")){
+            if(position == 0){
+                this.BNB005();
+            }
+        }
+        if(roomToDraw.equals("N-007")){
+            if(position == 0){
+                this.BNB007();
+            }
+        }
+        if(roomToDraw.equals("N-008")){
+            if(position == 0){
+                this.BNB008();
+            }
+        }
+        if(roomToDraw.equals("J-101")){
+            if(position == 1){
+                this.FFJ101();
+            }
+        }
+        if(roomToDraw.equals("J-102")){
+            if(position == 1){
+                this.FFJ102();
+            }
+        }
+        if(roomToDraw.equals("J-103")){
+            if(position == 1){
+                this.FFJ103();
+            }
+        }
+        if(roomToDraw.equals("J-104a")){
+            if(position == 1){
+                this.FFJ104a();
+            }
+        }
+        if(roomToDraw.equals("J-104b")){
+            if(position == 1){
+                this.FFJ104b();
+            }
+        }
+        if(roomToDraw.equals("J-104c")){
+            if(position == 1){
+                this.FFJ104c();
+            }
+        }
+        if(roomToDraw.equals("J-104d")){
+            if(position == 1){
+                this.FFJ104d();
+            }
+        }
+        if(roomToDraw.equals("J-104e")){
+            if(position == 1){
+                this.FFJ104e();
+            }
+        }
+        if(roomToDraw.equals("J-105")){
+            if(position == 1){
+                this.FFJ105();
+            }
+        }
+        if(roomToDraw.equals("J-107")){
+            if(position == 1){
+                this.FFJITS();
+            }
+        }
+        if(roomToDraw.equals("J-108")){
+            if(position == 1){
+                this.FFJ108();
+            }
+        }
+        if(roomToDraw.equals("J-113")){
+            if(position == 1){
+                this.FFJ113();
+            }
+        }
+        if(roomToDraw.equals("J-114a")){
+            if(position == 1){
+                this.FFJ114a();
+            }
+        }
+        if(roomToDraw.equals("J-114")){
+            if(position == 1){
+                this.FFJ114b();
+            }
+        }
+        if(roomToDraw.equals("J-116")){
+            if(position == 1){
+                this.FFJ116();
+            }
+        }
+        if(roomToDraw.equals("J-116a")){
+            if(position == 1){
+                this.FFJ116a();
+            }
+        }
+        if(roomToDraw.equals("J-116b")){
+            if(position == 1){
+                this.FFJ116b();
+            }
+        }
+        if(roomToDraw.equals("J-116c")){
+            if(position == 1){
+                this.FFJ116c();
+            }
+        }
+        if(roomToDraw.equals("J-117a")){
+            if(position == 1){
+                this.FFJ117a();
+            }
+        }
+        if(roomToDraw.equals("J-117b")){
+            if(position == 1){
+                this.FFJ117b();
+            }
+        }
+        if(roomToDraw.equals("J-117d")){
+            if(position == 1){
+                this.FFJ117d();
+            }
+        }
+        if(roomToDraw.equals("J-118")){
+            if(position == 1){
+                this.FFJ118();
+            }
+        }
+        if(roomToDraw.equals("J-119")){
+            if(position == 1){
+                this.FFJ119();
+            }
+        }
+        if(roomToDraw.equals("J-120")){
+            if(position == 1){
+                this.FFJ120();
+            }
+        }
+        if(roomToDraw.equals("J-121")){
+            if(position == 1){
+                this.FFJ121();
+            }
+        }
+        if(roomToDraw.equals("J-122")){
+            if(position == 1){
+                this.FFJ122();
+            }
+        }
+        if(roomToDraw.equals("J-123")){
+            if(position == 1){
+                this.FFJ123();
+            }
+        }
+        if(roomToDraw.equals("J-124")){
+            if(position == 1){
+                this.FFJ124();
+            }
+        }
+        if(roomToDraw.equals("J-125")){
+            if(position == 1){
+                this.FFJ125();
+            }
+        }
+        if(roomToDraw.equals("J-126")){
+            if(position == 1){
+                this.FFJ126();
+            }
+        }
+        if(roomToDraw.equals("J-127")){
+            if(position == 1){
+                this.FFJ127();
+            }
+        }
+        if(roomToDraw.equals("J-128")){
+            if(position == 1){
+                this.FFJ128();
+            }
+        }
+        if(roomToDraw.equals("J-150")){
+            if(position == 1){
+                this.FFJ150();
+            }
+        }
+        if(roomToDraw.equals("J-151")){
+            if(position == 1){
+                this.FFJ151();
+            }
+        }
+        if(roomToDraw.equals("J-152")){
+            if(position == 1){
+                this.FFJ152();
+            }
+        }
+        if(roomToDraw.equals("J-153")){
+            if(position == 1){
+                this.FFJ153();
+            }
+        }
+        if(roomToDraw.equals("J-154")){
+            if(position == 1){
+                this.FFJ154();
+            }
+        }
+        if(roomToDraw.equals("H-150")){
+            if(position == 1){
+                this.FFH150();
+            }
+        }
+        if(roomToDraw.equals("H-160")){
+            if(position == 1){
+                this.FFH160();
+            }
+        }
+        if(roomToDraw.equals("H-161")){
+            if(position == 1){
+                this.FFH161();
+            }
+        }
+        if(roomToDraw.equals("H-126")){
+            if(position == 1){
+                this.FFHBSC();
+            }
+        }
+        if(roomToDraw.equals("N-101")){
+            if(position == 1){
+                this.FFN101();
+            }
+        }
+        if(roomToDraw.equals("N-102")){
+            if(position == 1){
+                this.FFN102();
+            }
+        }
+        if(roomToDraw.equals("N-103")){
+            if(position == 1){
+                this.FFN103();
+            }
+        }
+        if(roomToDraw.equals("N-104")){
+            if(position == 1){
+                this.FFN104();
+            }
+        }
+        if(roomToDraw.equals("N-105")){
+            if(position == 1){
+                this.FFN105();
+            }
+        }
+        if(roomToDraw.equals("N-106")){
+            if(position == 1){
+                this.FFN106();
+            }
+        }
+        if(roomToDraw.equals("N-107")){
+            if(position == 1){
+                this.FFN107();
+            }
+        }
+        if(roomToDraw.equals("N-108")){
+            if(position == 1){
+                this.FFN108();
+            }
+        }
+        if(roomToDraw.equals("N-109")){
+            if(position == 1){
+                this.FFN109();
+            }
+        }
+        if(roomToDraw.equals("N-110")){
+            if(position == 1){
+                this.FFN110();
+            }
+        }
+        if(roomToDraw.equals("N-111")){
+            if(position == 1){
+                this.FFN111();
+            }
+        }
+        if(roomToDraw.equals("N-112")){
+            if(position == 1){
+                this.FFN112();
+            }
+        }
+        if(roomToDraw.equals("N-113")){
+            if(position == 1){
+                this.FFN113();
+            }
+        }
+        if(roomToDraw.equals("N-114")){
+            if(position == 1){
+                this.FFN114();
+            }
+        }
+        if(roomToDraw.equals("N-115")){
+            if(position == 1){
+                this.FFN115();
+            }
+        }
+        if(roomToDraw.equals("N-116")){
+            if(position == 1){
+                this.FFN116();
+            }
+        }
+        if(roomToDraw.equals("N-201")){
+            if(position == 2){
+                this.SFN201();
+            }
+        }
+        if(roomToDraw.equals("N-202")){
+            if(position == 2){
+                this.SFN202();
+            }
+        }
+        if(roomToDraw.equals("N-203")){
+            if(position == 2){
+                this.SFN203();
+            }
+        }
+        if(roomToDraw.equals("N-204")){
+            if(position == 2){
+                this.SFN204();
+            }
+        }
+        if(roomToDraw.equals("N-205")){
+            if(position == 2){
+                this.SFN205();
+            }
+        }
+        if(roomToDraw.equals("N-206")){
+            if(position == 2){
+                this.SFN206();
+            }
+        }
+        if(roomToDraw.equals("N-207")){
+            if(position == 2){
+                this.SFN207();
+            }
+        }
+        if(roomToDraw.equals("N-208")){
+            if(position == 2){
+                this.SFN208();
+            }
+        }
+        if(roomToDraw.equals("N-209")){
+            if(position == 2){
+                this.SFN209();
+            }
+        }
+        if(roomToDraw.equals("N-210a")){
+            if(position == 2){
+                this.SFN210a();
+            }
+        }
+        if(roomToDraw.equals("N-210b")){
+            if(position == 2){
+                this.SFN210b();
+            }
+        }
+        if(roomToDraw.equals("N-211")){
+            if(position == 2){
+                this.SFN211();
+            }
+        }
+        if(roomToDraw.equals("N-212")){
+            if(position == 2){
+                this.SFN212();
+            }
+        }
+        if(roomToDraw.equals("N-213")){
+            if(position == 2){
+                this.SFN213();
+            }
+        }
+        if(roomToDraw.equals("N-214")){
+            if(position == 2){
+                this.SFN214();
+            }
+        }
+        if(roomToDraw.equals("N-215")){
+            if(position == 2){
+                this.SFN215();
+            }
+        }
+        if(roomToDraw.equals("N-216")){
+            if(position == 2){
+                this.SFN216();
+            }
+        }
+        if(roomToDraw.equals("H-200")){
+            if(position == 2){
+                this.SFH200();
+            }
+        }
+        if(roomToDraw.equals("H-201")){
+            if(position == 2){
+                this.SFH201();
+            }
+        }
+        if(roomToDraw.equals("H-201b")){
+            if(position == 2){
+                this.SFH201b();
+            }
+        }
+        if(roomToDraw.equals("H-202")){
+            if(position == 2){
+                this.SFH202();
+            }
+        }
+        if(roomToDraw.equals("H-203")){
+            if(position == 2){
+                this.SFH203();
+            }
+        }
+        if(roomToDraw.equals("H-204")){
+            if(position == 2){
+                this.SFH204();
+            }
+        }
+        if(roomToDraw.equals("H-205a")){
+            if(position == 2){
+                this.SFH205a();
+            }
+        }
+        if(roomToDraw.equals("H-205b")){
+            if(position == 2){
+                this.SFH205b();
+            }
+        }
+        if(roomToDraw.equals("H-206")){
+            if(position == 2){
+                this.SFH206();
+            }
+        }
+        if(roomToDraw.equals("H-207")){
+            if(position == 2){
+                this.SFH207();
+            }
+        }
+        if(roomToDraw.equals("H-208")){
+            if(position == 2){
+                this.SFH208();
+            }
+        }
+        if(roomToDraw.equals("H-209")){
+            if(position == 2){
+                this.SFH209();
+            }
+        }
+        if(roomToDraw.equals("H-210")){
+            if(position == 2){
+                this.SFH210();
+            }
+        }
+        if(roomToDraw.equals("H-211")){
+            if(position == 2){
+                this.SFH211();
+            }
+        }
+        if(roomToDraw.equals("H-212")){
+            if(position == 2){
+                this.SFH212();
+            }
+        }
+        if(roomToDraw.equals("H-212a")){
+            if(position == 2){
+                this.SFH212a();
+            }
+        }
+        if(roomToDraw.equals("H-213")){
+            if(position == 2){
+                this.SFH213();
+            }
+        }
+        if(roomToDraw.equals("H-214")){
+            if(position == 2){
+                this.SFH214();
+            }
+        }
+        if(roomToDraw.equals("H-215")){
+            if(position == 2){
+                this.SFH215();
+            }
+        }
+        if(roomToDraw.equals("H-216")){
+            if(position == 2){
+                this.SFH216();
+            }
+        }
+        if(roomToDraw.equals("H-217")){
+            if(position == 2){
+                this.SFH217();
+            }
+        }
+        if(roomToDraw.equals("H-218")){
+            if(position == 2){
+                this.SFH218();
+            }
+        }
+        if(roomToDraw.equals("H-219")){
+            if(position == 2){
+                this.SFH219();
+            }
+        }
+
+        if(roomToDraw.equals("J-201")){
+            if(position == 2) {
+                SFJ201();
+            }
+        }
+        if(roomToDraw.equals("J-202")){
+            if(position == 2) {
+                SFJ202();
+            }
+        }
+        if(roomToDraw.equals("J-203b")){
+            if(position == 2) {
+                SFJ203b();
+            }
+        }
+        if(roomToDraw.equals("J-203a")){
+            if(position == 2) {
+                SFJ203a();
+            }
+        }
+        if(roomToDraw.equals("J-203")){
+            if(position == 2) {
+                SFJ203();
+            }
+        }
+        if(roomToDraw.equals("J-204")){
+            if(position == 2) {
+                SFJ204();
+            }
+        }
+        if(roomToDraw.equals("J-205")){
+            if(position == 2) {
+                SFJ205();
+            }
+        }
+        if(roomToDraw.equals("J-206")){
+            if(position == 2) {
+                SFJ206();
+            }
+        }
+        if(roomToDraw.equals("J-207a")){
+            if(position == 2) {
+                SFJ207a();
+            }
+        }
+        if(roomToDraw.equals("J-207")){
+            if(position == 2) {
+                SFJ207();
+            }
+        }
+        if(roomToDraw.equals("J-208")){
+            if(position == 2) {
+                SFJ208();
+            }
+        }
+        if(roomToDraw.equals("J-209")){
+            if(position == 2) {
+                SFJ209();
+            }
+        }
+        if(roomToDraw.equals("J-210")){
+            if(position == 2) {
+                SFJ210();
+            }
+        }
+        if(roomToDraw.equals("J-211")){
+            if(position == 2) {
+                SFJ211();
+            }
+        }
+
+        if(roomToDraw.equals("J-212")){
+            if(position == 2) {
+                SFJ212();
+            }
+        }
+        if(roomToDraw.equals("J-214")){
+            if(position == 2) {
+                SFJ214();
+            }
+        }
+        if(roomToDraw.equals("J-214a")){
+            if(position == 2) {
+                SFJ214a();
+            }
+        }
+
+        if(roomToDraw.equals("J-215a")){
+            if(position == 2) {
+                SFJ215a();
+            }
+        }
+        if(roomToDraw.equals("J-215")){
+            if(position == 2) {
+                SFJ215();
+            }
+        }
+        if(roomToDraw.equals("J-216")){
+            if(position == 2) {
+                SFJ216();
+            }
+        }
+        if(roomToDraw.equals("J-217")){
+            if(position == 2) {
+                SFJ217();
+            }
+        }
+        if(roomToDraw.equals("J-218")){
+            if(position == 2) {
+                SFJ218();
+            }
+        }
+        if(roomToDraw.equals("J-219")){
+            if(position == 2) {
+                SFJ219();
+            }
+        }
+        if(roomToDraw.equals("J-220")){
+            if(position == 2) {
+                SFJ220();
+            }
+        }
+        if(roomToDraw.equals("J-200")){
+            if(position == 2) {
+                SFJBWH();
+            }
+        }
+        if(roomToDraw.equals("J-221")){
+            if(position == 2) {
+                SFJ221();
+            }
+        }
+        if(roomToDraw.equals("J-230")){
+            if(position == 2) {
+                SFJ230();
+            }
+        }
+        if(roomToDraw.equals("J-232")){
+            if(position == 2) {
+                SFJ232();
+            }
+        }
+        if(roomToDraw.equals("J-232b")){
+            if(position == 2) {
+                SFJ232b();
+            }
+        }
+        if(roomToDraw.equals("J-232a")){
+            if(position == 2) {
+                SFJ232a();
+            }
+        }
+
+
+
+
+        if(roomToDraw.equals("J-301")){
+            if(position == 3) {
+                TFJ301();
+            }
+        }
+        if(roomToDraw.equals("J-302")){
+            if(position == 3) {
+                TFJ302();
+            }
+        }
+        if(roomToDraw.equals("J-302a")){
+            if(position == 3) {
+                TFJ302a();
+            }
+        }
+        if(roomToDraw.equals("J-303")){
+            if(position == 3) {
+                TFJ303();
+            }
+        }
+        if(roomToDraw.equals("J-305")){
+            if(position == 3) {
+                TFJ305();
+            }
+        }
+        if(roomToDraw.equals("J-306")){
+            if(position == 3) {
+                TFJ306();
+            }
+        }
+        if(roomToDraw.equals("J-308")){
+            if(position == 3) {
+                TFJ308();
+            }
+        }
+        if(roomToDraw.equals("J-309")){
+            if(position == 3) {
+                TFJ309();
+            }
+        }
+        if(roomToDraw.equals("J-310")){
+            if(position == 3) {
+                TFJ310();
+            }
+        }
+        if(roomToDraw.equals("J-310a")){
+            if(position == 3) {
+                TFJ310a();
+            }
+        }
+        if(roomToDraw.equals("J-313")){
+            if(position == 3) {
+                TFJ313();
+            }
+        }
+        if(roomToDraw.equals("J-314")){
+            if(position == 3) {
+                TFJ314();
+            }
+        }
+        if(roomToDraw.equals("J-315")){
+            if(position == 3) {
+                TFJ315();
+            }
+        }
+        if(roomToDraw.equals("J-316")){
+            if(position == 3) {
+                TFJ316();
+            }
+        }
+        if(roomToDraw.equals("J-317")){
+            if(position == 3) {
+                TFJ317();
+            }
+        }
+        if(roomToDraw.equals("J-318")){
+            if(position == 3) {
+                TFJ318();
+            }
+        }
+        if(roomToDraw.equals("J-320")){
+            if(position == 3) {
+                TFJ320();
+            }
+        }
+        if(roomToDraw.equals("J-321")){
+            if(position == 3) {
+                TFJ321();
+            }
+        }
+        if(roomToDraw.equals("J-322")){
+            if(position == 3) {
+                TFJ322();
+            }
+        }
+        if(roomToDraw.equals("J-323")){
+            if(position == 3) {
+                TFJ323();
+            }
+        }
+        if(roomToDraw.equals("J-324")){
+            if(position == 3) {
+                TFJ324();
+            }
+        }
+        if(roomToDraw.equals("J-325")){
+            if(position == 3) {
+                TFJ325();
+            }
+        }
+        if(roomToDraw.equals("J-326")){
+            if(position == 3) {
+                TFJ326();
+            }
+        }
+        if(roomToDraw.equals("J-327")){
+            if(position == 3) {
+                TFJ327();
+            }
+        }
+        if(roomToDraw.equals("J-328")){
+            if(position == 3) {
+                TFJ328();
+            }
+        }
+        if(roomToDraw.equals("J-329")){
+            if(position == 3) {
+                TFJ329();
+            }
+        }
+        if(roomToDraw.equals("H-300")){
+            if(position == 3) {
+                TFH300();
+            }
+        }
+        if(roomToDraw.equals("H-301")){
+            if(position == 3) {
+                TFH301();
+            }
+        }
+        if(roomToDraw.equals("H-302")){
+            if(position == 3) {
+                TFH302();
+            }
+        }
+        if(roomToDraw.equals("H-303")){
+            if(position == 3) {
+                TFH303();
+            }
+        }
+        if(roomToDraw.equals("H-304")){
+            if(position == 3) {
+                TFH304();
+            }
+        }
+        if(roomToDraw.equals("H-305")){
+            if(position == 3) {
+                TFH305();
+            }
+        }
+        if(roomToDraw.equals("H-310")){
+            if(position == 3) {
+                TFH310();
+            }
+        }
+        if(roomToDraw.equals("H-310a")){
+            if(position == 3) {
+                TFH310a();
+            }
+        }
+        if(roomToDraw.equals("N-301")){
+            if(position == 3) {
+                TFN301();
+            }
+        }
+        if(roomToDraw.equals("N-302")){
+            if(position == 3) {
+                TFN302();
+            }
+        }
+        if(roomToDraw.equals("N-303")){
+            if(position == 3) {
+                TFN303();
+            }
+        }
+        if(roomToDraw.equals("N-304")){
+            if(position == 3) {
+                TFN304();
+            }
+        }
+        if(roomToDraw.equals("N-305")){
+            if(position == 3) {
+                TFN305();
+            }
+        }
+        if(roomToDraw.equals("N-306")){
+            if(position == 3) {
+                TFN306();
+            }
+        }
+        if(roomToDraw.equals("N-307")){
+            if(position == 3) {
+                TFN307();
+            }
+        }
+        if(roomToDraw.equals("N-308")){
+            if(position == 3) {
+                TFN308();
+            }
+        }
+        if(roomToDraw.equals("N-310")){
+            if(position == 3) {
+                TFN310();
+            }
+        }
+        if(roomToDraw.equals("N-311a")){
+            if(position == 3) {
+                TFN311a();
+            }
+        }
+        if(roomToDraw.equals("N-311b")){
+            if(position == 3) {
+                TFN311b();
+            }
+        }
+        if(roomToDraw.equals("N-312")){
+            if(position == 3) {
+                TFN312();
+            }
+        }
+        if(roomToDraw.equals("N-314")){
+            if(position == 3) {
+                TFN314();
+            }
+        }
+        if(roomToDraw.equals("N-315")){
+            if(position == 3) {
+                TFN315();
+            }
+        }
+        if(roomToDraw.equals("N-315b")){
+            if(position == 3) {
+                TFN315b();
+            }
+        }
+        if(roomToDraw.equals("N-315a")){
+            if(position == 3) {
+                TFN315a();
+            }
+        }
+        if(roomToDraw.equals("N-316")){
+            if(position == 3) {
+                TFN316();
+            }
+        }
+    }
 }
