@@ -1057,6 +1057,62 @@ public class CustomSwipeAdapter extends PagerAdapter{
         }
 
         pathing(pDraw, stairs, position);
+        Rooms.TFJ301();
+        Rooms.TFJ302();
+        Rooms.TFJ302a();
+        Rooms.TFJ303();
+        Rooms.TFJ305();
+        Rooms.TFJ306();
+        Rooms.TFJ308();
+        Rooms.TFJ309();
+        Rooms.TFJ310();
+        Rooms.TFJ310a();
+        Rooms.TFJ313();
+        Rooms.TFJ314();
+        Rooms.TFJ315();
+        Rooms.TFJ316();
+        Rooms.TFJ317();
+        Rooms.TFJ318();
+        Rooms.TFJ320();
+        Rooms.TFJ321();
+        Rooms.TFJ322();
+        Rooms.TFJ323();
+        Rooms.TFJ324();
+        Rooms.TFJ325();
+        Rooms.TFJ326();
+        Rooms.TFJ327();
+        Rooms.TFJ328();
+        Rooms.TFJ329();
+        Rooms.TFN301();
+        Rooms.TFN302();
+        Rooms.TFN303();
+        Rooms.TFN304();
+        Rooms.TFN305();
+        Rooms.TFN306();
+        Rooms.TFN307();
+        Rooms.TFN308();
+        Rooms.TFN310();
+        Rooms.TFN311a();
+        Rooms.TFN311b();
+        Rooms.TFN312();
+        Rooms.TFN314();
+        Rooms.TFN315();
+        Rooms.TFN315b();
+        Rooms.TFN315a();
+        Rooms.TFN316();
+        Rooms.TFH300();
+        Rooms.TFH301();
+        Rooms.TFH302();
+        Rooms.TFH303();
+        Rooms.TFH304();
+        Rooms.TFH305();
+        Rooms.TFH310();
+        Rooms.TFH310a();
+
+
+
+
+
 
         // Display the newly created bitmap on app interface
         imageView.setImageBitmap(dstBitmap);
