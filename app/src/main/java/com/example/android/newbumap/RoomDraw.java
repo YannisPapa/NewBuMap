@@ -1319,10 +1319,6 @@ public class RoomDraw {
                 this.BJB001();
             }
         }
-            if(position == 0){
-                this.BJB001();
-            }
-        }
         if(roomToDraw.equals("J-002")){
             if(position == 0){
                 this.BJB002();
@@ -1928,7 +1924,6 @@ public class RoomDraw {
                 this.SFH219();
             }
         }
-    }
 
         if(roomToDraw.equals("J-201")){
             if(position == 2) {
