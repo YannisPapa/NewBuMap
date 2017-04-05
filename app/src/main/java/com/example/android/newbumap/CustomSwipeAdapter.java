@@ -1056,8 +1056,13 @@ public class CustomSwipeAdapter extends PagerAdapter{
             spinner6 = "H-126";
         }
 
+
         rooms.roomSelected(spinner3, position);
+        paint.setColor(Color.GREEN);
+        rooms.changePaint(paint);
         rooms.roomSelected(spinner6, position);
+        paint.setColor(Color.RED);
+        rooms.changePaint(paint);
 
         pathing(pDraw, stairs, position);
 
