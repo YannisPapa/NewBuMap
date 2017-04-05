@@ -1025,9 +1025,6 @@ public class CustomSwipeAdapter extends PagerAdapter{
         StairwellDraw stairs = new StairwellDraw (paint, canvas, px);
         RoomDraw Rooms = new RoomDraw(paint,canvas,px);
 
-        Rooms.roomSelected(spinner3);
-        Rooms.roomSelected(spinner6);
-
         if(spinner3.equals("ITS")){
             spinner1 = "Johnson";
             spinner2 = "First Floor";
@@ -1058,6 +1055,9 @@ public class CustomSwipeAdapter extends PagerAdapter{
             spinner5 = "First Floor";
             spinner6 = "H-126";
         }
+
+        Rooms.roomSelected(spinner3,position);
+        Rooms.roomSelected(spinner6,position);
 
         pathing(pDraw, stairs, position);
 
