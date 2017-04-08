@@ -18,10 +18,10 @@ public class StairwellDraw {
         P = p;
     }
 
-    /** ------------------------- Basement ------------------------- **/
+    //-------------------------- Ground Floor ------------------------------------------------------
 
     //Stairwell at Basement, Nicolls, Top
-    public void BNT() {
+    public void nGroundTop() {
         C.drawCircle( //N Top
                 (float)13.5*pixel, //x val
                 (float)19.1*pixel, //y val
@@ -31,7 +31,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Basement, Nicolls, Bottom
-    public void BNB() {
+    public void nGroundBottom() {
         C.drawCircle( //N Bottom
                 (float)13.7*pixel, //x val
                 (float)42.75*pixel, //y val
@@ -41,7 +41,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Basement, Johnson, Top
-    public void BJT() {
+    public void jGroundTop() {
         C.drawCircle( //J Top
                 (float)58.6*pixel, //x val
                 (float)16.6*pixel, //y val
@@ -51,7 +51,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Basement, Johnson, Middle
-    public void BJM() {
+    public void jGroundMiddle() {
         C.drawCircle( //J Mid
                 (float)58.5*pixel, //x val
                 (float)39*pixel, //y val
@@ -61,7 +61,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Basement, Johnson, Bottom
-    public void BJB() {
+    public void jGroundBottom() {
         C.drawCircle( //J Bottom
                 (float)56*pixel, //x val
                 (float)70*pixel, //y val
@@ -70,10 +70,10 @@ public class StairwellDraw {
         );
     }
 
-    /** ------------------------- First Floor ------------------------- **/
+    //-------------------------- First Floor  ------------------------------------------------------
 
     //Stairwell at First Floor, Nicolls, Top
-    public void FFNT() {
+    public void nFirstTop() {
         C.drawCircle( //N Top
                 (float)10.75*pixel, //x val
                 (float)18.5*pixel, //y val
@@ -83,7 +83,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at First Floor, Nicolls, Bottom
-    public void FFNB() {
+    public void nFirstBottom() {
         C.drawCircle( //N Bottom
                 (float)11*pixel, //x val
                 (float)42*pixel, //y val
@@ -93,7 +93,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at First Floor, Hamilton
-    public void FFHM() {
+    public void hFirst() {
         C.drawCircle( //H Mid
                 (float)45.38*pixel, //x val
                 (float)42.5*pixel, //y val
@@ -103,7 +103,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at First Floor, Johnson, Top
-    public void FFJT() {
+    public void jFirstTop() {
         C.drawCircle( //J Top
                 (float)56*pixel, //x val
                 (float)15.75*pixel, //y val
@@ -113,7 +113,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at First Floor, Johnson, Middle
-    public void FFJM() {
+    public void jFirstMiddle() {
         C.drawCircle( //J Mid
                 (float)56*pixel, //x val
                 (float)38.3*pixel, //y val
@@ -123,7 +123,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at First Floor, Johnson, Bottom
-    public void FFJB() {
+    public void jFirstBottom() {
         C.drawCircle( //J Bottom
                 (float)53.4*pixel, //x val
                 (float)70*pixel, //y val
@@ -132,10 +132,10 @@ public class StairwellDraw {
         );
     }
 
-    /** ------------------------- Second Floor ------------------------- **/
+    //-------------------------- Second Floor  -----------------------------------------------------
 
     //Stairwell at Second Floor, Nicolls, Top
-    public void SFNT() {
+    public void nSecondTop() {
         C.drawCircle( //N Top
                 (float)10.6*pixel, //x val
                 (float)18*pixel, //y val
@@ -145,7 +145,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Second Floor, Nicolls, Bottom
-    public void SFNB() {
+    public void nSecondBottom() {
         C.drawCircle( //N Bottom
                 (float)10*pixel, //x val
                 (float)41.5*pixel, //y val
@@ -155,7 +155,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Second Floor, Hamilton
-    public void SFHM() {
+    public void hSecond() {
         C.drawCircle( //H Mid
                 (float)46*pixel, //x val
                 (float)42*pixel, //y val
@@ -165,7 +165,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Second Floor, Johnson, Top
-    public void SFJT() {
+    public void jSecondTop() {
         C.drawCircle( //J Top
                 (float)56.2*pixel, //x val
                 (float)15.4*pixel, //y val
@@ -175,7 +175,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Second Floor, Johnson, Middle
-    public void SFJM() {
+    public void jSecondMiddle() {
         C.drawCircle( //J Mid
                 (float)56.5*pixel, //x val
                 (float)38.3*pixel, //y val
@@ -185,7 +185,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Second Floor, Johnson, Bottom
-    public void SFJB() {
+    public void jSecondBottom() {
         C.drawCircle( //J Bottom
                 (float)54*pixel, //x val
                 (float)70*pixel, //y val
@@ -194,10 +194,10 @@ public class StairwellDraw {
         );
     }
 
-    /** ------------------------- Third Floor ------------------------- **/
+    //-------------------------- Third Floor  ------------------------------------------------------
 
     //Stairwell at Third Floor, Nicolls, Top
-    public void TFNT() {
+    public void nThirdTop() {
         C.drawCircle( //N Top
                 (float)10.7*pixel, //x val
                 (float)17.9*pixel, //y val
@@ -207,7 +207,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Third Floor, Nicolls, Bottom
-    public void TFNB() {
+    public void nThirdBottom() {
         C.drawCircle( //N Bottom
                 (float)11*pixel, //x val
                 (float)41.5*pixel, //y val
@@ -217,7 +217,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Third Floor, Hamilton
-    public void TFHM() {
+    public void hThird() {
         C.drawCircle( //H Mid
                 (float)44.2*pixel, //x val
                 (float)40.5*pixel, //y val
@@ -227,7 +227,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Third Floor, Johnson, Top
-    public void TFJT() {
+    public void jThirdTop() {
         C.drawCircle( //J Top
                 (float)56.5*pixel, //x val
                 (float)15.1*pixel, //y val
@@ -237,7 +237,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Third Floor, Johnson, Middle
-    public void TFJM() {
+    public void jThirdMiddle() {
         C.drawCircle( //J Mid
                 (float)56.5*pixel, //x val
                 (float)38.1*pixel, //y val
@@ -247,7 +247,7 @@ public class StairwellDraw {
     }
 
     //Stairwell at Third Floor, Johnson, Bottom
-    public void TFJB() {
+    public void jThirdBottom() {
         C.drawCircle( //J Bottom
                 (float)54*pixel, //x val
                 (float)68.8*pixel, //y val

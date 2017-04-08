@@ -1,7 +1,5 @@
 package com.example.android.newbumap;
 
-import android.util.Log;
-
 public class PathDraw {
     private FloorDraw F;
     private StairwellDraw S;
@@ -97,32 +95,32 @@ public class PathDraw {
             if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
                 if(position == 0){
                     F.johnsonGroundTop();
-                    S.BJT();
+                    S.jGroundTop();
                 }
                 if(position == 1){
                     F.johnsonFirstTop();
-                    S.FFJT();
+                    S.jFirstTop();
                 }
             }
             if((roomTo >= 124 && roomTo <= 128)||(roomTo >= 107 && roomTo <= 115)||(roomTo >= 117 && roomTo <= 118)){
                 if(position == 0){
                     F.johnsonGroundTop();
-                    S.BJT();
+                    S.jGroundTop();
                 }
                 if(position == 1){
                     F.johnsonFirstTop();
                     F.johnsonFirstMid();
-                    S.FFJT();
+                    S.jFirstTop();
                 }
             }
             if((roomTo >= 101 && roomTo <= 105)||roomTo == 116){
                 if(position == 0){
                     F.johnsonGroundTop();
-                    S.BJT();
+                    S.jGroundTop();
                 }
                 if(position == 1){
                     F.johnsonFirstFloor();
-                    S.FFJT();
+                    S.jFirstTop();
                 }
             }
         }
@@ -130,33 +128,33 @@ public class PathDraw {
             if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
                 if(position == 0){
                     F.johnsonGroundMid();
-                    S.BJM();
+                    S.jGroundMiddle();
                 }
                 if(position == 1){
                     F.johnsonFirstMid();
                     F.johnsonFirstTop();
-                    S.FFJM();
+                    S.jFirstMiddle();
                 }
             }
             if((roomTo >= 124 && roomTo <= 128)||(roomTo >= 107 && roomTo <= 115)||(roomTo >= 117 && roomTo <= 118)){
                 if(position == 0){
                     F.johnsonGroundMid();
-                    S.BJM();
+                    S.jGroundMiddle();
                 }
                 if(position == 1){
                     F.johnsonFirstMid();
-                    S.FFJM();
+                    S.jFirstMiddle();
                 }
             }
             if((roomTo >= 101 && roomTo <= 105)||roomTo == 116){
                 if(position == 0){
                     F.johnsonGroundMid();
-                    S.BJM();
+                    S.jGroundMiddle();
                 }
                 if(position == 1){
                     F.johnsonFirstMid();
                     F.johnsonFirstBottom();
-                    S.FFJM();
+                    S.jFirstMiddle();
                 }
             }
         }
@@ -164,32 +162,32 @@ public class PathDraw {
             if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
                 if(position == 0){
                     F.johnsonGroundBottom();
-                    S.BJB();
+                    S.jGroundBottom();
                 }
                 if(position == 1){
                     F.johnsonFirstFloor();
-                    S.FFJB();
+                    S.jFirstBottom();
                 }
             }
             if((roomTo >= 124 && roomTo <= 128)||(roomTo >= 107 && roomTo <= 115)||(roomTo >= 117 && roomTo <= 118)){
                 if(position == 0){
                     F.johnsonGroundBottom();
-                    S.BJB();
+                    S.jGroundBottom();
                 }
                 if(position == 1){
                     F.johnsonFirstMid();
                     F.johnsonFirstBottom();
-                    S.FFJB();
+                    S.jFirstBottom();
                 }
             }
             if((roomTo >= 101 && roomTo <= 105)||roomTo == 116){
                 if(position == 0){
                     F.johnsonGroundBottom();
-                    S.BJB();
+                    S.jGroundBottom();
                 }
                 if(position == 1){
                     F.johnsonFirstBottom();
-                    S.FFJB();
+                    S.jFirstBottom();
                 }
             }
         }
@@ -208,23 +206,23 @@ public class PathDraw {
                     F.johnsonGroundMid();
                     F.hamiltonGroundFloor();
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if (position == 1) {
                     F.nicollsFirstBottom();
-                    S.FFNB();
+                    S.nFirstBottom();
                 }
             }
             else{
                 if (position == 0) {
                     F.johnsonGroundTop();
-                    S.BJT();
+                    S.jGroundTop();
                 }
                 if (position == 1) {
                     F.johnsonFirstTop();
                     F.johnsonFirstMid();
                     F.hamiltonFirstFloor();
-                    S.FFJT();
+                    S.jFirstTop();
                 }
             }
         }
@@ -234,22 +232,22 @@ public class PathDraw {
                     F.johnsonGroundMid();
                     F.hamiltonGroundFloor();
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if (position == 1) {
                     F.nicollsFirstBottom();
-                    S.FFNB();
+                    S.nFirstBottom();
                 }
             }
             else{
                 if(position == 0){
                     F.johnsonGroundMid();
-                    S.BJM();
+                    S.jGroundMiddle();
                 }
                 if(position == 1){
                     F.johnsonFirstMid();
                     F.hamiltonFirstFloor();
-                    S.FFJM();
+                    S.jFirstMiddle();
                 }
             }
         }
@@ -260,23 +258,23 @@ public class PathDraw {
                     F.johnsonGroundMid();
                     F.hamiltonGroundFloor();
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if (position == 1) {
                     F.nicollsFirstBottom();
-                    S.FFNB();
+                    S.nFirstBottom();
                 }
             }
             else{
                 if(position == 0){
                     F.johnsonGroundBottom();
-                    S.BJB();
+                    S.jGroundBottom();
                 }
                 if(position == 1){
                     F.johnsonFirstBottom();
                     F.johnsonFirstMid();
                     F.hamiltonFirstFloor();
-                    S.FFJB();
+                    S.jFirstBottom();
                 }
             }
         }
@@ -295,11 +293,11 @@ public class PathDraw {
                     F.johnsonGroundMid();
                     F.hamiltonGroundFloor();
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if(position == 1){
                     F.nicollsFirstFloor();
-                    S.FFNB();
+                    S.nFirstBottom();
                 }
             }
             if((roomTo >= 101 && roomTo <= 110)||roomTo == 116){
@@ -308,11 +306,11 @@ public class PathDraw {
                     F.johnsonGroundMid();
                     F.hamiltonGroundFloor();
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if(position == 1){
                     F.nicollsFirstBottom();
-                    S.FFNB();
+                    S.nFirstBottom();
                 }
             }
         }
@@ -322,11 +320,11 @@ public class PathDraw {
                     F.johnsonGroundMid();
                     F.hamiltonGroundFloor();
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if(position == 1){
                     F.nicollsFirstFloor();
-                    S.FFNB();
+                    S.nFirstBottom();
                 }
             }
             if((roomTo >= 101 && roomTo <= 110)||roomTo == 116){
@@ -334,11 +332,11 @@ public class PathDraw {
                     F.johnsonGroundMid();
                     F.hamiltonGroundFloor();
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if(position == 1){
                     F.nicollsFirstBottom();
-                    S.FFNB();
+                    S.nFirstBottom();
                 }
             }
         }
@@ -349,11 +347,11 @@ public class PathDraw {
                     F.johnsonGroundMid();
                     F.hamiltonGroundFloor();
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if(position == 1){
                     F.nicollsFirstFloor();
-                    S.FFNB();
+                    S.nFirstBottom();
                 }
             }
             if((roomTo >= 101 && roomTo <= 110)||roomTo == 116){
@@ -362,11 +360,11 @@ public class PathDraw {
                     F.johnsonGroundMid();
                     F.hamiltonGroundFloor();
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if(position == 1){
                     F.nicollsFirstBottom();
-                    S.FFNB();
+                    S.nFirstBottom();
                 }
             }
         }
@@ -381,79 +379,79 @@ public class PathDraw {
         if(roomFrom >= 18 && roomFrom < 26){
             if(position == 0){
                 F.johnsonGroundTop();
-                S.BJT();
+                S.jGroundTop();
             }
             if(position == 1){
-                S.FFJT();
+                S.jFirstTop();
             }
             if(roomTo>208 && roomTo<217){
                 if(position == 2){
                     F.johnsonSecondTop();
-                    S.SFJT();
+                    S.jSecondTop();
                 }
             } else if((roomTo>=200&&roomTo<=203)||roomTo==232){
                 if(position == 2){
                     F.johnsonSecondFloor();
-                    S.SFJT();
+                    S.jSecondTop();
                 }
             } else{
                 if(position == 2){
                     F.johnsonSecondTop();
                     F.johnsonSecondMid();
-                    S.SFJT();
+                    S.jSecondTop();
                 }
             }
         }
         if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
             if(position == 0){
                 F.johnsonGroundMid();
-                S.BJM();
+                S.jGroundMiddle();
             }
             if(position == 1){
-                S.FFJM();
+                S.jFirstMiddle();
             }
             if(roomTo>208 && roomTo<217){
                 if(position == 2){
                     F.johnsonSecondTop();
                     F.johnsonSecondMid();
-                    S.SFJM();
+                    S.jSecondMiddle();
                 }
             } else if((roomTo>=200&&roomTo<=203)||roomTo==232){
                 if(position == 2){
                     F.johnsonSecondBottom();
                     F.johnsonSecondMid();
-                    S.SFJM();
+                    S.jSecondMiddle();
                 }
             } else{
                 if(position == 2){
                     F.johnsonSecondMid();
-                    S.SFJM();
+                    S.jSecondMiddle();
                 }
             }
         }
         if(roomFrom < 5 || roomFrom == 11){
             if(position == 0){
                 F.johnsonGroundBottom();
-                S.BJB();
+                S.jGroundBottom();
             }
             if(position == 1){
-                S.FFJB();
+                S.jFirstBottom();
             }
             if(roomTo>208 && roomTo<217){
                 if(position == 2){
                     F.johnsonSecondFloor();
-                    S.SFJB();
+                    S.jSecondBottom();
                 }
             } else if((roomTo>=200&&roomTo<=203)||roomTo==232){
                 if(position == 2){
                     F.johnsonSecondBottom();
-                    S.SFJB();
+                    S.jSecondBottom();
                 }
             } else{
                 if(position == 2){
                     F.johnsonSecondBottom();
                     F.johnsonSecondMid();
-                    S.SFJB();
+                    S.jSecondBottom();
                 }
             }
         }
@@ -468,13 +466,13 @@ public class PathDraw {
         if(roomFrom >= 18 && roomFrom < 26){
             if(position == 0){
                 F.johnsonGroundTop();
-                S.BJT();
+                S.jGroundTop();
             }
             if(position == 1){
-                S.FFJT();
+                S.jFirstTop();
             }
             if(position == 2){
-                S.SFJT();
+                S.jSecondTop();
                 F.johnsonSecondTop();
                 F.johnsonSecondMid();
                 F.hamiltonSecondFloor();
@@ -483,13 +481,13 @@ public class PathDraw {
         if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
             if(position == 0){
                 F.johnsonGroundMid();
-                S.BJM();
+                S.jGroundMiddle();
             }
             if(position == 1){
-                S.FFJM();
+                S.jFirstMiddle();
             }
             if(position == 2){
-                S.SFJM();
+                S.jSecondMiddle();
                 F.johnsonSecondMid();
                 F.hamiltonSecondFloor();
             }
@@ -497,13 +495,13 @@ public class PathDraw {
         if(roomFrom < 5 || roomFrom == 11){
             if(position == 0){
                 F.johnsonGroundBottom();
-                S.BJB();
+                S.jGroundBottom();
             }
             if(position == 1){
-                S.FFJB();
+                S.jFirstBottom();
             }
             if(position == 2){
-                S.SFJB();
+                S.jSecondBottom();
                 F.johnsonSecondBottom();
                 F.johnsonSecondMid();
                 F.hamiltonSecondFloor();
@@ -520,14 +518,14 @@ public class PathDraw {
         if(roomFrom >= 18 && roomFrom < 26){
             if(position == 0){
                 F.johnsonGroundTop();
-                S.BJT();
+                S.jGroundTop();
             }
             if(position == 1){
-                S.FFJT();
+                S.jFirstTop();
             }
             if(roomTo>=211&&roomTo<=216){
                 if(position == 2){
-                    S.SFJT();
+                    S.jSecondTop();
                     F.johnsonSecondTop();
                     F.johnsonSecondMid();
                     F.hamiltonSecondFloor();
@@ -536,7 +534,7 @@ public class PathDraw {
             }
             else{
                 if(position == 2){
-                    S.SFJT();
+                    S.jSecondTop();
                     F.johnsonSecondTop();
                     F.johnsonSecondMid();
                     F.hamiltonSecondFloor();
@@ -547,14 +545,14 @@ public class PathDraw {
         if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
             if(position == 0){
                 F.johnsonGroundMid();
-                S.BJM();
+                S.jGroundMiddle();
             }
             if(position == 1){
-                S.FFJM();
+                S.jFirstMiddle();
             }
             if(roomTo>=211&&roomTo<=216){
                 if(position == 2){
-                    S.SFJM();
+                    S.jSecondMiddle();
                     F.johnsonSecondMid();
                     F.hamiltonSecondFloor();
                     F.nicollsSecondFloor();
@@ -562,7 +560,7 @@ public class PathDraw {
             }
             else{
                 if(position == 2){
-                    S.SFJM();
+                    S.jSecondMiddle();
                     F.johnsonSecondMid();
                     F.hamiltonSecondFloor();
                     F.nicollsSecondBottom();
@@ -572,14 +570,14 @@ public class PathDraw {
         if(roomFrom < 5 || roomFrom == 11){
             if(position == 0){
                 F.johnsonGroundBottom();
-                S.BJB();
+                S.jGroundBottom();
             }
             if(position == 1){
-                S.FFJB();
+                S.jFirstBottom();
             }
             if(roomTo>=211&&roomTo<=216){
                 if(position == 2){
-                    S.SFJB();
+                    S.jSecondBottom();
                     F.johnsonSecondBottom();
                     F.johnsonSecondMid();
                     F.hamiltonSecondFloor();
@@ -588,7 +586,7 @@ public class PathDraw {
             }
             else{
                 if(position == 2){
-                    S.SFJB();
+                    S.jSecondBottom();
                     F.johnsonSecondBottom();
                     F.johnsonSecondMid();
                     F.hamiltonSecondFloor();
@@ -607,88 +605,88 @@ public class PathDraw {
         if(roomFrom >= 18 && roomFrom < 26){
             if(position == 0){
                 F.johnsonGroundTop();
-                S.BJT();
+                S.jGroundTop();
             }
             if(position == 1){
-                S.FFJT();
+                S.jFirstTop();
             }
             if(position == 2){
-                S.SFJT();
+                S.jSecondTop();
             }
             if(roomTo>=315 && roomTo<326){
                 if(position == 3){
                     F.johnsonThirdTop();
-                    S.TFJT();
+                    S.jThirdTop();
                 }
             } else if(roomTo==301||roomTo==302||roomTo==309||roomTo==310){
                 if(position == 3){
                     F.johnsonThirdFloor();
-                    S.TFJT();
+                    S.jThirdTop();
                 }
             } else{
                 if(position == 3){
                     F.johnsonThirdTop();
                     F.johnsonThirdMid();
-                    S.TFJT();
+                    S.jThirdTop();
                 }
             }
         }
         if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
             if(position == 0){
                 F.johnsonGroundMid();
-                S.BJM();
+                S.jGroundMiddle();
             }
             if(position == 1){
-                S.FFJM();
+                S.jFirstMiddle();
             }
             if(position == 2){
-                S.SFJM();
+                S.jSecondMiddle();
             }
             if(roomTo>=315 && roomTo<326){
                 if(position == 3){
                     F.johnsonThirdTop();
                     F.johnsonThirdMid();
-                    S.TFJM();
+                    S.jThirdMiddle();
                 }
             } else if(roomTo==301||roomTo==302||roomTo==309||roomTo==310){
                 if(position == 3){
                     F.johnsonThirdBottom();
                     F.johnsonThirdMid();
-                    S.TFJM();
+                    S.jThirdMiddle();
                 }
             } else{
                 if(position == 3){
                     F.johnsonThirdMid();
-                    S.TFJM();
+                    S.jThirdMiddle();
                 }
             }
         }
         if(roomFrom < 5 || roomFrom == 11){
             if(position == 0){
                 F.johnsonGroundBottom();
-                S.BJB();
+                S.jGroundBottom();
             }
             if(position == 1){
-                S.FFJB();
+                S.jFirstBottom();
             }
             if(position == 2){
-                S.SFJB();
+                S.jSecondBottom();
             }
             if(roomTo>=315 && roomTo<326){
                 if(position == 3){
                     F.johnsonThirdFloor();
-                    S.TFJB();
+                    S.jThirdBottom();
                 }
             } else if(roomTo==301||roomTo==302||roomTo==309||roomTo==310){
                 if(position == 3){
                     F.johnsonThirdBottom();
-                    S.TFJB();
+                    S.jThirdBottom();
                 }
             } else{
                 if(position == 3){
                     F.johnsonThirdBottom();
                     F.johnsonThirdMid();
-                    S.TFJB();
+                    S.jThirdBottom();
                 }
             }
         }
@@ -704,38 +702,38 @@ public class PathDraw {
             if(position == 0){
                 F.johnsonGroundTop();
                 F.johnsonGroundMid();
-                S.BJM();
+                S.jGroundMiddle();
             }
             if(position == 1){
-                S.FFJM();
+                S.jFirstMiddle();
                 F.johnsonFirstMid();
                 F.hamiltonFirstFloor();
-                S.FFHM();
+                S.hFirst();
             }
             if(position == 2){
-                S.SFHM();
+                S.hSecond();
             }
             if(position == 3){
-                S.TFHM();
+                S.hThird();
                 F.hamiltonThirdFloor();
             }
         }
         if(roomFrom == 26 || (roomFrom <= 10 && roomFrom >= 5)){
             if(position == 0){
                 F.johnsonGroundMid();
-                S.BJM();
+                S.jGroundMiddle();
             }
             if(position == 1){
-                S.FFJM();
+                S.jFirstMiddle();
                 F.johnsonFirstMid();
                 F.hamiltonFirstFloor();
-                S.FFHM();
+                S.hFirst();
             }
             if(position == 2){
-                S.SFHM();
+                S.hSecond();
             }
             if(position == 3){
-                S.TFHM();
+                S.hThird();
                 F.hamiltonThirdFloor();
             }
         }
@@ -743,19 +741,19 @@ public class PathDraw {
             if(position == 0){
                 F.johnsonGroundBottom();
                 F.johnsonGroundMid();
-                S.BJM();
+                S.jGroundMiddle();
             }
             if(position == 1){
-                S.FFJM();
+                S.jFirstMiddle();
                 F.johnsonFirstMid();
                 F.hamiltonFirstFloor();
-                S.FFHM();
+                S.hFirst();
             }
             if(position == 2){
-                S.SFHM();
+                S.hSecond();
             }
             if(position == 3){
-                S.TFHM();
+                S.hThird();
                 F.hamiltonThirdFloor();
             }
         }
@@ -773,23 +771,23 @@ public class PathDraw {
                 F.johnsonGroundMid();
                 F.hamiltonGroundFloor();
                 F.nicollsGroundBottom();
-                S.BNB();
+                S.nGroundBottom();
             }
             if(position == 1){
-                S.FFNB();
+                S.nFirstBottom();
             }
             if(position == 2){
-                S.SFNB();
+                S.nSecondBottom();
             }
             if(roomTo>=311&&roomTo<=315){
                 if(position == 3){
-                    S.TFNB();
+                    S.nThirdBottom();
                     F.nicollsThirdFloor();
                 }
             }
             else{
                 if(position == 3){
-                    S.TFNB();
+                    S.nThirdBottom();
                     F.nicollsThirdBottom();
                 }
             }
@@ -799,23 +797,23 @@ public class PathDraw {
                 F.johnsonGroundMid();
                 F.hamiltonGroundFloor();
                 F.nicollsGroundBottom();
-                S.BNB();
+                S.nGroundBottom();
             }
             if(position == 1){
-                S.FFNB();
+                S.nFirstBottom();
             }
             if(position == 2){
-                S.SFNB();
+                S.nSecondBottom();
             }
             if(roomTo>=311&&roomTo<=315){
                 if(position == 3){
-                    S.TFNB();
+                    S.nThirdBottom();
                     F.nicollsThirdFloor();
                 }
             }
             else{
                 if(position == 3){
-                    S.TFNB();
+                    S.nThirdBottom();
                     F.nicollsThirdBottom();
                 }
             }
@@ -826,23 +824,23 @@ public class PathDraw {
                 F.johnsonGroundMid();
                 F.hamiltonGroundFloor();
                 F.nicollsGroundBottom();
-                S.BNB();
+                S.nGroundBottom();
             }
             if(position == 1){
-                S.FFNB();
+                S.nFirstBottom();
             }
             if(position == 2){
-                S.SFNB();
+                S.nSecondBottom();
             }
             if(roomTo>=311&&roomTo<=315){
                 if(position == 3){
-                    S.TFNB();
+                    S.nThirdBottom();
                     F.nicollsThirdFloor();
                 }
             }
             else{
                 if(position == 3){
-                    S.TFNB();
+                    S.nThirdBottom();
                     F.nicollsThirdBottom();
                 }
             }
@@ -888,14 +886,14 @@ public class PathDraw {
         if(position == 0){
             F.hamiltonGroundFloor();
             F.johnsonGroundMid();
-            S.BJM();
+            S.jGroundMiddle();
         }
         if(roomFrom>=3&&roomFrom<=7){
             if(position == 0){
                 F.nicollsGroundFloor();
             }
             if(position == 1){
-                S.FFJM();
+                S.jFirstMiddle();
                 if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
                     F.johnsonFirstMid();
                     F.johnsonFirstTop();
@@ -912,7 +910,7 @@ public class PathDraw {
                 F.nicollsGroundBottom();
             }
             if(position == 1){
-                S.FFJM();
+                S.jFirstMiddle();
                 if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
                     F.johnsonFirstMid();
                     F.johnsonFirstTop();
@@ -936,10 +934,10 @@ public class PathDraw {
             if(roomTo==126) {
                 if(position == 0){
                     F.nicollsGroundFloor();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if(position == 1){
-                    S.FFNB();
+                    S.nFirstBottom();
                     F.nicollsFirstBottom();
                 }
             }else{
@@ -947,10 +945,10 @@ public class PathDraw {
                     F.nicollsGroundFloor();
                     F.hamiltonGroundFloor();
                     F.johnsonGroundMid();
-                    S.BJM();
+                    S.jGroundMiddle();
                 }
                 if(position == 1){
-                    S.FFJM();
+                    S.jFirstMiddle();
                     F.johnsonFirstMid();
                     F.hamiltonFirstFloor();
                 }
@@ -960,10 +958,10 @@ public class PathDraw {
             if(roomTo==126) {
                 if(position == 0){
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if(position == 1){
-                    S.FFNB();
+                    S.nFirstBottom();
                     F.nicollsFirstBottom();
                 }
             }else{
@@ -971,10 +969,10 @@ public class PathDraw {
                     F.nicollsGroundBottom();
                     F.hamiltonGroundFloor();
                     F.johnsonGroundMid();
-                    S.BJM();
+                    S.jGroundMiddle();
                 }
                 if(position == 1){
-                    S.FFJM();
+                    S.jFirstMiddle();
                     F.johnsonFirstMid();
                     F.hamiltonFirstFloor();
                 }
@@ -992,19 +990,19 @@ public class PathDraw {
             if(roomTo >= 111 && roomTo < 116) {
                 if(position == 0){
                     F.nicollsGroundTop();
-                    S.BNT();
+                    S.nGroundTop();
                 }
                 if(position == 1){
-                    S.FFNT();
+                    S.nFirstTop();
                     F.nicollsFirstTop();
                 }
             }else{
                 if(position == 0){
                     F.nicollsGroundTop();
-                    S.BNT();
+                    S.nGroundTop();
                 }
                 if(position == 1){
-                    S.FFNT();
+                    S.nFirstTop();
                     F.nicollsFirstFloor();
                 }
             }
@@ -1013,19 +1011,19 @@ public class PathDraw {
             if(roomTo >= 111 && roomTo < 116) {
                 if(position == 0){
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if(position == 1){
-                    S.FFNB();
+                    S.nFirstBottom();
                     F.nicollsFirstFloor();
                 }
             }else{
                 if(position == 0){
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
                 if(position == 1){
-                    S.FFNB();
+                    S.nFirstBottom();
                     F.nicollsFirstBottom();
                 }
             }
@@ -1041,7 +1039,7 @@ public class PathDraw {
         if(position == 0) {
             F.hamiltonGroundFloor();
             F.johnsonGroundMid();
-            S.BJM();
+            S.jGroundMiddle();
             if (roomFrom >= 3 && roomFrom <= 7) {
                 F.nicollsGroundFloor();
             } else {
@@ -1049,10 +1047,10 @@ public class PathDraw {
             }
         }
         if(position == 1){
-            S.FFJM();
+            S.jFirstMiddle();
         }
         if(position == 2){
-            S.SFJM();
+            S.jSecondMiddle();
             F.johnsonSecondMid();
             if(roomTo>208 && roomTo<217){
                 F.johnsonSecondTop();
@@ -1070,7 +1068,7 @@ public class PathDraw {
             roomTo = tempRoom;
         }
         if(position == 0) {
-            S.BNB();
+            S.nGroundBottom();
             if (roomFrom >= 3 && roomFrom <= 7) {
                 F.nicollsGroundFloor();
             } else {
@@ -1078,10 +1076,10 @@ public class PathDraw {
             }
         }
         if(position == 1){
-            S.FFNB();
+            S.nFirstBottom();
         }
         if(position == 2){
-            S.SFNB();
+            S.nSecondBottom();
             F.nicollsSecondBottom();
             F.hamiltonSecondFloor();
         }
@@ -1096,13 +1094,13 @@ public class PathDraw {
         if (roomFrom >= 3 && roomFrom <= 7) {
             if(position == 0) {
                 F.nicollsGroundTop();
-                S.BNT();
+                S.nGroundTop();
             }
             if(position == 1){
-                S.FFNT();
+                S.nFirstTop();
             }
             if(position == 2){
-                S.SFNT();
+                S.nSecondTop();
                 if(roomTo>=211&&roomTo<=216){
                     F.nicollsSecondTop();
                 }else{
@@ -1112,13 +1110,13 @@ public class PathDraw {
         } else {
             if(position == 0) {
                 F.nicollsGroundBottom();
-                S.BNB();
+                S.nGroundBottom();
             }
             if(position == 1){
-                S.FFNB();
+                S.nFirstBottom();
             }
             if(position == 2){
-                S.SFNB();
+                S.nSecondBottom();
                 if(roomTo>=211&&roomTo<=216){
                     F.nicollsSecondFloor();
                 }else{
@@ -1137,7 +1135,7 @@ public class PathDraw {
         if(position == 0) {
             F.hamiltonGroundFloor();
             F.johnsonGroundMid();
-            S.BJM();
+            S.jGroundMiddle();
             if (roomFrom >= 3 && roomFrom <= 7) {
                 F.nicollsGroundFloor();
             } else {
@@ -1145,13 +1143,13 @@ public class PathDraw {
             }
         }
         if(position == 1){
-            S.FFJM();
+            S.jFirstMiddle();
         }
         if(position == 2){
-            S.SFJM();
+            S.jSecondMiddle();
         }
         if(position == 3){
-            S.TFJM();
+            S.jThirdMiddle();
             F.johnsonThirdMid();
             if(roomTo>=315 && roomTo<326){
                 F.johnsonThirdTop();
@@ -1169,7 +1167,7 @@ public class PathDraw {
             roomTo = tempRoom;
         }
         if(position == 0) {
-            S.BNB();
+            S.nGroundBottom();
             if (roomFrom >= 3 && roomFrom <= 7) {
                 F.nicollsGroundFloor();
             } else {
@@ -1177,13 +1175,13 @@ public class PathDraw {
             }
         }
         if(position == 1){
-            S.FFNB();
+            S.nFirstBottom();
         }
         if(position == 2){
-            S.SFNB();
+            S.nSecondBottom();
         }
         if(position == 3){
-            S.TFNB();
+            S.nThirdBottom();
             F.nicollsThirdBottom();
             F.hamiltonThirdFloor();
         }
@@ -1198,16 +1196,16 @@ public class PathDraw {
         if (roomFrom >= 3 && roomFrom <= 7) {
             if(position == 0) {
                 F.nicollsGroundTop();
-                S.BNT();
+                S.nGroundTop();
             }
             if(position == 1){
-                S.FFNT();
+                S.nFirstTop();
             }
             if(position == 2){
-                S.SFNT();
+                S.nSecondTop();
             }
             if(position == 3){
-                S.TFNT();
+                S.nThirdTop();
                 if(roomTo>=311&&roomTo<=315){
                     F.nicollsThirdTop();
                 }else{
@@ -1217,16 +1215,16 @@ public class PathDraw {
         } else {
             if(position == 0) {
                 F.nicollsGroundBottom();
-                S.BNB();
+                S.nGroundBottom();
             }
             if(position == 1){
-                S.FFNB();
+                S.nFirstBottom();
             }
             if(position == 2){
-                S.SFNB();
+                S.nSecondBottom();
             }
             if(position == 3){
-                S.TFNB();
+                S.nThirdBottom();
                 if(roomTo>=311&&roomTo<=315){
                     F.nicollsThirdFloor();
                 }else{
@@ -1251,11 +1249,11 @@ public class PathDraw {
         if(position == 0){
             F.hamiltonGroundFloor();
             F.johnsonGroundMid();
-            S.BJM();
+            S.jGroundMiddle();
         }
         if(position == 1){
             F.johnsonFirstMid();
-            S.FFJM();
+            S.jFirstMiddle();
             if((roomTo >= 119 && roomTo <= 123)||(roomTo >= 150 && roomTo <= 154)){
                 F.johnsonFirstTop();
             }
@@ -1275,19 +1273,19 @@ public class PathDraw {
             F.hamiltonGroundFloor();
             if(roomTo==126){
                 F.nicollsGroundBottom();
-                S.BNB();
+                S.nGroundBottom();
             }else{
                 F.johnsonGroundMid();
-                S.BJM();
+                S.jGroundMiddle();
             }
         }
         if(position == 1){
             if(roomTo==126){
                 F.nicollsFirstBottom();
-                S.FFNB();
+                S.nFirstBottom();
             }else{
                 F.johnsonFirstMid();
-                S.FFJM();
+                S.jFirstMiddle();
                 F.hamiltonFirstFloor();
             }
         }
@@ -1302,10 +1300,10 @@ public class PathDraw {
         if(position == 0){
             F.hamiltonGroundFloor();
             F.nicollsGroundBottom();
-            S.BNB();
+            S.nGroundBottom();
         }
         if(position == 1){
-            S.FFNB();
+            S.nFirstBottom();
             if(roomTo >= 111 && roomTo < 116) {
                 F.nicollsFirstFloor();
             }else{
@@ -1323,13 +1321,13 @@ public class PathDraw {
         if(position == 0) {
             F.hamiltonGroundFloor();
             F.johnsonGroundMid();
-            S.BJM();
+            S.jGroundMiddle();
         }
         if(position == 1){
-            S.FFJM();
+            S.jFirstMiddle();
         }
         if(position == 2){
-            S.SFJM();
+            S.jSecondMiddle();
             F.johnsonSecondMid();
             if(roomTo>208 && roomTo<217){
                 F.johnsonSecondTop();
@@ -1349,13 +1347,13 @@ public class PathDraw {
         if(position == 0) {
             F.hamiltonGroundFloor();
             F.johnsonGroundMid();
-            S.BJM();
+            S.jGroundMiddle();
         }
         if(position == 1){
-            S.FFJM();
+            S.jFirstMiddle();
         }
         if(position == 2){
-            S.SFJM();
+            S.jSecondMiddle();
             F.johnsonSecondMid();
             F.hamiltonSecondFloor();
         }
@@ -1370,13 +1368,13 @@ public class PathDraw {
         if(position == 0) {
             F.hamiltonGroundFloor();
             F.nicollsGroundBottom();
-            S.BNB();
+            S.nGroundBottom();
         }
         if(position == 1){
-            S.FFNB();
+            S.nFirstBottom();
         }
         if(position == 2){
-            S.SFNB();
+            S.nSecondBottom();
             if(roomTo>=211&&roomTo<=216){
                 F.nicollsSecondFloor();
             }else{
@@ -1394,16 +1392,16 @@ public class PathDraw {
         if(position == 0) {
             F.hamiltonGroundFloor();
             F.johnsonGroundMid();
-            S.BJM();
+            S.jGroundMiddle();
         }
         if(position == 1){
-            S.FFJM();
+            S.jFirstMiddle();
         }
         if(position == 2){
-            S.SFJM();
+            S.jSecondMiddle();
         }
         if(position == 3){
-            S.TFJM();
+            S.jThirdMiddle();
             F.johnsonThirdMid();
             if(roomTo>=315 && roomTo<326){
                 F.johnsonThirdTop();
@@ -1423,16 +1421,16 @@ public class PathDraw {
         if(position == 0) {
             F.hamiltonGroundFloor();
             F.nicollsGroundBottom();
-            S.BNB();
+            S.nGroundBottom();
         }
         if(position == 1){
-            S.FFNB();
+            S.nFirstBottom();
         }
         if(position == 2){
-            S.SFNB();
+            S.nSecondBottom();
         }
         if(position == 3){
-            S.TFNB();
+            S.nThirdBottom();
             F.nicollsThirdBottom();
             F.hamiltonThirdFloor();
         }
@@ -1447,16 +1445,16 @@ public class PathDraw {
         if(position == 0) {
             F.hamiltonGroundFloor();
             F.nicollsGroundBottom();
-            S.BNB();
+            S.nGroundBottom();
         }
         if(position == 1){
-            S.FFNB();
+            S.nFirstBottom();
         }
         if(position == 2){
-            S.SFNB();
+            S.nSecondBottom();
         }
         if(position == 3){
-            S.TFNB();
+            S.nThirdBottom();
             if(roomTo>=311&&roomTo<=315){
                 F.nicollsThirdFloor();
             }else{
@@ -1482,8 +1480,8 @@ public class PathDraw {
                     F.johnsonFirstBottom();
                 }
                 if(roomTo==126){
-                    S.FFJM();
-                    S.FFNB();
+                    S.jFirstMiddle();
+                    S.nFirstBottom();
                     F.nicollsFirstBottom();
                 }else{
                     F.hamiltonFirstFloor();
@@ -1496,8 +1494,8 @@ public class PathDraw {
                     F.johnsonFirstBottom();
                 }
                 if(roomFrom==126){
-                    S.FFJM();
-                    S.FFNB();
+                    S.jFirstMiddle();
+                    S.nFirstBottom();
                     F.nicollsFirstBottom();
                 }else{
                     F.hamiltonFirstFloor();
@@ -1507,19 +1505,19 @@ public class PathDraw {
         if(position == 0){
             if(buildFrom.equals("Johnson")){
                 if(roomTo==126){
-                    S.BJM();
+                    S.jGroundMiddle();
                     F.johnsonGroundMid();
                     F.hamiltonGroundFloor();
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
             }else{
                 if(roomFrom==126){
-                    S.BJM();
+                    S.jGroundMiddle();
                     F.johnsonGroundMid();
                     F.hamiltonGroundFloor();
                     F.nicollsGroundBottom();
-                    S.BNB();
+                    S.nGroundBottom();
                 }
             }
         }
@@ -1527,16 +1525,16 @@ public class PathDraw {
     //----------------------------------------------------------------------------------------------
     public void johnson1FtoNicolls1F() {
         if(position == 0){
-            S.BJM();
+            S.jGroundMiddle();
             F.johnsonGroundMid();
             F.hamiltonGroundFloor();
             F.nicollsGroundBottom();
-            S.BNB();
+            S.nGroundBottom();
         }
         if(position == 1){
             F.johnsonFirstMid();
-            S.FFJM();
-            S.FFNB();
+            S.jFirstMiddle();
+            S.nFirstBottom();
             if(buildFrom.equals("Johnson")){
                 if((roomFrom >= 119 && roomFrom <= 123)||(roomFrom >= 150 && roomFrom <= 154)){
                     F.johnsonFirstTop();
@@ -1575,18 +1573,18 @@ public class PathDraw {
         if(position == 1){
             if((roomFrom >= 119 && roomFrom <= 123)||(roomFrom >= 150 && roomFrom <= 154)){
                 F.johnsonFirstTop();
-                S.FFJT();
+                S.jFirstTop();
             }else if((roomFrom >= 101 && roomFrom <= 105)||roomFrom == 116){
                 F.johnsonFirstBottom();
-                S.FFJB();
+                S.jFirstBottom();
             }else{
                 F.johnsonFirstMid();
-                S.FFJM();
+                S.jFirstMiddle();
             }
         }
         if(position == 2){
             if((roomFrom >= 119 && roomFrom <= 123)||(roomFrom >= 150 && roomFrom <= 154)){
-                S.SFJT();
+                S.jSecondTop();
                 F.johnsonSecondTop();
                 if(roomTo>208 && roomTo<217){
 
@@ -1597,7 +1595,7 @@ public class PathDraw {
                     F.johnsonSecondMid();
                 }
             }else if((roomFrom >= 101 && roomFrom <= 105)||roomFrom == 116){
-                S.SFJB();
+                S.jSecondBottom();
                 F.johnsonSecondBottom();
                 if(roomTo>208 && roomTo<217){
                     F.johnsonSecondTop();
@@ -1608,7 +1606,7 @@ public class PathDraw {
                         F.johnsonSecondMid();
                 }
             }else{
-                S.SFJM();
+                S.jSecondMiddle();
                 F.johnsonSecondMid();
                 if(roomTo>208 && roomTo<217){
                     F.johnsonSecondTop();
@@ -1629,7 +1627,7 @@ public class PathDraw {
         if(position == 1){
             F.johnsonFirstMid();
             F.hamiltonFirstFloor();
-            S.FFHM();
+            S.hFirst();
             if((roomFrom >= 119 && roomFrom <= 123)||(roomFrom >= 150 && roomFrom <= 154)){
                 F.johnsonFirstTop();
             }
@@ -1638,7 +1636,7 @@ public class PathDraw {
             }
         }
         if(position == 2){
-            S.SFHM();
+            S.hSecond();
             F.hamiltonSecondFloor();
         }
     }
@@ -1652,7 +1650,7 @@ public class PathDraw {
         if(position == 1){
             F.johnsonFirstMid();
             F.hamiltonFirstFloor();
-            S.FFHM();
+            S.hFirst();
             if((roomFrom >= 119 && roomFrom <= 123)||(roomFrom >= 150 && roomFrom <= 154)){
                 F.johnsonFirstTop();
             }
@@ -1661,7 +1659,7 @@ public class PathDraw {
             }
         }
         if(position == 2){
-            S.SFHM();
+            S.hSecond();
             F.hamiltonSecondFloor();
             if(roomTo>=211&&roomTo<=216){
                 F.nicollsSecondFloor();
@@ -1680,27 +1678,27 @@ public class PathDraw {
         if(position == 1){
             if((roomFrom >= 119 && roomFrom <= 123)||(roomFrom >= 150 && roomFrom <= 154)){
                 F.johnsonFirstTop();
-                S.FFJT();
+                S.jFirstTop();
             }else if((roomFrom >= 101 && roomFrom <= 105)||roomFrom == 116){
                 F.johnsonFirstBottom();
-                S.FFJB();
+                S.jFirstBottom();
             }else{
                 F.johnsonFirstMid();
-                S.FFJM();
+                S.jFirstMiddle();
             }
         }
         if(position == 2){
             if((roomFrom >= 119 && roomFrom <= 123)||(roomFrom >= 150 && roomFrom <= 154)){
-                S.SFJT();
+                S.jSecondTop();
             }else if((roomFrom >= 101 && roomFrom <= 105)||roomFrom == 116){
-                S.SFJB();
+                S.jSecondBottom();
             }else{
-                S.SFJM();
+                S.jSecondMiddle();
             }
         }
         if(position == 3){
             if((roomFrom >= 119 && roomFrom <= 123)||(roomFrom >= 150 && roomFrom <= 154)){
-                S.SFJT();
+                S.jSecondTop();
                 F.johnsonThirdTop();
                 if(roomTo>=315 && roomTo<326){
 
@@ -1711,7 +1709,7 @@ public class PathDraw {
                     F.johnsonThirdMid();
                 }
             }else if((roomFrom >= 101 && roomFrom <= 105)||roomFrom == 116){
-                S.SFJB();
+                S.jSecondBottom();
                 F.johnsonThirdBottom();
                 if(roomTo>=315 && roomTo<326){
                     F.johnsonThirdTop();
@@ -1722,7 +1720,7 @@ public class PathDraw {
                     F.johnsonThirdMid();
                 }
             }else{
-                S.SFJM();
+                S.jSecondMiddle();
                 F.johnsonThirdMid();
                 if(roomTo>=315 && roomTo<326){
                     F.johnsonThirdTop();
@@ -1743,7 +1741,7 @@ public class PathDraw {
         if(position == 1){
             F.johnsonFirstMid();
             F.hamiltonFirstFloor();
-            S.FFHM();
+            S.hFirst();
             if((roomFrom >= 119 && roomFrom <= 123)||(roomFrom >= 150 && roomFrom <= 154)){
                 F.johnsonFirstTop();
             }
@@ -1752,10 +1750,10 @@ public class PathDraw {
             }
         }
         if(position == 2){
-            S.SFHM();
+            S.hSecond();
         }
         if(position == 3){
-            S.TFHM();
+            S.hThird();
             F.hamiltonThirdFloor();
         }
     }
@@ -1769,7 +1767,7 @@ public class PathDraw {
         if(position == 1){
             F.johnsonFirstMid();
             F.hamiltonFirstFloor();
-            S.FFHM();
+            S.hFirst();
             if((roomFrom >= 119 && roomFrom <= 123)||(roomFrom >= 150 && roomFrom <= 154)){
                 F.johnsonFirstTop();
             }
@@ -1778,10 +1776,10 @@ public class PathDraw {
             }
         }
         if(position == 2){
-            S.SFHM();
+            S.hSecond();
         }
         if(position == 3){
-            S.TFHM();
+            S.hThird();
             F.hamiltonThirdFloor();
             if(roomTo>=311&&roomTo<=315){
                 F.nicollsThirdFloor();
@@ -1823,14 +1821,14 @@ public class PathDraw {
 
         if(position == 1) {
             F.nicollsFirstBottom();
-            S.FFNB();
+            S.nFirstBottom();
 
             if(roomTo > 110 && roomTo < 116) {
                 F.nicollsFirstTop();
             }
         }
         if(position == 2) {
-            S.SFNB();
+            S.nSecondBottom();
             F.nicollsSecondBottom();
             F.hamiltonSecondFloor();
             F.johnsonSecondMid();
@@ -1846,7 +1844,7 @@ public class PathDraw {
     public void nicolls1FtoHamilton2F() {
         if(position == 1) {
             F.nicollsFirstBottom();
-            S.FFNB();
+            S.nFirstBottom();
 
             if (buildFrom.equals("Hamilton")) {
                 int temp = roomTo;
@@ -1859,7 +1857,7 @@ public class PathDraw {
             }
         }
         if(position == 2) {
-            S.SFNB();
+            S.nSecondBottom();
             F.hamiltonSecondFloor();
         }
     }
@@ -1873,22 +1871,22 @@ public class PathDraw {
         if(position == 1) {
             if(roomFrom > 110 && roomFrom < 116) {
                 F.nicollsFirstTop();
-                S.FFNT();
+                S.nFirstTop();
             } else {
                 F.nicollsFirstBottom();
-                S.FFNB();
+                S.nFirstBottom();
             }
         }
         if(position == 2) {
             if(roomFrom > 110 && roomFrom < 116) {
                 F.nicollsSecondTop();
-                S.SFNT();
+                S.nSecondTop();
                 if(roomTo < 211) {
                     F.nicollsSecondBottom();
                 }
             } else {
                 F.nicollsSecondBottom();
-                S.SFNB();
+                S.nSecondBottom();
                 if(roomTo > 210) {
                     F.nicollsSecondTop();
                 }
@@ -1905,36 +1903,36 @@ public class PathDraw {
         }
         if(position == 1) {
             F.nicollsFirstBottom();
-            S.FFNB();
+            S.nFirstBottom();
             if(roomFrom > 110 && roomFrom < 116) {
                 F.nicollsFirstTop();
             }
         }
         if(position == 2) {
             F.nicollsSecondBottom();
-            S.SFNB();
+            S.nSecondBottom();
             F.hamiltonSecondFloor();
             F.johnsonSecondMid();
             if (roomTo < 326 && roomTo > 315) {
                 F.johnsonSecondTop();
-                S.SFJT();
+                S.jSecondTop();
             } else if (roomTo == 309 || roomTo == 310 || roomTo < 303) {
                 F.johnsonSecondBottom();
-                S.SFJB();
+                S.jSecondBottom();
             } else {
-                S.SFJM();
+                S.jSecondMiddle();
             }
         }
         if(position == 3) {
             if (roomTo < 326 && roomTo > 315) {
                 F.johnsonThirdTop();
-                S.TFJT();
+                S.jThirdTop();
             } else if (roomTo == 309 || roomTo == 310 || roomTo < 303) {
                 F.johnsonThirdBottom();
-                S.TFJB();
+                S.jThirdBottom();
             } else {
                 F.johnsonThirdMid();
-                S.TFJM();
+                S.jThirdMiddle();
             }
         }
 
@@ -1943,7 +1941,7 @@ public class PathDraw {
     public void nicolls1FtoHamilton3F() {
         if(position == 1) {
             F.nicollsFirstBottom();
-            S.FFNB();
+            S.nFirstBottom();
 
             if (buildFrom.equals("Hamilton")) {
                 int temp = roomTo;
@@ -1956,10 +1954,10 @@ public class PathDraw {
             }
         }
         if(position == 2) {
-            S.SFNB();
+            S.nSecondBottom();
         }
         if(position == 3) {
-            S.TFNB();
+            S.nThirdBottom();
             F.hamiltonThirdFloor();
         }
     }
@@ -1973,29 +1971,29 @@ public class PathDraw {
         if(position == 1) {
             if(roomFrom > 110 && roomFrom < 116) {
                 F.nicollsFirstTop();
-                S.FFNT();
+                S.nFirstTop();
             } else {
                 F.nicollsFirstBottom();
-                S.FFNB();
+                S.nFirstBottom();
             }
         }
         if(position == 2) {
             if(roomFrom > 110 && roomFrom < 116) {
-                S.SFNT();
+                S.nSecondTop();
             } else {
-                S.SFNB();
+                S.nSecondBottom();
             }
         }
         if(position == 3) {
             if(roomFrom > 110 && roomFrom < 116) {
                 F.nicollsThirdTop();
-                S.TFNT();
+                S.nThirdTop();
                 if (roomTo > 314 || roomTo < 311) {
                     F.nicollsThirdBottom();
                 }
             } else {
                 F.nicollsThirdBottom();
-                S.TFNB();
+                S.nThirdBottom();
                 if (roomTo < 315 && roomTo > 310) {
                     F.nicollsThirdTop();
                 }
@@ -2022,11 +2020,11 @@ public class PathDraw {
 
         if(position == 1) {
             F.hamiltonFirstFloor();
-            S.FFHM();
+            S.hFirst();
         }
 
         if(position == 2) {
-            S.SFHM();
+            S.hSecond();
             F.hamiltonSecondFloor();
             F.johnsonSecondMid();
             if(roomFrom > 207 && roomFrom < 218) {
@@ -2041,18 +2039,18 @@ public class PathDraw {
     public void hamilton1FtoHamilton2F() {
         if(position == 1) {
             F.hamiltonFirstFloor();
-            S.FFHM();
+            S.hFirst();
         }
         if(position == 2) {
             F.hamiltonSecondFloor();
-            S.SFHM();
+            S.hSecond();
         }
     }
 
     public void hamilton1FtoNicolls2F() {
         if(position == 1) {
             F.hamiltonFirstFloor();
-            S.FFHM();
+            S.hFirst();
         }
         if(position == 2) {
             if (buildFrom.equals("Hamilton")) {
@@ -2061,7 +2059,7 @@ public class PathDraw {
                 roomFrom = temp;
             }
 
-            S.SFHM();
+            S.hSecond();
             F.hamiltonSecondFloor();
             F.nicollsSecondBottom();
 
@@ -2074,16 +2072,16 @@ public class PathDraw {
     public void hamilton1FtoJohnson3F() {
         if(position == 1) {
             F.hamiltonFirstFloor();
-            S.FFHM();
+            S.hFirst();
         }
         if(position == 2) {
             F.hamiltonSecondFloor();
-            S.SFHM();
+            S.hSecond();
             F.johnsonSecondMid();
-            S.SFJM();
+            S.jSecondMiddle();
         }
         if(position == 3) {
-            S.TFJM();
+            S.jThirdMiddle();
             F.johnsonThirdMid();
 
             if(buildFrom.equals("Hamilton")) {
@@ -2103,13 +2101,13 @@ public class PathDraw {
     public void hamilton1FtoHamilton3F() {
         if(position == 1) {
             F.hamiltonFirstFloor();
-            S.FFHM();
+            S.hFirst();
         }
         if(position == 2) {
-            S.SFHM();
+            S.hSecond();
         }
         if(position == 3) {
-            S.TFHM();
+            S.hThird();
             F.hamiltonThirdFloor();
         }
     }
@@ -2117,13 +2115,13 @@ public class PathDraw {
     public void hamilton1FtoNicolls3F() {
         if(position == 1) {
             F.hamiltonFirstFloor();
-            S.FFHM();
+            S.hFirst();
         }
         if(position == 2) {
-            S.SFHM();
+            S.hSecond();
         }
         if(position == 3) {
-            S.TFHM();
+            S.hThird();
             F.hamiltonThirdFloor();
             F.nicollsThirdBottom();
 
@@ -2202,13 +2200,13 @@ public class PathDraw {
         if(position == 2) {
             if(roomTo > 207 && roomTo < 218) {
                 F.johnsonSecondTop();
-                S.SFJT();
+                S.jSecondTop();
             } else if (roomTo > 230 || roomTo < 204) {
                 F.johnsonSecondBottom();
-                S.SFJB();
+                S.jSecondBottom();
             } else {
                 F.johnsonSecondMid();
-                S.SFJM();
+                S.jSecondMiddle();
             }
 
         }
@@ -2216,7 +2214,7 @@ public class PathDraw {
         if(position == 3) {
             if(roomTo > 207 && roomTo < 218) {
                 F.johnsonThirdTop();
-                S.TFJT();
+                S.jThirdTop();
                 if (roomFrom == 309 || roomFrom == 310 || roomFrom < 303) {
                     F.johnsonThirdBottom();
                     F.johnsonThirdMid();
@@ -2226,7 +2224,7 @@ public class PathDraw {
 
             } else if (roomTo > 230 || roomTo < 204) {
                 F.johnsonThirdBottom();
-                S.TFJB();
+                S.jThirdBottom();
                 if (roomFrom < 326 && roomFrom > 315) {
                     F.johnsonThirdTop();
                     F.johnsonThirdMid();
@@ -2235,7 +2233,7 @@ public class PathDraw {
                 }
             } else {
                 F.johnsonThirdMid();
-                S.TFJM();
+                S.jThirdMiddle();
                 if (roomFrom < 326 && roomFrom > 315) {
                     F.johnsonThirdTop();
                 } else if (roomFrom == 309 || roomFrom == 310 || roomFrom < 303) {
@@ -2255,7 +2253,7 @@ public class PathDraw {
         if(position == 2) {
             F.johnsonSecondMid();
             F.hamiltonSecondFloor();
-            S.SFHM();
+            S.hSecond();
             if(roomFrom > 207 && roomFrom < 218) {
                 F.johnsonSecondTop();
             } else if (roomTo > 230 || roomTo < 204) {
@@ -2263,7 +2261,7 @@ public class PathDraw {
             }
         }
         if(position == 3) {
-            S.TFHM();
+            S.hThird();
             F.hamiltonThirdFloor();
         }
     }
@@ -2278,7 +2276,7 @@ public class PathDraw {
             F.johnsonSecondMid();
             F.hamiltonSecondFloor();
             F.nicollsSecondBottom();
-            S.SFNB();
+            S.nSecondBottom();
             if(roomFrom > 207 && roomFrom < 218) {
                 F.johnsonSecondTop();
             } else if (roomFrom > 230 || roomFrom < 204) {
@@ -2286,7 +2284,7 @@ public class PathDraw {
             }
         }
         if(position == 3) {
-            S.TFNB();
+            S.nThirdBottom();
             F.nicollsThirdBottom();
             if (roomTo > 310 && roomTo < 315) {
                 F.nicollsThirdTop();
@@ -2324,7 +2322,7 @@ public class PathDraw {
             F.nicollsSecondFloor();
             F.hamiltonSecondFloor();
             F.johnsonSecondMid();
-            S.SFJM();
+            S.jSecondMiddle();
         }
         if(position == 3) {
             if (buildFrom.equals("Nicolls")) {
@@ -2333,7 +2331,7 @@ public class PathDraw {
                 roomFrom = temp;
             }
             F.johnsonThirdMid();
-            S.TFJM();
+            S.jThirdMiddle();
             if (roomFrom < 326 && roomFrom > 315) {
                 F.johnsonThirdTop();
             } else if (roomFrom == 309 || roomFrom == 310 || roomFrom < 303) {
@@ -2352,7 +2350,7 @@ public class PathDraw {
                 roomFrom = temp;
             }
             F.nicollsSecondBottom();
-            S.SFNB();
+            S.nSecondBottom();
 
             if(roomFrom > 210) {
                 F.nicollsSecondTop();
@@ -2361,7 +2359,7 @@ public class PathDraw {
         if(position == 3) {
             F.hamiltonThirdFloor();
             F.nicollsThirdBottom();
-            S.TFNB();
+            S.nThirdBottom();
         }
     }
 
@@ -2375,19 +2373,19 @@ public class PathDraw {
         if(position == 2) {
             F.nicollsSecondFloor();
             if (roomFrom > 310 && roomFrom < 315) {
-                S.SFNT();
+                S.nSecondTop();
             } else {
-                S.SFNB();
+                S.nSecondBottom();
             }
 
         }
 
         if(position == 3) {
             if (roomFrom > 310 && roomFrom < 315) {
-                S.TFNT();
+                S.nThirdTop();
                 F.nicollsThirdTop();
             } else {
-                S.TFNB();
+                S.nThirdBottom();
                 F.nicollsThirdBottom();
             }
         }
@@ -2405,10 +2403,10 @@ public class PathDraw {
         if(position == 2) {
             F.hamiltonSecondFloor();
             F.johnsonSecondMid();
-            S.SFJM();
+            S.jSecondMiddle();
         }
         if(position == 3) {
-            S.TFJM();
+            S.jThirdMiddle();
 
             if (buildFrom.equals("Hamilton")) {
                 int temp = roomTo;
@@ -2432,21 +2430,21 @@ public class PathDraw {
     public void hamilton2FtoHamilton3F() {
         if(position == 2) {
             F.hamiltonSecondFloor();
-            S.SFHM();
+            S.hSecond();
         }
         if(position == 3) {
             F.hamiltonThirdFloor();
-            S.TFHM();
+            S.hThird();
         }
     }
 
     public void hamilton2FtoNicolls3F() {
         if(position == 2) {
-            S.SFHM();
+            S.hSecond();
             F.hamiltonSecondFloor();
         }
         if(position == 3) {
-            S.TFHM();
+            S.hThird();
             F.hamiltonThirdFloor();
             F.nicollsThirdBottom();
 
@@ -2477,8 +2475,8 @@ public class PathDraw {
         if(position == 3) {
             F.hamiltonThirdFloor();
             F.nicollsThirdBottom();
-            S.TFNB();
-            S.TFJM();
+            S.nThirdBottom();
+            S.jThirdMiddle();
 
             if(buildFrom.equals("Hamilton")) {
                 int temp = roomTo;
@@ -2502,8 +2500,8 @@ public class PathDraw {
             F.nicollsSecondBottom();
             F.hamiltonSecondFloor();
             F.johnsonSecondMid();
-            S.SFJM();
-            S.SFNB();
+            S.jSecondMiddle();
+            S.nSecondBottom();
         }
     }
 
@@ -2512,8 +2510,8 @@ public class PathDraw {
         if(position == 3) {
             F.nicollsThirdBottom();
             F.johnsonThirdMid();
-            S.SFNB();
-            S.SFJM();
+            S.nSecondBottom();
+            S.jSecondMiddle();
 
             if(buildFrom.equals("Nicolls")) {
                 int temp = roomTo;
@@ -2537,8 +2535,8 @@ public class PathDraw {
             F.nicollsSecondBottom();
             F.johnsonSecondMid();
             F.hamiltonSecondFloor();
-            S.SFNB();
-            S.SFJM();
+            S.nSecondBottom();
+            S.jSecondMiddle();
         }
     }
 

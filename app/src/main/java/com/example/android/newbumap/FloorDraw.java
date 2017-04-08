@@ -57,7 +57,7 @@ public class FloorDraw {
         p = paint;
     }
 
-    /*------------------------GROUND FLOOR-----------------------------------*/
+    //-------------------------- Ground Floor  -----------------------------------------------------
 
     public void nicollsGroundTop() {
         //line to N005, N004 and N007
@@ -95,6 +95,7 @@ public class FloorDraw {
         nicollsGroundTop();
         nicollsGroundBottom();
     }
+
     public void hamiltonGroundFloor(){
         //line going across hamilton ground floor
         c.drawLine(
@@ -146,7 +147,8 @@ public class FloorDraw {
         johnsonGroundMid();
         johnsonGroundBottom();
     }
-    /*------------------------FIRST FLOOR-----------------------------------*/
+
+    //-------------------------- First Floor  ------------------------------------------------------
 
     public void nicollsFirstTop() {
         c.drawLine(
@@ -181,6 +183,7 @@ public class FloorDraw {
         nicollsFirstTop();
         nicollsFirstBottom();
     }
+
     public void hamiltonFirstFloor(){
         //line going in front of nelly's old office
         c.drawLine(
@@ -287,7 +290,9 @@ public class FloorDraw {
         johnsonFirstBottom();
 
     }
-    /*------------------------SECOND FLOOR-----------------------------------*/
+
+    //-------------------------- Second Floor  -----------------------------------------------------
+
     public void nicollsSecondTop() {
         //line from top to N216
         c.drawLine(
@@ -346,6 +351,7 @@ public class FloorDraw {
         nicollsSecondTop();
         nicollsSecondBottom();
     }
+
     public void hamiltonSecondFloor(){
         //big line going across main section
         c.drawLine(
@@ -383,6 +389,7 @@ public class FloorDraw {
                 p // Paint
         );
     }
+
     public void johnsonSecondMid() {
         //line from J208 to J232
         c.drawLine(
@@ -393,6 +400,7 @@ public class FloorDraw {
                 p // Paint
         );
     }
+
     public void johnsonSecondBottom() {
         //line from J232b to bottom
         c.drawLine(
@@ -410,7 +418,9 @@ public class FloorDraw {
         johnsonSecondMid();
         johnsonSecondBottom();
     }
-    /*------------------------THIRD FLOOR-----------------------------------*/
+
+    //-------------------------- Third Floor  ------------------------------------------------------
+
     public void nicollsThirdTop() {
         //line from top to N315b
         c.drawLine(
@@ -469,6 +479,7 @@ public class FloorDraw {
         nicollsThirdTop();
         nicollsThirdBottom();
     }
+
     public void hamiltonThirdFloor(){
         //line connecting to nicolls third floor
         c.drawLine(
