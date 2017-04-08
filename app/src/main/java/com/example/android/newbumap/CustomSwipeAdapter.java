@@ -48,7 +48,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         return image_resources.length;
     }
 
-    //This function gives the Activity and view and layout
+    //This function returns true if the view has a LinearLayout
     @Override
     public boolean isViewFromObject(View view, Object object) {
         return (view==(LinearLayout) object);
