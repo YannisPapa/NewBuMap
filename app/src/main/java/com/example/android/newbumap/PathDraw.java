@@ -1466,7 +1466,7 @@ public class PathDraw {
     }
     //--------------- Pathing from Johnson First Floor ---------------------------------------------
     public void johnson1FtoJohnson1F() {
-        if(position == 0){
+        if(position == 1){
             F.johnsonFirstFloor();
         }
     }
