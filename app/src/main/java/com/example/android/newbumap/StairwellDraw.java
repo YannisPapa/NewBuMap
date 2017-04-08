@@ -17,10 +17,6 @@ public class StairwellDraw {
         pixel = px;
     }
 
-    public void changePaint(Paint p) {
-        P = p;
-    }
-
     //-------------------------- Ground Floor ------------------------------------------------------
 
     //Stairwell at Basement, Nicolls, Top
