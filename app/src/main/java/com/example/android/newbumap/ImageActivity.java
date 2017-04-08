@@ -5,6 +5,10 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+/*This is the image activity that is first created to post the building images. It creates and
+* calls CustomSwipeAdapter that then controls the activity. It passes the spinner information to
+* CustomSwipeAdapter.*/
+
 public class ImageActivity extends AppCompatActivity {
 
     ViewPager viewPager;

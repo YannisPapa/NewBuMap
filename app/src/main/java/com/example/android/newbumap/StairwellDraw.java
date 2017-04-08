@@ -3,6 +3,9 @@ package com.example.android.newbumap;
 import android.graphics.Paint;
 import android.graphics.Canvas;
 
+/*This Class and its Functions are used to draw the circle's around the different stairwells
+* depending on the users selection.*/
+
 public class StairwellDraw {
     private Paint P;
     private Canvas C;

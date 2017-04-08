@@ -8,13 +8,14 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.v4.view.PagerAdapter;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+/*This Class becomes the new Activity manager for ImageActivity*/
 
 public class CustomSwipeAdapter extends PagerAdapter{
 
@@ -30,6 +31,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
     private String secondFloor = "Second Floor";
     private String thirdFloor = "Third Floor";
 
+    //Constructor that receives the spinner information and the context from ImageActivity
     public CustomSwipeAdapter(Context ctx, String spn1, String spn2, String spn3, String spn4, String spn5, String spn6){
         this.ctx = ctx;
         spinner1 = spn1;
@@ -39,16 +41,21 @@ public class CustomSwipeAdapter extends PagerAdapter{
         spinner5 = spn5;
         spinner6 = spn6;
     }
-    /*--------------------------------------------------------------------------------------------*/
+
+    //getCount tells us how many images we have in the array of images
     @Override
     public int getCount() {
         return image_resources.length;
     }
-    /*--------------------------------------------------------------------------------------------*/
+
+    //This function gives the Activity and view and layout
     @Override
     public boolean isViewFromObject(View view, Object object) {
         return (view==(LinearLayout) object);
     }
+
+    /*All the Functions named similarly to fromJGround all call the proper PathDraw Function
+    * according to what the user has selected*/
     /*--------------------------------------------------------------------------------------------*/
     private void fromJGround(PathDraw paths){
         //going to GF
@@ -118,7 +125,8 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-                paths.johnsonGFtoHamiltonGF();  //same path
+                //this is the same as going from jGF to hGF
+                paths.johnsonGFtoHamiltonGF();
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
@@ -126,7 +134,8 @@ public class CustomSwipeAdapter extends PagerAdapter{
             }
             //going to nGF
             if(spinner4.equals(nicolls)){
-                paths.nicollsGFtoHamiltonGF();  //same path
+                //this is the same as going from nGF to hGF
+                paths.nicollsGFtoHamiltonGF();
             }
         }
         //going to 1F
@@ -181,7 +190,8 @@ public class CustomSwipeAdapter extends PagerAdapter{
         if(spinner5.equals(groundFloor)){
             //going to jGF
             if(spinner4.equals(johnson)){
-                paths.johnsonGFtoNicollsGF();   //same path
+                //this is the same as going from jGF to nGF
+                paths.johnsonGFtoNicollsGF();
             }
             //going to hGF
             if(spinner4.equals(hamilton)){
@@ -875,6 +885,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
         }
     }
     /*--------------------------------------------------------------------------------------------*/
+    /*This Function is used to call the Functions above*/
     private void pathing(FloorDraw F, StairwellDraw S, int pos) {
         String fRm = spinner3.substring(2,5);
         String tRm = spinner6.substring(2,5);
@@ -945,8 +956,12 @@ public class CustomSwipeAdapter extends PagerAdapter{
         }
     }
     /*--------------------------------------------------------------------------------------------*/
+    /*This function puts the images on the screen and is used to call all the proper functions
+    * to paint the users selected rooms,path, and stairs. It also is used to set up the image
+    * swiper to alot switching between images.*/
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
+        //This is where the view is set up for the images to display
         layoutInflater = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View item_view = layoutInflater.inflate(R.layout.swipe_layout,container,false);
         TouchImageView imageView = (TouchImageView) item_view.findViewById(R.id.image_view);
@@ -959,6 +974,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
                 R.drawable.bubasement
         );
 
+        //change the bitmap depending on which position on the screen you are at
         if(position == 0){
             bitmap = BitmapFactory.decodeResource(
                     imageView.getResources(),
@@ -1021,10 +1037,12 @@ public class CustomSwipeAdapter extends PagerAdapter{
         Resources r = ctx.getResources();
         float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16, r.getDisplayMetrics());
 
+        //Create FloorDraw, StairwellDraw, and RoomDraw
         FloorDraw pDraw = new FloorDraw(canvas, paint, px);
         StairwellDraw stairs = new StairwellDraw (paint, canvas, px);
         RoomDraw Rooms = new RoomDraw(paint,canvas,px);
 
+        //If any special named room is selected change the information
         if(spinner3.equals("ITS")){
             spinner1 = "Johnson";
             spinner2 = "First Floor";
@@ -1056,9 +1074,15 @@ public class CustomSwipeAdapter extends PagerAdapter{
             spinner6 = "H-126";
         }
 
+        //Change the color for the starting room and call RoomDraw
+        paint.setColor(Color.GREEN);
+        Rooms.changePaint(paint);
         Rooms.roomSelected(spinner3, position);
+        paint.setColor(Color.RED);
+        Rooms.changePaint(paint);
         Rooms.roomSelected(spinner6, position);
 
+        //pass pathing the path, stairs, and screen position to draw them
         pathing(pDraw, stairs, position);
 
         // Display the newly created bitmap on app interface
@@ -1078,6 +1102,7 @@ public class CustomSwipeAdapter extends PagerAdapter{
             textView.setText("Third Floor");
         }
 
+        //add the view we have created to the container
         container.addView(item_view);
 
         return item_view;

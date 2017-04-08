@@ -1,5 +1,8 @@
 package com.example.android.newbumap;
 
+/*This class and its functions are used to call FloorDraw and StairwellDraw to draw the proper
+* paths and circle the proper stair's on the image depending on the users selection*/
+
 public class PathDraw {
     private FloorDraw F;
     private StairwellDraw S;
@@ -20,13 +23,12 @@ public class PathDraw {
 
     }
 
-    //--------------- Pathing from Johnson Ground Floor --------------------------------------------
-
+    //------------------------------Pathing from Johnson Ground Floor-------------------------------
+    //--------------------------------From Johnson GF to Johnson GF---------------------------------
     public void johnsonGFtoJohnsonGF() {
         F.johnsonGroundFloor();
     }
-
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson GF to Nicolls GF---------------------------------
     public void johnsonGFtoNicollsGF() {
         if (position == 0) {
             F.hamiltonGroundFloor();
@@ -70,7 +72,7 @@ public class PathDraw {
 
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson GF to Hamilton GF--------------------------------
     public void johnsonGFtoHamiltonGF() {
         if (position == 0) {
             F.hamiltonGroundFloor();
@@ -83,7 +85,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson GF to Johnson 1F---------------------------------
     public void johnsonGFtoJohnson1F() {
         //rooms near top stairs
         if(floorFrom.equals("First Floor")){
@@ -192,7 +194,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson GF to Hamilton 1F--------------------------------
     public void johnsonGFtoHamilton1F () {
         if(floorFrom.equals("First Floor")){
             int tempRoom = roomFrom;
@@ -279,7 +281,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson GF to Nicolls 1F---------------------------------
     public void johnsonGFtoNicolls1F() {
         if(floorFrom.equals("First Floor")){
             int tempRoom = roomFrom;
@@ -369,7 +371,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson GF to Johnson 2F---------------------------------
     public void johnsonGFtoJohnson2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -456,7 +458,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson GF to Hamilton 2F--------------------------------
     public void johnsonGFtoHamilton2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -508,7 +510,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson GF to Nicolls 2F---------------------------------
     public void johnsonGFtoNicolls2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -595,7 +597,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson GF to Johnson 3F---------------------------------
     public void johnsonGFtoJohnson3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -691,7 +693,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson GF to Hamilton 3F--------------------------------
     public void johnsonGFtoHamilton3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -758,7 +760,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson GF to Nicolls 3F---------------------------------
     public void johnsonGFtoNicolls3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -847,14 +849,14 @@ public class PathDraw {
         }
     }
 
-    //--------------- Pathing from Nicolls Ground Floor --------------------------------------------
-
+    //------------------------------Pathing from Nicolls Ground Floor-------------------------------
+    //--------------------------------From Nicolls GF to Nicolls GF---------------------------------
     public void nicollsGFtoNicollsGF() {
         if(position == 0){
             F.nicollsGroundFloor();
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Nicolls GF to Hamilton GF--------------------------------
     public void nicollsGFtoHamiltonGF() {
         if(position == 0){
             F.hamiltonGroundFloor();
@@ -876,7 +878,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Nicolls GF to Johnson 1F---------------------------------
     public void nicollsGFtoJohnson1F() {
         if(floorFrom.equals("First Floor")){
             int tempRoom = roomFrom;
@@ -923,7 +925,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Nicolls GF to Hamilton 1F--------------------------------
     public void nicollsGFtoHamilton1F() {
         if(floorFrom.equals("First Floor")){
             int tempRoom = roomFrom;
@@ -979,7 +981,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Nicolls GF to Nicolls 1F---------------------------------
     public void nicollsGFtoNicolls1F() {
         if(floorFrom.equals("First Floor")){
             int tempRoom = roomFrom;
@@ -1029,7 +1031,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Nicolls GF to Johnson 2F---------------------------------
     public void nicollsGFtoJohnson2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -1060,7 +1062,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Nicolls GF to Hamilton 2F--------------------------------
     public void nicollsGFtoHamilton2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -1084,7 +1086,7 @@ public class PathDraw {
             F.hamiltonSecondFloor();
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Nicolls GF to Nicolls 2F---------------------------------
     public void nicollsGFtoNicolls2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -1125,7 +1127,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Nicolls GF to Johnson 3F---------------------------------
     public void nicollsGFtoJohnson3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -1159,7 +1161,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Nicolls GF to Hamilton 3F--------------------------------
     public void nicollsGFtoHamilton3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -1186,7 +1188,7 @@ public class PathDraw {
             F.hamiltonThirdFloor();
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Nicolls GF to Nicolls 3F---------------------------------
     public void nicollsGFtoNicolls3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -1233,13 +1235,15 @@ public class PathDraw {
             }
         }
     }
-    //--------------- Pathing from Hamilton Ground Floor ---------------
+
+    //------------------------------Pathing from Hamilton Ground Floor------------------------------
+    //--------------------------------From Hamilton GF to Hamilton GF-------------------------------
     public void hamiltonGFtoHamiltonGF() {
         if(position == 0){
             F.hamiltonGroundFloor();
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Hamilton GF to Johnson 1F--------------------------------
     public void hamiltonGFtoJohnson1F() {
         if(floorFrom.equals("First Floor")){
             int tempRoom = roomFrom;
@@ -1262,7 +1266,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Hamilton GF to Hamilton 1F-------------------------------
     public void hamiltonGFtoHamilton1F() {
         if(floorFrom.equals("First Floor")){
             int tempRoom = roomFrom;
@@ -1290,7 +1294,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Hamilton GF to Nicolls 1F--------------------------------
     public void hamiltonGFtoNicolls1F() {
         if(floorFrom.equals("First Floor")){
             int tempRoom = roomFrom;
@@ -1311,7 +1315,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Hamilton GF to Johnson 2F--------------------------------
     public void hamiltonGFtoJohnson2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -1337,7 +1341,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Hamilton GF to Hamilton 2F-------------------------------
     public void hamiltonGFtoHamilton2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -1358,7 +1362,7 @@ public class PathDraw {
             F.hamiltonSecondFloor();
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Hamilton GF to Nicolls 2F--------------------------------
     public void hamiltonGFtoNicolls2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -1382,7 +1386,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Hamilton GF to Johnson 3F--------------------------------
     public void hamiltonGFtoJohnson3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -1411,7 +1415,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Hamilton GF to Hamilton 3F-------------------------------
     public void hamiltonGFtoHamilton3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -1435,7 +1439,7 @@ public class PathDraw {
             F.hamiltonThirdFloor();
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Hamilton GF to Nicolls 3F--------------------------------
     public void hamiltonGFtoNicolls3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -1462,13 +1466,15 @@ public class PathDraw {
             }
         }
     }
-    //--------------- Pathing from Johnson First Floor ---------------------------------------------
+
+    //------------------------------Pathing from Johnson First Floor--------------------------------
+    //--------------------------------From Johnson 1F to Johnson 1F---------------------------------
     public void johnson1FtoJohnson1F() {
         if(position == 1){
             F.johnsonFirstFloor();
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson 1F to Hamilton 1F--------------------------------
     public void johnson1FtoHamilton1F() {
         if(position == 1){
             F.johnsonFirstMid();
@@ -1522,7 +1528,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson 1F to Nicolls 1F---------------------------------
     public void johnson1FtoNicolls1F() {
         if(position == 0){
             S.jGroundMiddle();
@@ -1563,7 +1569,7 @@ public class PathDraw {
         }
 
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson 1F to Johnson 2F---------------------------------
     public void johnson1FtoJohnson2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -1617,7 +1623,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson 1F to Hamilton 2F--------------------------------
     public void johnson1FtoHamilton2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -1640,7 +1646,7 @@ public class PathDraw {
             F.hamiltonSecondFloor();
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson 1F to Nicolls 2F---------------------------------
     public void johnson1FtoNicolls2F() {
         if(floorFrom.equals("Second Floor")){
             int tempRoom = roomFrom;
@@ -1668,7 +1674,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson 1F to Johnson 3F---------------------------------
     public void johnson1FtoJohnson3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -1731,7 +1737,7 @@ public class PathDraw {
             }
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson 1F to Hamilton 3F--------------------------------
     public void johnson1FtoHamilton3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -1757,7 +1763,7 @@ public class PathDraw {
             F.hamiltonThirdFloor();
         }
     }
-    //----------------------------------------------------------------------------------------------
+    //--------------------------------From Johnson 1F to Nicolls 3F---------------------------------
     public void johnson1FtoNicolls3F() {
         if(floorFrom.equals("Third Floor")){
             int tempRoom = roomFrom;
@@ -1788,30 +1794,46 @@ public class PathDraw {
             }
         }
     }
-    //--------------- Pathing from Nicolls First Floor ---------------
+
+    //------------------------------Pathing from Nicolls First Floor--------------------------------
+    //--------------------------------From Nicolls 1F to Nicolls 1F---------------------------------
     public void nicolls1FtoNicolls1F() {
         if(position == 1){
             F.nicollsFirstFloor();
         }
     }
-
+    //--------------------------------From Nicolls 1F to Hamilton 1F--------------------------------
     public void nicolls1FtoHamilton1F() {
+        if (buildFrom.equals("Hamilton")) {
+            int temp = roomTo;
+            roomTo = roomFrom;
+            roomFrom = temp;
+        }
         if(position == 1) {
             F.nicollsFirstBottom();
-            F.hamiltonFirstFloor();
-
-            if (buildFrom.equals("Hamilton")) {
-                int temp = roomTo;
-                roomTo = roomFrom;
-                roomFrom = temp;
-            }
-
             if(roomFrom > 110 && roomFrom < 116) {
                 F.nicollsFirstTop();
             }
+            if(roomTo==126){
+            }else{
+                S.FFNB();
+                F.hamiltonFirstFloor();
+                S.FFJM();
+                F.johnsonFirstMid();
+            }
+        }
+        if(position == 0){
+            if(roomTo==126){
+            }else{
+                S.BNB();
+                F.nicollsGroundBottom();
+                F.hamiltonGroundFloor();
+                F.johnsonGroundMid();
+                S.BJM();
+            }
         }
     }
-
+    //--------------------------------From Nicolls 1F to Johnson 2F---------------------------------
     public void nicolls1FtoJohnson2F() {
         if (buildFrom.equals("Nicolls")) {
             int temp = roomTo;
@@ -1840,7 +1862,7 @@ public class PathDraw {
 
         }
     }
-
+    //--------------------------------From Nicolls 1F to Hamilton 2F--------------------------------
     public void nicolls1FtoHamilton2F() {
         if(position == 1) {
             F.nicollsFirstBottom();
@@ -1861,7 +1883,7 @@ public class PathDraw {
             F.hamiltonSecondFloor();
         }
     }
-
+    //--------------------------------From Nicolls 1F to Nicolls 2F---------------------------------
     public void nicolls1FtoNicolls2F() {
         if (floorFrom.equals("Second Floor")) {
             int temp = roomTo;
@@ -1894,7 +1916,7 @@ public class PathDraw {
 
         }
     }
-
+    //--------------------------------From Nicolls 1F to Johnson 3F---------------------------------
     public void nicolls1FtoJohnson3F() {
         if (buildFrom.equals("Johnson")) {
             int temp = roomTo;
@@ -1937,7 +1959,7 @@ public class PathDraw {
         }
 
     }
-
+    //--------------------------------From Nicolls 1F to Hamilton 3F--------------------------------
     public void nicolls1FtoHamilton3F() {
         if(position == 1) {
             F.nicollsFirstBottom();
@@ -1961,7 +1983,7 @@ public class PathDraw {
             F.hamiltonThirdFloor();
         }
     }
-
+    //--------------------------------From Nicolls 1F to Nicolls 3F---------------------------------
     public void nicolls1FtoNicolls3F() {
         if (floorFrom.equals("Third Floor")) {
             int temp = roomTo;
@@ -2001,152 +2023,230 @@ public class PathDraw {
         }
     }
 
-    //--------------- Pathing from Hamilton First Floor ---------------
-
-    //Todo: add starting at bus stop to hamilton first floor functionality
-
+    //------------------------------Pathing from Hamilton First Floor-------------------------------
+    //--------------------------------From Hamilton 1F to Hamilton 1F-------------------------------
     public void hamilton1FtoHamilton1F() {
-        if (position == 1){
+        if(position == 0){
+            if(roomFrom == 126 || roomTo == 126){
+                S.BJM();
+                F.johnsonGroundMid();
+                F.hamiltonGroundFloor();
+                F.nicollsGroundBottom();
+                S.BNB();
+            }
+        }
+        if(position == 1){
             F.hamiltonFirstFloor();
+            if(roomFrom == 126 || roomTo == 126){
+                F.johnsonFirstMid();
+                S.FFJM();
+                F.nicollsFirstBottom();
+                S.FFNB();
+            }
         }
     }
-
+    //--------------------------------From Hamilton 1F to Johnson 2F--------------------------------
     public void hamilton1FtoJohnson2F() {
-        if (buildFrom.equals("Hamilton")) {
+        if (buildFrom.equals("Johnson")) {
             int temp = roomTo;
             roomTo = roomFrom;
             roomFrom = temp;
         }
-
         if(position == 1) {
-            F.hamiltonFirstFloor();
-            S.hFirst();
+            if(roomFrom==126){
+                F.nicollsFirstBottom();
+                S.FFNB();
+            }else{
+                F.hamiltonFirstFloor();
+                S.FFHM();
+            }
         }
-
         if(position == 2) {
-            S.hSecond();
+            if(roomFrom==126){
+                S.SFNB();
+                F.nicollsSecondBottom();
+            }else{
+                S.SFHM();
+            }
             F.hamiltonSecondFloor();
             F.johnsonSecondMid();
-            if(roomFrom > 207 && roomFrom < 218) {
+            if(roomTo > 207 && roomTo < 218) {
                 F.johnsonSecondTop();
-            } else if (roomFrom > 230 || roomFrom < 204) {
+            } else if (roomTo > 230 || roomTo < 204) {
                 F.johnsonSecondBottom();
             }
         }
-
     }
-
+    //--------------------------------From Hamilton 1F to Hamilton 2F-------------------------------
     public void hamilton1FtoHamilton2F() {
+        if(floorFrom.equals("Second Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
         if(position == 1) {
-            F.hamiltonFirstFloor();
-            S.hFirst();
+            if(roomFrom == 126){
+                F.nicollsFirstBottom();
+                S.FFNB();
+            }else{
+                F.hamiltonFirstFloor();
+                S.FFHM();
+            }
         }
         if(position == 2) {
+            if(roomFrom == 126){
+                F.nicollsSecondBottom();
+                S.SFNB();
+            }else{
+                S.SFHM();
+            }
             F.hamiltonSecondFloor();
-            S.hSecond();
         }
     }
-
+    //--------------------------------From Hamilton 1F to Nicolls 2F--------------------------------
     public void hamilton1FtoNicolls2F() {
+        if(floorFrom.equals("Second Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
         if(position == 1) {
-            F.hamiltonFirstFloor();
-            S.hFirst();
+            if(roomFrom == 126){
+                F.nicollsFirstBottom();
+                S.FFNB();
+            }else{
+                F.hamiltonFirstFloor();
+                S.FFHM();
+            }
         }
         if(position == 2) {
-            if (buildFrom.equals("Hamilton")) {
-                int temp = roomTo;
-                roomTo = roomFrom;
-                roomFrom = temp;
+            if(roomFrom == 126){
+                S.SFNB();
+            }else{
+                S.SFHM();
+                F.hamiltonSecondFloor();
             }
-
-            S.hSecond();
-            F.hamiltonSecondFloor();
             F.nicollsSecondBottom();
-
             if(roomFrom > 210) {
                 F.nicollsSecondTop();
             }
         }
     }
-
+    //--------------------------------From Hamilton 1F to Johnson 3F--------------------------------
     public void hamilton1FtoJohnson3F() {
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
         if(position == 1) {
-            F.hamiltonFirstFloor();
-            S.hFirst();
+            if(roomFrom == 126){
+                F.nicollsFirstBottom();
+                S.FFNB();
+            }else{
+                F.hamiltonFirstFloor();
+                S.FFHM();
+            }
         }
         if(position == 2) {
+            if(roomFrom == 126){
+                F.nicollsSecondBottom();
+                S.SFNB();
+            }else{
+                S.SFHM();
+            }
             F.hamiltonSecondFloor();
-            S.hSecond();
             F.johnsonSecondMid();
-            S.jSecondMiddle();
+            S.SFJM();
         }
         if(position == 3) {
-            S.jThirdMiddle();
+            S.TFJM();
             F.johnsonThirdMid();
-
-            if(buildFrom.equals("Hamilton")) {
-                int temp = roomTo;
-                roomTo = roomFrom;
-                roomFrom = temp;
-            }
-
-            if (roomFrom < 326 && roomFrom > 315) {
+            if (roomTo < 326 && roomTo > 315) {
                 F.johnsonThirdTop();
-            } else if (roomFrom == 309 || roomFrom == 310 || roomFrom < 303) {
+            } else if (roomTo == 309 || roomTo == 310 || roomTo < 303) {
                 F.johnsonThirdBottom();
             }
         }
     }
-
+    //--------------------------------From Hamilton 1F to Hamilton 3F-------------------------------
     public void hamilton1FtoHamilton3F() {
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
         if(position == 1) {
-            F.hamiltonFirstFloor();
-            S.hFirst();
+            if(roomFrom == 126){
+                F.nicollsFirstBottom();
+                S.FFNB();
+            }else{
+                F.hamiltonFirstFloor();
+                S.FFHM();
+            }
         }
         if(position == 2) {
-            S.hSecond();
+            if(roomFrom == 126){
+                S.SFNB();
+            }else{
+                S.SFHM();
+            }
         }
         if(position == 3) {
-            S.hThird();
+            if(roomFrom == 126){
+                S.TFNB();
+                F.nicollsThirdBottom();
+            }else{
+                S.TFHM();
+            }
             F.hamiltonThirdFloor();
         }
     }
-
+    //--------------------------------From Hamilton 1F to Nicolls 3F--------------------------------
     public void hamilton1FtoNicolls3F() {
+        if(floorFrom.equals("Third Floor")){
+            int tempRoom = roomFrom;
+            roomFrom = roomTo;
+            roomTo = tempRoom;
+        }
         if(position == 1) {
-            F.hamiltonFirstFloor();
-            S.hFirst();
+            if(roomFrom == 126){
+                F.nicollsFirstBottom();
+                S.FFNB();
+            }else{
+                F.hamiltonFirstFloor();
+                S.FFHM();
+            }
         }
         if(position == 2) {
-            S.hSecond();
+            if(roomFrom == 126){
+                S.SFNB();
+            }else{
+                S.SFHM();
+            }
         }
         if(position == 3) {
-            S.hThird();
-            F.hamiltonThirdFloor();
-            F.nicollsThirdBottom();
-
-            if(buildFrom.equals("Nicolls")) {
-                int temp = roomTo;
-                roomTo = roomFrom;
-                roomFrom = temp;
+            if(roomFrom == 126){
+                S.TFNB();
+            }else{
+                S.TFHM();
+                F.hamiltonThirdFloor();
             }
-
+            F.nicollsThirdBottom();
             if (roomTo < 315 && roomTo > 310) {
                 F.nicollsThirdTop();
             }
-
         }
     }
 
-
-    //--------------- Pathing from Johnson Second Floor ---------------
-
+    //------------------------------Pathing from Johnson Second Floor-------------------------------
+    //--------------------------------From Johnson 2F to Johnson 2F---------------------------------
     public void johnson2FtoJohnson2F() {
         if(position == 2) {
             F.johnsonSecondFloor();
         }
     }
-
+    //--------------------------------From Johnson 2F to Hamilton 2F--------------------------------
     public void johnson2FtoHamilton2F() {
         if (buildFrom.equals("Hamilton")) {
             int temp = roomTo;
@@ -2165,7 +2265,7 @@ public class PathDraw {
         }
 
     }
-
+    //--------------------------------From Johnson 2F to Nicolls 2F---------------------------------
     public void johnson2FtoNicolls2F() {
         if(position == 2) {
             F.johnsonSecondMid();
@@ -2189,7 +2289,7 @@ public class PathDraw {
             }
         }
     }
-
+    //--------------------------------From Johnson 2F to Johnson 3F---------------------------------
     public void johnson2FtoJohnson3F() {
         if(floorFrom.equals("Second Floor")) {
             int temp = roomTo;
@@ -2243,7 +2343,7 @@ public class PathDraw {
 
         }
     }
-
+    //--------------------------------From Johnson 2F to Hamilton 3F--------------------------------
     public void johnson2FtoHamilton3F() {
         if(buildFrom.equals("Hamilton")) {
             int temp = roomTo;
@@ -2265,7 +2365,7 @@ public class PathDraw {
             F.hamiltonThirdFloor();
         }
     }
-
+    //--------------------------------From Johnson 2F to Nicolls 3F---------------------------------
     public void johnson2FtoNicolls3F() {
         if(buildFrom.equals("Nicolls")) {
             int temp = roomTo;
@@ -2293,14 +2393,14 @@ public class PathDraw {
         }
     }
 
-    //--------------- Pathing from Nicolls Second Floor ---------------
-
+    //------------------------------Pathing from Nicolls Second Floor-------------------------------
+    //--------------------------------From Nicolls 2F to Nicolls 2F---------------------------------
     public void nicolls2FtoNicolls2F() {
         if(position == 2) {
             F.nicollsSecondFloor();
         }
     }
-
+    //--------------------------------From Nicolls 2F to Hamilton 2F--------------------------------
     public void nicolls2FtoHamilton2F() {
         if(position == 2) {
             F.nicollsSecondBottom();
@@ -2316,7 +2416,7 @@ public class PathDraw {
         }
 
     }
-
+    //--------------------------------From Nicolls 2F to Johnson 3F---------------------------------
     public void nicolls2FtoJohnson3F() {
         if(position == 2) {
             F.nicollsSecondFloor();
@@ -2341,7 +2441,7 @@ public class PathDraw {
         }
 
     }
-
+    //--------------------------------From Nicolls 2F to Hamilton 3F--------------------------------
     public void nicolls2FtoHamilton3F() {
         if(position == 2) {
             if (buildFrom.equals("Hamilton")) {
@@ -2362,7 +2462,7 @@ public class PathDraw {
             S.nThirdBottom();
         }
     }
-
+    //--------------------------------From Nicolls 2F to Nicolls 3F---------------------------------
     public void nicolls2FtoNicolls3F() {
         if(floorFrom.equals("Second Floor")) {
             int temp = roomTo;
@@ -2391,14 +2491,14 @@ public class PathDraw {
         }
     }
 
-    //--------------- Pathing from Hamilton Second Floor ---------------
-
+    //------------------------------Pathing from Hamilton Second Floor------------------------------
+    //--------------------------------From Hamilton 2F to Hamilton 2F-------------------------------
     public void hamilton2FtoHamilton2F() {
         if(position == 2) {
             F.hamiltonSecondFloor();
         }
     }
-
+    //--------------------------------From Hamilton 2F to Johnson 3F--------------------------------
     public void hamilton2FtoJohnson3F() {
         if(position == 2) {
             F.hamiltonSecondFloor();
@@ -2426,7 +2526,7 @@ public class PathDraw {
 
         }
     }
-
+    //--------------------------------From Hamilton 2F to Hamilton 3F-------------------------------
     public void hamilton2FtoHamilton3F() {
         if(position == 2) {
             F.hamiltonSecondFloor();
@@ -2437,7 +2537,7 @@ public class PathDraw {
             S.hThird();
         }
     }
-
+    //--------------------------------From Hamilton 2F to Nicolls 3F--------------------------------
     public void hamilton2FtoNicolls3F() {
         if(position == 2) {
             S.hSecond();
@@ -2462,15 +2562,14 @@ public class PathDraw {
         }
     }
 
-    //--------------- Pathing from Johnson Third Floor ---------------
-
+    //------------------------------Pathing from Johnson Third Floor--------------------------------
+    //--------------------------------From Johnson 3F to Johnson 3F---------------------------------
     public void johnson3FtoJohnson3F() {
         if(position == 3) {
             F.johnsonThirdFloor();
         }
     }
-
-
+    //--------------------------------From Johnson 3F to Hamilton 3F--------------------------------
     public void johnson3FtoHamilton3F() {
         if(position == 3) {
             F.hamiltonThirdFloor();
@@ -2504,8 +2603,7 @@ public class PathDraw {
             S.nSecondBottom();
         }
     }
-
-
+    //--------------------------------From Johnson 3F to Nicolls 3F---------------------------------
     public void johnson3FtoNicolls3F() {
         if(position == 3) {
             F.nicollsThirdBottom();
@@ -2540,14 +2638,14 @@ public class PathDraw {
         }
     }
 
-    //--------------- Pathing from Nicolls Third Floor ---------------
-
+    //------------------------------Pathing from Nicolls Third Floor--------------------------------
+    //--------------------------------From Nicolls 3F to Nicolls 3F---------------------------------
     public void nicolls3FtoNicolls3F() {
         if(position == 3) {
             F.nicollsThirdFloor();
         }
     }
-
+    //--------------------------------From Nicolls 3F to Hamilton 3F--------------------------------
     public void nicolls3FtoHamilton3F() {
         if (position == 3) {
             F.nicollsThirdBottom();
@@ -2563,8 +2661,8 @@ public class PathDraw {
         }
     }
 
-    //--------------- Pathing from Hamilton Third Floor ---------------
-
+    //------------------------------Pathing from Hamilton Third Floor-------------------------------
+    //--------------------------------From Hamilton 3F to Hamilton 3F-------------------------------
     public void hamilton3FtoHamilton3F() {
         if(position == 3) {
             F.hamiltonThirdFloor();

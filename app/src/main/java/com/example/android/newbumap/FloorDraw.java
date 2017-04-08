@@ -4,6 +4,8 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 
+/*This Class and its Functions draw the segmented floor paths depending on the user's selection.*/
+
 public class FloorDraw {
 
     private Canvas c;
