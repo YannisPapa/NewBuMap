@@ -19,46 +19,6 @@ public class FloorDraw {
         this.px = px;
     }
 
-    public void changePaint(Paint paint) {
-        p = paint;
-    }
-
-    public void startPaint() {
-        Paint paint = new Paint();
-        // Line color
-        paint.setColor(Color.MAGENTA);
-        paint.setStyle(Paint.Style.STROKE);
-        // Line width in pixels
-        paint.setStrokeWidth(8);
-        paint.setAntiAlias(true);
-
-        p = paint;
-    }
-
-    public void endPaint() {
-        Paint paint = new Paint();
-        // Line color
-        paint.setColor(Color.BLUE);
-        paint.setStyle(Paint.Style.STROKE);
-        // Line width in pixels
-        paint.setStrokeWidth(8);
-        paint.setAntiAlias(true);
-
-        p = paint;
-    }
-
-    public void paintBack() {
-        Paint paint = new Paint();
-        // Line color
-        paint.setColor(Color.RED);
-        paint.setStyle(Paint.Style.STROKE);
-        // Line width in pixels
-        paint.setStrokeWidth(8);
-        paint.setAntiAlias(true);
-
-        p = paint;
-    }
-
     //-------------------------- Ground Floor  -----------------------------------------------------
 
     public void nicollsGroundTop() {
