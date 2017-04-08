@@ -2295,9 +2295,14 @@ public class RoomDraw {
                 this.FFJ114a();
             }
         }
-        if(roomToDraw.equals("J-114")){
+        if(roomToDraw.equals("J-114b")){
             if(position == 1){
                 this.FFJ114b();
+            }
+        }
+        if(roomToDraw.equals("J-115")){
+            if(position == 1){
+                this.FFJ115();
             }
         }
         if(roomToDraw.equals("J-116")){
