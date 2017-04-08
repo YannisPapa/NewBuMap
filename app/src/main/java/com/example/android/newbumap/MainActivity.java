@@ -9,6 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+/*The first activity that is created. This is the main page where you select where you want to go
+* to and from*/
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     public Spinner spinner1, spinner2, spinner3, spinner4, spinner5, spinner6;
@@ -18,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //set spinner1-6 to the corresponding spinner on the view
         spinner1 = (Spinner) findViewById(R.id.building_spinner);
         spinner2 = (Spinner) findViewById(R.id.floor_spinner);
         spinner3 = (Spinner) findViewById(R.id.room_spinner);
@@ -25,11 +29,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         spinner5 = (Spinner) findViewById(R.id.floor_spinner2);
         spinner6 = (Spinner) findViewById(R.id.room_spinner2);
 
+        //set the proper adapter for each spinner
         ArrayAdapter adapter1 = ArrayAdapter.createFromResource(this, R.array.building_array, android.R.layout.simple_spinner_dropdown_item);
         ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this, R.array.floor_array, android.R.layout.simple_spinner_dropdown_item);
         ArrayAdapter adapter4 = ArrayAdapter.createFromResource(this, R.array.building_array, android.R.layout.simple_spinner_dropdown_item);
         ArrayAdapter adapter5 = ArrayAdapter.createFromResource(this, R.array.floor_array, android.R.layout.simple_spinner_dropdown_item);
 
+        //give spinner1,2,4,5 their adapter and activate the listener
         spinner1.setAdapter(adapter1);
         spinner2.setAdapter(adapter2);
         spinner1.setOnItemSelectedListener(this);
@@ -41,10 +47,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
-
+    //This function will be used once a spinner is touched
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
+        //These if's are to ensure we change spinner3 to the appropriate array
         if (parent.equals(spinner1) || parent.equals(spinner2)) {
             //These are the settings for the "from" spinners
             if (spinner1.getSelectedItem().equals("Hamilton") && spinner2.getSelectedItem().equals("Ground Floor")) {
@@ -114,6 +121,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             }
         }
 
+        //These if's are to ensure we change spinner6 to the appropriate array
         if (parent.equals(spinner4) || parent.equals(spinner5)) {
             //These are the settings for the "to" spinners
             if (spinner4.getSelectedItem().equals("Hamilton") && spinner5.getSelectedItem().equals("Ground Floor")) {
@@ -185,12 +193,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
+    //onClick for the button on the main page will call this
     public void nextPage(View view){
 
+        //Make sure you cannot select the same rooms
         if(spinner3.getSelectedItem().equals(spinner6.getSelectedItem())){
             Toast.makeText(this, "Change one of your room choices",
                     Toast.LENGTH_SHORT).show();
         }
+        //This is to create and call ImageActivity and pass it the information from the spinners
         else{
             Intent intent = new Intent(MainActivity.this, ImageActivity.class);
             intent.putExtra("spinner1", spinner1.getSelectedItem().toString());

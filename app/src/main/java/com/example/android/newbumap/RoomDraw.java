@@ -3,6 +3,8 @@ package com.example.android.newbumap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 
+/*This Class and its Function draw the squares/rectangles around the rooms the user selected*/
+
 public class RoomDraw {
     private Paint P;
     private Canvas C;
