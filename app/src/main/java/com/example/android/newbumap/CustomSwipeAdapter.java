@@ -15,7 +15,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-/*This Class becomes the new Activity manager for ImageActivity*/
+/*This Class becomes the new Activity manager for ImageActivity. It creates the images we swipe
+* through and analyzes and calls the paths that need to be drawn*/
 
 public class CustomSwipeAdapter extends PagerAdapter{
 
